@@ -6,7 +6,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "ace_main"
         };
         units[] = {};
         weapons[] = {};

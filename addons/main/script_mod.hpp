@@ -5,6 +5,7 @@
 
 #define REQUIRED_VERSION 2.16
 #define REQUIRED_CBA_VERSION {3,17,0}
+#define REQUIRED_ACE_VERSION {3,17,1}
 
 #include "script_version.hpp"
 
