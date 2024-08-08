@@ -1,6 +1,6 @@
-name = "MOD_TITLE"
+name = "Helicopter Addon Features"
 author = "DartRuffian"
-prefix = "MOD_PREFIX"
+prefix = "haf"
 mainprefix = "z"
 
 [version]
@@ -11,8 +11,8 @@ git_hash = 0
 include = [
     "mod.cpp",
     "meta.cpp",
-    "logo_MOD_PREFIX.png",
-    "logo_MOD_PREFIX_ca.paa",
+    "logo_haf.png",
+    "logo_haf_ca.paa",
     "LICENSE.md",
     "README.md",
 ]
