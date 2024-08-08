@@ -1,0 +1,17 @@
+# HEMTT
+hemtt.exe
+.hemtt/missions/~*
+.hemttout/
+releases/
+
+# Textures
+Exports/
+*.spp
+*.spp.painter_lock
+*.psd
+
+# Other
+*.biprivatekey
+*.zip
+*.pbo
+*.sqfc

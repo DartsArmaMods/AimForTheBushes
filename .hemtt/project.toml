@@ -1,0 +1,39 @@
+name = "MOD_TITLE"
+author = "DartRuffian"
+prefix = "MOD_PREFIX"
+mainprefix = "z"
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "logo_MOD_PREFIX.png",
+    "logo_MOD_PREFIX_ca.paa",
+    "LICENSE.md",
+    "README.md",
+]
+exclude = []
+
+[properties]
+author = "DartRuffian"
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",  # CBA_A3
+    "463939057", # ACE
+    "2369477168", # Advanced Dev Tools
+    "623475643",  # 3DEN Enhanced
+]
+presets = []
+dlc = []
+optionals = []
+parameters = []
+
+[hemtt.launch.previews]
+extends = "default"
+mission = "Previews.VR"
+parameters = ["-name=Previews"]

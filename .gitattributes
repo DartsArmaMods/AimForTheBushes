@@ -1,0 +1,13 @@
+# Sources
+*.cpp text diff=cpp linguist-language=cpp
+*.hpp text diff=cpp linguist-language=cpp
+*.rhai text diff=rust linguist-language=rust
+
+*.png binary
+*.jpg binary
+*.paa binary
+
+# Linguistics
+# Exclude included files and examples from stats
+include/* linguist-vendored
+extra/* linguist-vendored
