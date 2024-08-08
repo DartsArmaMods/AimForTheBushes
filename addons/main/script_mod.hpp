@@ -1,8 +1,10 @@
 #define MAINPREFIX z
-#define PREFIX MOD_PREFIX
-#define MOD_NAME MOD_TITLE
+#define PREFIX haf
+#define MOD_NAME Helicopter Addon Features
 #define AUTHOR "DartRuffian"
+
 #define REQUIRED_VERSION 2.16
+#define REQUIRED_CBA_VERSION {3,17,0}
 
 #include "script_version.hpp"
 

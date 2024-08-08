@@ -1,7 +1,7 @@
-MOD_PREFIX_main
+haf_main
 ===================
 
-Main Addon for MOD_TITLE
+Main Addon for Helicopter Addon Features
 
 ## Maintainers
 
