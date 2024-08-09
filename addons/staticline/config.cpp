@@ -8,8 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "haf_common",
-            "ace_parachute",
-            "bocr_main"
+            "ace_parachute"
         };
         units[] = {};
         weapons[] = {};
