@@ -31,8 +31,6 @@ private _passengerTurrets = getArray (_config >> "passengerTurrets");
 private _unitsToDeploy = fullCrew _vehicle select {
     _x params ["_unit", "_role", "", "_turretPath"];
     _role == "cargo" or {_turretPath in _passengerTurrets};
-    systemChat str _turretPath;
-    systemChat str _passengerTurrets;
 } apply { _x#0 };
 
 if (_unitsToDeploy isEqualTo []) exitWith {};
