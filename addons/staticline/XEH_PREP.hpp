@@ -5,4 +5,7 @@ PREP(createParachute);
 PREP(hook);
 PREP(isEnabled);
 PREP(jump);
+PREP(jumpAI);
+PREP(jumpAIRecursive);
+PREP(jumpAIWaypoint);
 PREP(unhook);

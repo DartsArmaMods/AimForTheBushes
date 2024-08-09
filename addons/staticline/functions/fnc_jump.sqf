@@ -20,7 +20,7 @@ params ["_vehicle", "_unit"];
 TRACE_2("fnc_jump",_vehicle,_unit);
 
 private _hasParachute = [_unit] call EFUNC(common,hasParachute);
-if !(_hasParachute and {["bocr_main"] call ace_common_fnc_isModLoaded}) then {
+if (!_hasParachute and {["bocr_main"] call ace_common_fnc_isModLoaded}) then {
     [_unit] call bocr_main_fnc_actionOnChest;
 };
 

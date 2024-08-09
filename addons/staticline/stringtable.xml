@@ -25,6 +25,13 @@
             <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
         </Key>
 
+        <Key ID="STR_HAF_staticLine_flyInHeight_name">
+            <English>Altitude</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_flyInHeight_tooltip">
+            <English>The altitude in meters that AI will fly in at when paradropping.</English>
+        </Key>
+
         <Key ID="STR_HAF_staticLine_action_hook">
             <English>Hook</English>
         </Key>

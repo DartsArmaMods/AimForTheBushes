@@ -17,6 +17,7 @@ class CfgVehicles {
         class ADDON {
             enabled = 1;
             condition = QUOTE(true);
+            passengerTurrets[] = {{3}, {4}}; // Left and right ramp seats
             doorAnim[] = {"Door_rear_source", 0, 1}; // animationSource, closedState, openState
         };
     };
@@ -26,6 +27,7 @@ class CfgVehicles {
         class ADDON {
             enabled = 1;
             condition = QUOTE(true);
+            passengerTurrets[] = {{3}, {4}}; // Left and right ramp seats
             doorAnim[] = {"Door_1_source", 0, 1};
         };
     };
