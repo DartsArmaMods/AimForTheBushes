@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="HAF">
     <Package name="StaticLine">
-        <Key ID="STR_HAF_staticLine_category_displayName">
+        <Key ID="STR_HAF_staticLine_displayName">
             <English>Static Line Jump</English>
         </Key>
         <Key ID="STR_HAF_staticLine_enabled_name">

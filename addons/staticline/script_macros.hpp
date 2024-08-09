@@ -1,5 +1,5 @@
 #define MAIN_ACTION class ADDON { \
-    displayName = CSTRING(category_displayName); \
+    displayName = CSTRING(displayName); \
     condition = QUOTE([_target] call FUNC(isEnabled)); \
     statement = ""; \
     icon = ""; \

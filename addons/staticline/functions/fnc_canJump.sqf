@@ -19,11 +19,14 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_canJump",_vehicle,_unit);
 
-private _jumpCondition = compile getText (configOf _vehicle >> QUOTE(ADDON) >> "condition");
+private _config = configOf _vehicle >> QUOTE(ADDON);
+getArray (_config >> "doorAnim") params ["_animSource", ["_closedState", 0], ["_openState", 1]];
+
+private _jumpCondition = compile getText (_config >> "condition");
 if (_jumpCondition isEqualTo {}) then {
-    _jumpCondition = {true};
+    _jumpCondition = { true };
 };
 
-_unit getVariable [QGVAR(isHooked), false] and {
-    [_vehicle, _unit] call _jumpCondition;
-};
+_unit getVariable [QGVAR(isHooked), false] and
+{ _vehicle animationSourcePhase _animSource == _openState } and
+{ [_vehicle, _unit, [_animSource, _closedState, _openState]] call _jumpCondition };
