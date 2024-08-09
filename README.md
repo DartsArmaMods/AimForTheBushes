@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a></b>
+    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a></b>
 </p>
 
 # Initial Project Setup!
