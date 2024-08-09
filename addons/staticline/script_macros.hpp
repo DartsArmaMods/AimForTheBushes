@@ -1,6 +1,6 @@
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(category_displayName); \
-    condition = QUOTE(GVAR(enabled)); \
+    condition = QUOTE([_target] call FUNC(isEnabled)); \
     statement = ""; \
     icon = ""; \
     class GVAR(hook) { \

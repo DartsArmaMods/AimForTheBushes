@@ -16,14 +16,9 @@
  * Public: No
  */
 
-params [
-    ["_vehicle", "", ["", objNull]]
-];
-
-if (_vehicle isEqualType objNull) then {
-    _vehicle = typeOf _vehicle;
-};
-
+params ["_vehicle"];
 TRACE_1("fnc_isEnabled",_vehicle);
 
-GVAR(enabled) and {configOf _vehicle >> QUOTE(ADDON) >> "enabled" >= 1};
+if (isNull _vehicle) exitWith {};
+
+GVAR(enabled) and {getNumber (configOf _vehicle >> QUOTE(ADDON) >> "enabled") >= 1};
