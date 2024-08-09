@@ -11,6 +11,20 @@
             <English>Enables / disables static line jumping from vehicles.</English>
         </Key>
 
+        <Key ID="STR_HAF_staticLine_defaultParachute_name">
+            <English>Default Parachute</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_defaultParachute_tooltip">
+            <English>The default parachute (vehicle) class to use when a unit ejects without a parachute equipped.</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_defaultReserveParachute_name">
+            <English>Default Reserve Parachute</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_defaultReserveParachute_tooltip">
+            <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
+        </Key>
+
         <Key ID="STR_HAF_staticLine_action_hook">
             <English>Hook</English>
         </Key>

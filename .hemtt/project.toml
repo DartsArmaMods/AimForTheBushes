@@ -33,6 +33,12 @@ dlc = []
 optionals = []
 parameters = []
 
+[hemtt.launch.bocr]
+extends = "default"
+workshop = [
+    "2372036642", # Backpack on Chest - Redux
+]
+
 [hemtt.launch.previews]
 extends = "default"
 mission = "Previews.VR"

@@ -21,3 +21,4 @@ TRACE_2("fnc_unhook",_vehicle,_unit);
 
 [_unit, QGVAR(unhook)] call EFUNC(common,say3D);
 _unit setVariable [QGVAR(isHooked), nil, true];
+nil;

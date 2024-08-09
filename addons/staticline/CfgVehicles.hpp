@@ -20,8 +20,8 @@ class CfgVehicles {
         };
     };
 
-    class VTOL_Base_F;
-    class VTOL_01_base_F: VTOL_Base_F {
+    class VTOL_01_unarmed_base_F;
+    class VTOL_01_infantry_base_F: VTOL_01_unarmed_base_F {
         class ADDON {
             enabled = 1;
             condition = QUOTE(_this#0 animationSourcePhase 'Door_1_source' == 1);

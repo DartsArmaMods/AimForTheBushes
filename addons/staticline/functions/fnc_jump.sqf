@@ -8,7 +8,7 @@
  * 1: Unit <OBJECT>
  *
  * Return Value:
- * True if unit can jump, otherwise false <BOOL>
+ * None
  *
  * Example:
  * [objectParent ace_player, ace_player] call haf_staticLine_fnc_jump;
@@ -19,6 +19,35 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_jump",_vehicle,_unit);
 
-// isHooked is always reset when exiting vehicle
+private _hasParachute = [_unit] call EFUNC(common,hasParachute);
+if !(_hasParachute and {["bocr_main"] call ace_common_fnc_isModLoaded}) then {
+    [_unit] call bocr_main_fnc_actionOnChest;
+};
 
-[QGVAR(jumped), [_unit, _vehicle]] call CBA_fnc_localEvent;
+private _velocity = velocity _vehicle;
+private _direction = direction _vehicle;
+
+unassignVehicle _unit;
+moveOut _unit;
+
+// isHooked is always reset when exiting a vehicle
+
+_unit setDir (_direction - 180);
+_unit setVelocity _velocity;
+
+[{
+    params ["_vehicle", "_unit", "_hasParachute"];
+    private _parachute = objNull;
+
+    if (_hasParachute) then {
+        _unit action ["OpenParachute", _unit];
+        private _velocity = velocity _unit;
+        _parachute = objectParent _unit;
+        _parachute setVelocity _velocity;
+    } else {
+        _parachute = [_vehicle, _unit] call FUNC(createParachute);
+    };
+
+    [QGVAR(jumped), [_vehicle, _unit, _parachute]] call CBA_fnc_localEvent;
+}, [_vehicle, _unit, _hasParachute], 1] call CBA_fnc_waitAndExecute;
+nil;
