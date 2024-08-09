@@ -3,6 +3,7 @@
 class CfgPatches {
     class ADDON {
         author = AUTHOR;
+        authors[] = {"DartRuffian"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -15,4 +16,5 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
+#include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
