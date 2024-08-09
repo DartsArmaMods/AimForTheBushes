@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HAF">
+    <Package name="Main">
+        <!-- <Key ID="STR_HAF_main_...">
+            <English></English>
+            <German></German>
+            <Chinese></Chinese>
+            <Chinesesimp></Chinesesimp>
+            <Italian></Italian>
+            <Czech></Czech>
+            <Japanese></Japanese>
+            <Polish></Polish>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Spanish></Spanish>
+            <Turkish></Turkish>
+            <Russian></Russian>
+            <Korean></Korean>
+        </Key> -->
+    </Package>
+</Project>

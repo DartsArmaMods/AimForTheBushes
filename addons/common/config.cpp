@@ -6,7 +6,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ace_interact_menu"
+            "haf_main"
         };
         units[] = {};
         weapons[] = {};
@@ -14,5 +14,5 @@ class CfgPatches {
     };
 };
 
-#include "CfgSettings.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HAF">
+    <Package name="StaticLine">
+        <Key ID="STR_HAF_staticLine_category_displayName">
+            <English>Static Line Jumping</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_enabled_name">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_enabled_tooltip">
+            <English>Enables / disables static line jumping from vehicles.</English>
+        </Key>
+    </Package>
+</Project>
