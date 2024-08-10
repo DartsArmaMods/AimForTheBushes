@@ -55,6 +55,7 @@ if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     waitUntil {_vehicle distance2D _startPosition < COMPLETION_RADIUS};
     _vehicle animateDoor [_animSource, _openState];
     _commander doMove _position;
+    [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
 
 // Wait for door to open
@@ -66,4 +67,5 @@ waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isNotEqualTo []};
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
 _vehicle animateDoor [_animSource, _closedState];
+[QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 true;
