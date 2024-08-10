@@ -24,12 +24,7 @@ TRACE_2("fnc_jumpAI",_vehicle,_createGroup);
 private _config = configOf _vehicle >> QUOTE(ADDON);
 if (!alive _vehicle or getNumber (_config >> "enabled") < 1) exitWith {};
 
-private _passengerTurrets = getArray (_config >> "passengerTurrets");
-
-private _unitsToDeploy = fullCrew _vehicle select {
-    _x params ["", "_role", "", "_turretPath"];
-    _role == "cargo" or {_turretPath in _passengerTurrets};
-} apply { _x#0 };
+private _unitsToDeploy = [_vehicle] call FUNC(getPassengers);
 
 if !(GVAR(aiDeployPlayers)) then {
     _unitsToDeploy = _unitsToDeploy select {!isPlayer _x};

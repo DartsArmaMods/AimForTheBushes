@@ -48,6 +48,17 @@ _unit setVelocity _velocity;
         _parachute = [_vehicle, _unit] call FUNC(createParachute);
     };
 
+    // Automatically swap backpack back after landing
+    if (["bocr_main"] call ace_common_fnc_isModLoaded) then {
+        _unit addEventHandler ["GetOutMan", {
+            params ["_unit"];
+            // Check for reserve parachute
+            if !([_unit] call EFUNC(common,hasParachute)) then {
+                [_unit] call bocr_main_fnc_actionOnBack;
+            };
+        }];
+    };
+
     [QGVAR(jumped), [_vehicle, _unit, _parachute]] call CBA_fnc_localEvent;
 }, [_vehicle, _unit, _hasParachute], 1] call CBA_fnc_waitAndExecute;
 nil;

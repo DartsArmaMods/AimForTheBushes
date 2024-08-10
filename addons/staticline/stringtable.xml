@@ -32,6 +32,9 @@
             <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
         </Key>
 
+        <Key ID="STR_HAF_staticLine_action_staticLine">
+            <English>Static Line</English>
+        </Key>
         <Key ID="STR_HAF_staticLine_action_hook">
             <English>Hook</English>
         </Key>
