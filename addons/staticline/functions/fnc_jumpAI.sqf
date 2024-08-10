@@ -6,7 +6,6 @@
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
- * 1: Create new group for AI (optional, default: true) <BOOL>
  *
  * Return Value:
  * None
@@ -18,8 +17,7 @@
  */
 
 params [
-    ["_vehicle", objNull, [objNull]],
-    ["_createGroup", true, [true]]
+    ["_vehicle", objNull, [objNull]]
 ];
 TRACE_2("fnc_jumpAI",_vehicle,_createGroup);
 
@@ -30,15 +28,13 @@ private _passengerTurrets = getArray (_config >> "passengerTurrets");
 
 private _unitsToDeploy = fullCrew _vehicle select {
     _x params ["_unit", "_role", "", "_turretPath"];
-    _role == "cargo" or {_turretPath in _passengerTurrets};
+    (_role == "cargo" or {_turretPath in _passengerTurrets}) and {!isPlayer _unit};
 } apply { _x#0 };
 
 if (_unitsToDeploy isEqualTo []) exitWith {};
 
-if (_createGroup) then {
-    private _group = createGroup side (_unitsToDeploy#0);
-    _unitsToDeploy joinSilent _group;
-};
+private _group = createGroup side (_unitsToDeploy#0);
+_unitsToDeploy joinSilent _group;
 
 _vehicle setVariable [QGVAR(unitsToDeploy), _unitsToDeploy, true];
 

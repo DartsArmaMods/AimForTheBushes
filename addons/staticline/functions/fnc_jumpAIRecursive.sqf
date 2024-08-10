@@ -17,7 +17,7 @@
  * Public: No
  */
 
-#define JUMP_INTERVAL 3
+#define JUMP_INTERVAL 0.5
 
 params ["_vehicle", "_unitsToDeploy"];
 TRACE_2("fnc_jumpAI_recursive",_vehicle,_unitsToDeploy);
