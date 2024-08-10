@@ -63,7 +63,6 @@ sleep 2;
 
 // - Deployment ---------------------------------------------------------------
 [_vehicle] call FUNC(jumpAI);
-waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isNotEqualTo []};
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
 _vehicle animateDoor [_animSource, _closedState];
