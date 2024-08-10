@@ -18,6 +18,13 @@
             <English>The default parachute (vehicle) class to use when a unit ejects without a parachute equipped.</English>
         </Key>
 
+        <Key ID="STR_HAF_staticLine_aiDeployPlayers_name">
+            <English>AI Deploy Players</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_aiDeployPlayers_tooltip">
+            <English>If enabled, AI pilots will also deploy players when using the Static Line Jump waypoint.</English>
+        </Key>
+
         <Key ID="STR_HAF_staticLine_defaultReserveParachute_name">
             <English>Default Reserve Parachute</English>
         </Key>

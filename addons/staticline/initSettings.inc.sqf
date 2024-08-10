@@ -5,6 +5,12 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(aiDeployPlayers), "CHECKBOX",
+    [LSTRING(aiDeployPlayers_name), LSTRING(aiDeployPlayers_tooltip)],
+    _category, false, true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(defaultParachute), "EDITBOX",
     [LSTRING(defaultParachute_name), LSTRING(defaultParachute_tooltip)],
     _category, "NonSteerable_Parachute_F", true
