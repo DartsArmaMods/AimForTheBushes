@@ -31,12 +31,12 @@ Delete this section after the project has been initially set up:
    - This should be all lowercase.
 4. After the initial Steam upload, find and replace all instances of `MOD_ID` with the mod's Steam Workshop id.
 
-**Helicopter Addon Features** (ACRONYM) aims to...
+**Helicopter Addon Features** (HAF) aims to add new features to helicopters in a modular way.
 
 The project is entirely **open-source** and any contributions to fix other mods are welcome.
 
 ## Core Features
-- Feature
+- [Static Line Jumping](./docs/features/staticline-feature.md)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
