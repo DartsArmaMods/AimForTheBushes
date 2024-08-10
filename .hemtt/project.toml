@@ -39,6 +39,12 @@ workshop = [
     "2372036642", # Backpack on Chest - Redux
 ]
 
+[hemtt.launch.ls]
+extends = "default"
+workshop = [
+    "2162749089", # Legion Studios: Core
+]
+
 [hemtt.launch.previews]
 extends = "default"
 mission = "Previews.VR"
