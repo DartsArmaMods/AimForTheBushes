@@ -34,7 +34,6 @@ getArray (configOf _vehicle >> QUOTE(ADDON) >> "doorAnim") params ["_animSource"
 
 // - Approach -----------------------------------------------------------------
 if (_vehicle distance2D _position > COMPLETION_RADIUS) then {
-    _vehicle flyInHeight [GVAR(flyInHeight), true];
     _commander doMove _position;
     waitUntil {_vehicle distance2D _position < COMPLETION_RADIUS}; // Needs tweaking
     _vehicle animateDoor [_animSource, _openState];

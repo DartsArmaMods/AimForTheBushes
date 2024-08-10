@@ -15,9 +15,3 @@
     [LSTRING(defaultReserveParachute_name), LSTRING(defaultReserveParachute_tooltip)],
     _category, "ACE_NonSteerableReserveParachute", true
 ] call CBA_fnc_addSetting;
-
-[
-    QGVAR(flyInHeight), "SLIDER",
-    [LSTRING(flyInHeight_name), LSTRING(flyInHeight_tooltip)],
-    _category, [100, 1000, 200, 0], true
-] call CBA_fnc_addSetting;
