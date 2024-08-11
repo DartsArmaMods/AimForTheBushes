@@ -3,7 +3,7 @@
 <h1 align="center">Helicopter Addon Features</h1>
 <p align="center">
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.0.0-blue?style=flat-square" alt="Helicopter Addon Features Version">
+        <img src="https://img.shields.io/badge/Version-1.0.1.0-blue?style=flat-square" alt="Helicopter Addon Features Version">
     </a>
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/issues">
         <img src="https://img.shields.io/github/issues-raw/DartRuffian/HelicopterAddonFeatures.svg?style=flat-square&label=Issues" alt="Helicopter Addon Features Issues">
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a></b>
+    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a></b>
 </p>
 
 # Initial Project Setup!
@@ -31,12 +31,12 @@ Delete this section after the project has been initially set up:
    - This should be all lowercase.
 4. After the initial Steam upload, find and replace all instances of `MOD_ID` with the mod's Steam Workshop id.
 
-**Helicopter Addon Features** (ACRONYM) aims to...
+**Helicopter Addon Features** (HAF) aims to add new features to helicopters in a modular way.
 
 The project is entirely **open-source** and any contributions to fix other mods are welcome.
 
 ## Core Features
-- Feature
+- [Static Line Jumping](./docs/features/staticline-feature.md)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).

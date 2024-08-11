@@ -3,10 +3,11 @@
 class CfgPatches {
     class ADDON {
         author = AUTHOR;
+        authors[] = {"DartRuffian"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "ace_interact_menu"
         };
         units[] = {};
         weapons[] = {};

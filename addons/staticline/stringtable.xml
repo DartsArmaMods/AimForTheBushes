@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HAF">
+    <Package name="StaticLine">
+        <Key ID="STR_HAF_staticLine_displayName">
+            <English>Static Line Jump</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_enabled_name">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_enabled_tooltip">
+            <English>Enables / disables static line jumping from vehicles.</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_defaultParachute_name">
+            <English>Default Parachute</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_defaultParachute_tooltip">
+            <English>The default parachute (vehicle) class to use when a unit ejects without a parachute equipped.</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_aiDeployPlayers_name">
+            <English>AI Deploy Players</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_aiDeployPlayers_tooltip">
+            <English>If enabled, AI pilots will also deploy players when using the Static Line Jump waypoint.</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_defaultReserveParachute_name">
+            <English>Default Reserve Parachute</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_defaultReserveParachute_tooltip">
+            <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_parachuteDelay_name">
+            <English>Parachute Delay</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_parachuteDelay_tooltip">
+            <English>The minimum amount of time in seconds before deploying a unit's parachute. There will be a small offset to this time (0-1 seconds)</English>
+        </Key>
+
+        <Key ID="STR_HAF_staticLine_action_staticLine">
+            <English>Static Line</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_action_hook">
+            <English>Hook</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_action_unhook">
+            <English>Unhook</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_action_jump">
+            <English>Jump</English>
+        </Key>
+    </Package>
+</Project>
