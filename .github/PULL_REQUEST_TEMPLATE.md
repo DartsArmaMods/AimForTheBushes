@@ -1,17 +1,12 @@
-Closes #issue number
+**When merged this pull request will:**
+- _Describe what this pull request will do_
+- _Each change in a separate line_
 
-<!--
-Add items as they come up and mark them as completed when finished.
-The checkbox can clicked to mark it as done, or manually by adding an `x` inside inside the brackets
--->
-## To Do
-- [ ] Added X
-- [ ] Updated Y
+### Important
+- [ ] If the contribution affects [the documentation](https://github.com/DartRuffian/HelicopterAddonFeatures/tree/main/docs), please include your changes in this pull request.
+- [ ] [Development Guidelines](https://github.com/DartRuffian/HelicopterAddonFeatures/tree/main/.github/CONTRIBUTING.md) are read, understood and applied.
+- [ ] Title of this PR uses our standard template `Component - Add|Fix|Improve|Change|Make|Remove {changes}`.
 
-<!--
-Known issues with this PR, mark as completed when fixed.
-If its too big of a fix, or needs someone with more experience, create a new issue on GitHub.
--->
-## Known Issues
-- [ ] Issue 1
-- [ ] Issue 2
+<!-- Known issues that need to be addressed -->
+### Known Issues
+- [ ] Issue
