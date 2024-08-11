@@ -1,4 +1,4 @@
-#define START_POS_DISTANCE -2000
+#define START_POS_DISTANCE 2000
 
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(action_staticLine); \

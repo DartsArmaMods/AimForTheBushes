@@ -29,8 +29,8 @@ private _commander = effectiveCommander _vehicle;
 getArray (configOf _vehicle >> QUOTE(ADDON) >> "doorAnim") params ["_animSource", ["_closedState", 0], ["_openState", 1]];
 
 private _startPosition = _position vectorAdd [
-    START_POS_DISTANCE * sin _direction,
-    START_POS_DISTANCE * cos _direction,
+    -START_POS_DISTANCE * sin _direction,
+    -START_POS_DISTANCE * cos _direction,
     0
 ];
 

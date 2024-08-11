@@ -37,11 +37,7 @@ _unitsToDeploy joinSilent _group;
 
 _vehicle setVariable [QGVAR(unitsToDeploy), _unitsToDeploy, true];
 
-/*
- * Formula was done by using speed and a tested interval value, and finding the slope between two points.
- * This isn't perfect, but works good enough.
- * 400 km/h @ 0.5 seconds
- * 170 km/h @ 2 seconds
- */
-private _jumpInterval = (-0.0065217391304348 * speed _vehicle) + 3.1086956521739;
+// Thanks Baer
+private _time = START_POS_DISTANCE / ((speed _vehicle) / 3.6);
+private _jumpInterval = _time / (count _unitsToDeploy);
 [_vehicle, _unitsToDeploy, _jumpInterval] call FUNC(jumpAIRecursive);
