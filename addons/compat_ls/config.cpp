@@ -9,8 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "aftb_loadorder",
-            "lsd_core",
-            "lsd_vehicles_heli"
+            "ls_loadorder"
         };
         units[] = {};
         weapons[] = {};
