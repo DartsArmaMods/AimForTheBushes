@@ -5,6 +5,7 @@ class CfgVehicles {
             enabled = 1;
             condition = QUOTE(true);
             passengerTurrets[] = {
+                // Left and right ramp seats, side seats, inside standing seats
                 {1}, {2},
                 {3}, {4},
                 {5}, {6},

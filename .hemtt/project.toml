@@ -45,6 +45,12 @@ workshop = [
     "2162749089", # Legion Studios: Core
 ]
 
+[hemtt.launch.vn]
+extends = "default"
+workshop = [
+    "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
+]
+
 [hemtt.launch.previews]
 extends = "default"
 mission = "Previews.VR"

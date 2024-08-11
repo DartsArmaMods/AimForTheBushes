@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "haf_loadOrder",
-            "lsd_core"
+            "loadorder_f_vietnam"
         };
         units[] = {};
         weapons[] = {};
