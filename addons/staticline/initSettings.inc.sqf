@@ -21,3 +21,9 @@
     [LSTRING(defaultReserveParachute_name), LSTRING(defaultReserveParachute_tooltip)],
     _category, "ACE_NonSteerableReserveParachute", true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(parachuteDelay), "SLIDER",
+    [LSTRING(parachuteDelay_name), LSTRING(parachuteDelay_tooltip)],
+    _category, [4, 10, 2, 0], true
+] call CBA_fnc_addSetting;

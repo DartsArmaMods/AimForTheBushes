@@ -32,6 +32,13 @@
             <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
         </Key>
 
+        <Key ID="STR_HAF_staticLine_parachuteDelay_name">
+            <English>Parachute Delay</English>
+        </Key>
+        <Key ID="STR_HAF_staticLine_parachuteDelay_tooltip">
+            <English>The minimum amount of time in seconds before deploying a unit's parachute. There will be a small offset to this time (0-1 seconds)</English>
+        </Key>
+
         <Key ID="STR_HAF_staticLine_action_staticLine">
             <English>Static Line</English>
         </Key>

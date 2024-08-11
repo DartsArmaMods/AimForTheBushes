@@ -35,6 +35,8 @@ moveOut _unit;
 _unit setDir (_direction - 180);
 _unit setVelocity _velocity;
 
+private _delay = (GVAR(parachuteDelay) + random 1) max 0;
+
 [{
     params ["_vehicle", "_unit", "_hasParachute"];
     private _parachute = objNull;
@@ -60,5 +62,5 @@ _unit setVelocity _velocity;
     };
 
     [QGVAR(jumped), [_vehicle, _unit, _parachute]] call CBA_fnc_localEvent;
-}, [_vehicle, _unit, _hasParachute], 1] call CBA_fnc_waitAndExecute;
+}, [_vehicle, _unit, _hasParachute], _delay] call CBA_fnc_waitAndExecute;
 nil;
