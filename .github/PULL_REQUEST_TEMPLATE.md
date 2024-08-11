@@ -1,6 +1,6 @@
 **When merged this pull request will:**
-- _Describe what this pull request will do_
-- _Each change in a separate line_
+- Describe what this pull request will do
+- Each change in a separate line
 
 ### Important
 - [ ] If the contribution affects [the documentation](https://github.com/DartRuffian/HelicopterAddonFeatures/tree/main/docs), please include your changes in this pull request.
