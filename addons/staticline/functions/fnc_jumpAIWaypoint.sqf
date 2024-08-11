@@ -18,7 +18,6 @@
  */
 
 #define COMPLETION_RADIUS 150
-#define START_POS_DISTANCE -2000
 
 params ["_group", "_position"];
 TRACE_2("fnc_jumpAIWaypoint",_group,_position);
@@ -53,7 +52,8 @@ private _startPosition = _position vectorAdd [
 if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     _commander doMove _startPosition;
     waitUntil {_vehicle distance2D _startPosition < COMPLETION_RADIUS};
-    _vehicle animateDoor [_animSource, _openState];
+    _vehicle animateDoor [_animSource, _openState]; // Most vanilla vehicles seem to use animateDoor, but most modded use animateSource
+    _vehicle animateSource [_animSource, _openState];
     _commander doMove _position;
     [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
@@ -66,5 +66,6 @@ sleep 2;
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
 _vehicle animateDoor [_animSource, _closedState];
+_vehicle animateSource [_animSource, _closedState];
 [QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 true;

@@ -1,3 +1,5 @@
+#define START_POS_DISTANCE -2000
+
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(action_staticLine); \
     condition = QUOTE([_target] call FUNC(isEnabled) and {_player in ([_target] call FUNC(getPassengers))}); \
