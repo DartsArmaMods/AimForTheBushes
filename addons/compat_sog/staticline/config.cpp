@@ -8,7 +8,8 @@ class CfgPatches {
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QUOTE(ADDON)
+            QUOTE(ADDON),
+            "loadorder_f_vietnam"
         };
         units[] = {};
         weapons[] = {};
