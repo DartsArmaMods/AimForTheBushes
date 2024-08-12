@@ -13,7 +13,7 @@ class Extended_PreInit_EventHandlers {
 class Extended_GetOutMan_EventHandlers {
     class CAManBase {
         class ADDON {
-            getOutMan = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(isHooked),nil,true)]);
+            getOutMan = QUOTE(call FUNC(getOutMan));
         };
     };
 };

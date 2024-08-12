@@ -21,10 +21,9 @@ params [
 ];
 TRACE_2("fnc_jumpAI",_vehicle,_createGroup);
 
-private _config = configOf _vehicle >> QUOTE(ADDON);
-if (!alive _vehicle or getNumber (_config >> "enabled") < 1) exitWith {};
+if (!alive _vehicle or getNumber (configOf _vehicle >> QGVAR(enabled)) < 1) exitWith {};
 
-private _unitsToDeploy = [_vehicle] call FUNC(getPassengers);
+private _unitsToDeploy = [_vehicle] call EFUNC(common,getPassengers);
 
 if !(GVAR(aiDeployPlayers)) then {
     _unitsToDeploy = _unitsToDeploy select {!isPlayer _x};

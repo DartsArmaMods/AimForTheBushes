@@ -10,7 +10,7 @@
  * True if unit has parachute, otherwise false <BOOL>
  *
  * Example:
- * [ace_player] call haf_common_fnc_empty;
+ * [ace_player] call haf_common_fnc_hasParachute;
  *
  * Public: Yes
  */
@@ -25,5 +25,5 @@ if (isNull _unit) exitWith {};
 private _backpack = backpackContainer _unit;
 GVAR(parachuteCache) getOrDefaultCall [typeOf _backpack, {
     _backpack isKindOf "B_Parachute" or
-    {getNumber (configOf _backpack >> QGVAR(isParachute)) >= 1};
+    {getNumber (configOf _backpack >> QGVARMAIN(isParachute)) >= 1};
 }, true];

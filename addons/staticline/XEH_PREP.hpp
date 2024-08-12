@@ -2,7 +2,7 @@ PREP(canHook);
 PREP(canJump);
 PREP(canUnhook);
 PREP(createParachute);
-PREP(getPassengers);
+PREP(getOutMan);
 PREP(hook);
 PREP(isEnabled);
 PREP(jump);

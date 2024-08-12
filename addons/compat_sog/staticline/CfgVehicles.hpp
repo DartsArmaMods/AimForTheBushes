@@ -1,11 +1,5 @@
-#define STATICLINE class haf_staticLine { \
-    enabled = 1; \
-    condition = QUOTE(true); \
-    passengerTurrets[] = { \
-        {1}, {2} \
-    }; \
-    doorAnim[] = {"ramp", 0, 1}; \
-}
+#define STATICLINE EGVAR(staticLine,enabled) = 1; \
+EGVAR(staticLine,condition) = QUOTE(true)
 
 class CfgVehicles {
     class vn_air_ch47_04_base;

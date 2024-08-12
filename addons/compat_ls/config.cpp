@@ -8,7 +8,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "haf_loadOrder",
-            "lsd_core"
+            "lsd_core",
+            "lsd_vehicles_heli"
         };
         units[] = {};
         weapons[] = {};
@@ -17,3 +18,5 @@ class CfgPatches {
         skipWhenMissingDependencies = 1;
     };
 };
+
+#include "CfgVehicles.hpp"
