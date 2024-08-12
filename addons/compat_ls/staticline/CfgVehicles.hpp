@@ -1,9 +1,7 @@
 class CfgVehicles {
     class Helicopter_Base_H;
     class lsd_laat_base: Helicopter_Base_H {
-        class haf_staticLine {
-            enabled = 1;
-            condition = QUOTE(true);
-        };
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
     };
 };

@@ -19,10 +19,9 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_canJump",_vehicle,_unit);
 
-private _config = configOf _vehicle >> QUOTE(ADDON);
 [_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "_closed", "_opened"];
 
-private _jumpCondition = compile getText (_config >> "condition");
+private _jumpCondition = compile getText (configOf _vehicle >> QGVAR(condition));
 if (_jumpCondition isEqualTo {}) then {
     _jumpCondition = { true };
 };

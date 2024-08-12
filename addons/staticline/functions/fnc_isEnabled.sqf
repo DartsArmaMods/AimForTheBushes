@@ -21,4 +21,4 @@ TRACE_1("fnc_isEnabled",_vehicle);
 
 if (isNull _vehicle) exitWith {};
 
-GVAR(enabled) and {getNumber (configOf _vehicle >> QUOTE(ADDON) >> "enabled") >= 1};
+GVAR(enabled) and {getNumber (configOf _vehicle >> QGVAR(enabled)) >= 1};
