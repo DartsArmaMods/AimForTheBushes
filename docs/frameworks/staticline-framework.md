@@ -13,22 +13,22 @@ Static line actions are automatically added to all children of `Helicopter` and 
 ```cpp
 class CfgVehicles {
     class TAG_myVehicle {
+        haf_passengerTurrets[] = {{3}, {4}};
         class haf_staticLine {
             enabled = 1;
             condition = "true";
-            passengerTurrets[] = {{3}, {4}};
             doorAnim[] = {"Door_rear_source", 0, 1};
         };
     };
 };
 ```
 
-| Config Name        | Type             | Description                                                       |
-| ------------------ | ---------------- | ----------------------------------------------------------------- |
-| `enabled`          | Number           | 0-disabled, 1-enabled                                             |
-| `condition`        | String (of code) | Extra condition that must return true in order to jump (OPTIONAL) |
-| `passengerTurrets` | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
-| `doorAnim`         | Array            | Door animation, must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
+| Config Name            | Type             | Description                                                       |
+| ---------------------- | ---------------- | ----------------------------------------------------------------- |
+| `enabled`              | Number           | 0-disabled, 1-enabled                                             |
+| `condition`            | String (of code) | Extra condition that must return true in order to jump (OPTIONAL) |
+| `haf_passengerTurrets` | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
+| `doorAnim`             | Array            | Door animation, must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
 
 ## 3. Events
 ### 3.1 Listenable

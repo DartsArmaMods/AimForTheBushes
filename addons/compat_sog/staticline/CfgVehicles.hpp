@@ -1,9 +1,6 @@
 #define STATICLINE class haf_staticLine { \
     enabled = 1; \
     condition = QUOTE(true); \
-    passengerTurrets[] = { \
-        {1}, {2} \
-    }; \
     doorAnim[] = {"ramp", 0, 1}; \
 }
 

@@ -2,7 +2,7 @@
 
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(action_staticLine); \
-    condition = QUOTE([_target] call FUNC(isEnabled) and {_player in ([_target] call FUNC(getPassengers))}); \
+    condition = QUOTE([_target] call FUNC(isEnabled) and {_player in ([_target] call EFUNC(common,getPassengers))}); \
     statement = ""; \
     icon = ""; \
     class GVAR(hook) { \
