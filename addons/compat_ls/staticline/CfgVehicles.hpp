@@ -4,7 +4,6 @@ class CfgVehicles {
         class haf_staticLine {
             enabled = 1;
             condition = QUOTE(true);
-            doorAnim[] = {"laat_ramp_open", 0, 1};
         };
     };
 };

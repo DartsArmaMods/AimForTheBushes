@@ -26,7 +26,7 @@ private _vehicle = objectParent leader _group;
 private _direction = direction _vehicle;
 private _commander = effectiveCommander _vehicle;
 
-getArray (configOf _vehicle >> QUOTE(ADDON) >> "doorAnim") params ["_animSource", ["_closedState", 0], ["_openState", 1]];
+[_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "_closed", "_opened"];
 
 private _startPosition = _position vectorAdd [
     -START_POS_DISTANCE * sin _direction,
@@ -52,8 +52,8 @@ private _startPosition = _position vectorAdd [
 if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     _commander doMove _startPosition;
     waitUntil {_vehicle distance2D _startPosition < COMPLETION_RADIUS};
-    _vehicle animateDoor [_animSource, _openState]; // Most vanilla vehicles seem to use animateDoor, but most modded use animateSource
-    _vehicle animateSource [_animSource, _openState];
+    _vehicle animateDoor [_anim, _opened]; // Most vanilla vehicles seem to use animateDoor, but most modded use animateSource
+    _vehicle animateSource [_anim, _opened];
     _commander doMove _position;
     [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
@@ -65,7 +65,7 @@ sleep 2;
 [_vehicle] call FUNC(jumpAI);
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
-_vehicle animateDoor [_animSource, _closedState];
-_vehicle animateSource [_animSource, _closedState];
+_vehicle animateDoor [_anim, _closed];
+_vehicle animateSource [_anim, _closed];
 [QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 true;

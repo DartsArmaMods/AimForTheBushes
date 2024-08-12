@@ -14,5 +14,6 @@ class CfgVehicles {
             {18}, {19},
             {20}
         };
+        GVARMAIN(rampAnim)[] = {"laat_ramp_open", 0, 1};
     };
 };

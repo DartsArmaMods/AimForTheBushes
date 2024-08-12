@@ -1,7 +1,6 @@
 #define STATICLINE class haf_staticLine { \
     enabled = 1; \
     condition = QUOTE(true); \
-    doorAnim[] = {"ramp", 0, 1}; \
 }
 
 class CfgVehicles {
