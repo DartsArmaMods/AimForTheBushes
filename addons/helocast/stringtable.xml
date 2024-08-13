@@ -14,7 +14,7 @@
         <Key ID="STR_HAF_helocast_action_helocast">
             <English>Helocast</English>
         </Key>
-        <Key ID="STR_HAF_helocast_action_loadBoat">
+        <Key ID="STR_HAF_helocast_action_recoverBoat">
             <English>Recover Boat</English>
         </Key>
         <Key ID="STR_HAF_helocast_action_unloadBoats">

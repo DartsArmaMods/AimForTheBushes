@@ -6,7 +6,8 @@
  * Arguments:
  * 0: Vehicle <OBJECT>
  * 1: Boat <OBJECT>
- * 2: Index (optional, default: first found) <NUMBER>
+ * 2: Move boat crew into vehicle (optional, default: true) <BOOL>
+ * 3: Index (optional, default: first found) <NUMBER>
  *
  * Return Value:
  * None

@@ -22,7 +22,7 @@ if (!alive _vehicle or {!simulationEnabled _vehicle}) exitWith {};
 
 // Mods have a tendency to overwrite / clear the UserActions class, so we add it manually
 if (hasInterface) then {
-    _vehicle addAction [LLSTRING(action_loadBoat), {
+    _vehicle addAction [LLSTRING(action_recoverBoat), {
         params ["_target"];
         private _vehicle = _target getVariable [QGVAR(loadTarget), objNull];
         [_vehicle, _target] call FUNC(loadBoat);

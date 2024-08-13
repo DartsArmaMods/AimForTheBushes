@@ -15,6 +15,7 @@
  * Public: No
  */
 
+// _vehicle param needs to be second and optional for recover boat UserAction
 params ["_boat", ["_vehicle", objNull]];
 TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
 
@@ -25,7 +26,6 @@ if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
 
 private _positionAGL = ASLToAGL getPosASL _boat;
 
-// _vehicle param needs to be optional for recover boat UserAction
 if (isNull _vehicle) then {
     _vehicle = (nearestObjects [_positionAGL, ["Helicopter"], BOAT_LOAD_DISTANCE]) select {
         alive _x;
