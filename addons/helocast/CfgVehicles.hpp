@@ -6,6 +6,13 @@ class CfgVehicles {
         };
     };
 
+    // Assault / Rescue inflatable boats
+    class Boat_F;
+    class Rubber_duck_base_F: Boat_F {
+        GVAR(isLoadable) = 1;
+        GVAR(markerOffset) = {0, 2.25, -0.52};
+    };
+
     class Helicopter_Base_H;
     class Heli_Transport_03_base_F: Helicopter_Base_H {
         GVAR(boatPositions)[] = {

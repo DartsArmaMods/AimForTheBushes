@@ -17,6 +17,11 @@
  */
 
 #define UNLOAD_TIMEOUT 15
+#define UNLOAD_EVENTS [QEGVAR(common,enableCollision), [_boat]] call CBA_fnc_globalEvent; \
+["ace_common_blockDamage", [_boat, 0]] call CBA_fnc_globalEvent; \
+["ace_common_blockEngine", [_boat, 0]] call CBA_fnc_globalEvent; \
+["ace_common_unlockVehicle", _boat] call CBA_fnc_globalEvent; \
+[QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent \
 
 params [
     ["_vehicle", objNull, [objNull]],
@@ -50,19 +55,11 @@ detach _boat;
     };
 }, {
     params ["_vehicle", "_boat", "_index"];
-    [QEGVAR(common,enableCollision), [_boat]] call CBA_fnc_globalEvent;
-    ["ace_common_blockDamage", [_boat, 0]] call CBA_fnc_globalEvent;
-    ["ace_common_blockEngine", [_boat, 0]] call CBA_fnc_globalEvent;
-    ["ace_common_unlockVehicle", _boat] call CBA_fnc_globalEvent;
-    [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
+    UNLOAD_EVENTS;
 }, [_vehicle, _boat, _index], UNLOAD_TIMEOUT, {
     params ["_vehicle", "_boat", "_index"];
     WARNING_4("Timed out while unloading %1 (%2) from %3 (%4). Running events anyway.",_boat,typeOf _boat,_vehicle,typeOf _vehicle);
-    [QEGVAR(common,enableCollision), [_boat]] call CBA_fnc_globalEvent;
-    ["ace_common_blockDamage", [_boat, 0]] call CBA_fnc_globalEvent;
-    ["ace_common_blockEngine", [_boat, 0]] call CBA_fnc_globalEvent;
-    ["ace_common_unlockVehicle", _boat] call CBA_fnc_globalEvent;
-    [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
+    UNLOAD_EVENTS;
 }] call CBA_fnc_waitUntilAndExecute;
 
 if (isNull (_boat getVariable [QGVAR(marker), objNull])) then {
