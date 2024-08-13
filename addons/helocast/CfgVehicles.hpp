@@ -10,7 +10,7 @@ class CfgVehicles {
     class Boat_F;
     class Rubber_duck_base_F: Boat_F {
         GVAR(isLoadable) = 1;
-        GVAR(markerOffset) = {0, 2.25, -0.52};
+        GVAR(markerOffset)[] = {0, 2.25, -0.52};
     };
 
     class Helicopter_Base_H;
