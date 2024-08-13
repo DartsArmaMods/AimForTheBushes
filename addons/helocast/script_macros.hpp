@@ -1,4 +1,4 @@
-#define BOAT_LOAD_DISTANCE 10
+#define BOAT_LOAD_DISTANCE 7
 
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(action_helocast); \

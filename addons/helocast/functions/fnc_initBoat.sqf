@@ -20,6 +20,7 @@ TRACE_1("fnc_initBoat",_vehicle);
 
 if (!alive _vehicle or {!simulationEnabled _vehicle}) exitWith {};
 
+// Mods have a tendency to overwrite / clear the UserActions class, so we add it manually
 if (hasInterface) then {
     _vehicle addAction [LLSTRING(action_loadBoat), {
         params ["_target"];
@@ -27,6 +28,7 @@ if (hasInterface) then {
         [_vehicle, _target] call FUNC(loadBoat);
     }, [], 5, true, true, "", QUOTE(ace_player == currentPilot _originalTarget and {[_originalTarget] call FUNC(canLoadBoat)}), BOAT_LOAD_DISTANCE];
 
+    // This could technically just be done via config
     private _action = [QGVAR(removeMarker), "Remove Marker", "", {
         params ["_target"];
         private _marker = _target getVariable [QGVAR(marker), objNull];
