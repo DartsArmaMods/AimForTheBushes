@@ -16,7 +16,10 @@
  */
 
 params ["_boat", ["_vehicle", objNull]];
-TRACE_2("fnc_canLoadBoat",_boat,_helicopter);
+TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
+
+[_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "", "_open"];
+if (_vehicle animationSourcePhase _anim != _open) exitWith { false; };
 
 private _positionAGL = ASLToAGL getPosASL _boat;
 

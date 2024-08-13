@@ -19,6 +19,9 @@
 params ["_vehicle", "_boat"];
 TRACE_2("fnc_canUnloadBoat",_vehicle,_boat);
 
+[_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "", "_open"];
+if (_vehicle animationSourcePhase _anim != _open) exitWith { false; };
+
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 if (!alive _vehicle or {!alive _boat} or {!(_boat in _loadedBoats)}) exitWith { false; };
 
