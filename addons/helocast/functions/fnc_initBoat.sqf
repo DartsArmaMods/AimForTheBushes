@@ -22,7 +22,7 @@ if (!alive _vehicle or {!simulationEnabled _vehicle}) exitWith {};
 
 if (hasInterface) then {
     _vehicle addAction [LLSTRING(action_loadBoat), {
-        params ["_target", "_caller", "_actionId", "_arguments"];
+        params ["_target"];
         private _vehicle = _target getVariable [QGVAR(loadTarget), objNull];
         [_vehicle, _target] call FUNC(loadBoat);
     }, [], 5, true, true, "", QUOTE(ace_player == currentPilot _originalTarget and {[_originalTarget] call FUNC(canLoadBoat)}), BOAT_LOAD_DISTANCE];
