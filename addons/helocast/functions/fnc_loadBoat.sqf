@@ -46,6 +46,7 @@ _vehicle setVariable [QGVAR(loadedBoats), _loadedBoats, true];
 
 [QEGVAR(common,disableCollision), [_boat]] call CBA_fnc_globalEvent;
 ["ace_common_blockDamage", [_boat, 1]] call CBA_fnc_globalEvent;
+["ace_common_blockEngine", [_boat, 1]] call CBA_fnc_globalEvent;
 ["ace_common_lockVehicle", _boat] call CBA_fnc_globalEvent;
 _boat attachTo [_vehicle, _boatPositions select _index];
 
@@ -57,5 +58,6 @@ if (_moveIntoVehicle) then {
     } forEach (crew _boat);
 };
 
+[_boat, QGVAR(loadBoat)] call EFUNC(common,say3D);
 [QGVAR(boatLoaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
 true;
