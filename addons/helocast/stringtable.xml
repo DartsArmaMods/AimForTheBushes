@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HAF">
+    <Package name="Helocast">
+        <Key ID="STR_HAF_helocast_displayName">
+            <English>Helocast</English>
+        </Key>
+        <Key ID="STR_HAF_helocast_enabled_name">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_HAF_helocast_enabled_tooltip">
+            <English>Enables / disables static line jumping from vehicles.</English>
+        </Key>
+
+        <Key ID="STR_HAF_helocast_action_helocast">
+            <English>Helocast</English>
+        </Key>
+        <Key ID="STR_HAF_helocast_action_loadBoat">
+            <English>Recover Boat</English>
+        </Key>
+        <Key ID="STR_HAF_helocast_action_unloadBoats">
+            <English>Unload Boats</English>
+        </Key>
+        <!-- %1 will be displayName of given boat -->
+        <Key ID="STR_HAF_helocast_action_unloadBoat">
+            <English>Unload %1</English>
+        </Key>
+
+        <Key ID="STR_HAF_helocast_action_removeMarker">
+            <English>Remove Marker</English>
+        </Key>
+    </Package>
+</Project>
