@@ -27,7 +27,7 @@ if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
 private _positionAGL = ASLToAGL getPosASL _boat;
 
 if (isNull _vehicle) then {
-    _vehicle = (nearestObjects [_positionAGL, ["Helicopter"], BOAT_LOAD_DISTANCE]) select {
+    _vehicle = (nearestObjects [_positionAGL, ["Helicopter"], GVAR(loadDistance)]) select {
         alive _x;
     } select 0;
 };

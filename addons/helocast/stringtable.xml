@@ -8,7 +8,14 @@
             <English>Enabled</English>
         </Key>
         <Key ID="STR_HAF_helocast_enabled_tooltip">
-            <English>Enables / disables static line jumping from vehicles.</English>
+            <English>Enables / disables helocasting.</English>
+        </Key>
+
+        <Key ID="STR_HAF_helocast_loadDistance_name">
+            <English>Load Distance</English>
+        </Key>
+        <Key ID="STR_HAF_helocast_loadDistance_tooltip">
+            <English>Distance in meters that boats are able to load into helicopters from.</English>
         </Key>
 
         <Key ID="STR_HAF_helocast_action_helocast">

@@ -1,5 +1,3 @@
-#define BOAT_LOAD_DISTANCE 7
-
 #define MAIN_ACTION class ADDON { \
     displayName = CSTRING(action_helocast); \
     condition = QUOTE([ARR_2(_target,_player)] call EFUNC(common,isPilot)); \
