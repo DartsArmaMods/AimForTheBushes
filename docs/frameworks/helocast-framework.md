@@ -1,7 +1,7 @@
 # Helocast Framework
 
 >[!IMPORTANT]
-> While a boat is loaded inside of a vehicle, it will have it's **mass set to 0** (to prevent collissions), **locked**, **engine locked**, and **damage disabled**. These are all done to prevent issues such as units dismounting, the boat colliding with the helicopter and causing damage, etc.
+> While a boat is loaded inside of a vehicle, it will have it's **mass set to 0** (to prevent collisions), **locked**, **engine locked**, and **damage disabled**. These are all done to prevent issues such as units dismounting, the boat colliding with the helicopter and causing damage, etc.
 
 If you need to access the mass of a loaded boat, it is saved to the `haf_common_originalMass` variable on the boat itself.
 
