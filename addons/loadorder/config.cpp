@@ -9,7 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             "haf_main",
             "haf_common",
-            "haf_staticLine"
+            "haf_staticLine",
+            "haf_helocast"
         };
         units[] = {};
         weapons[] = {};

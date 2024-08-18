@@ -26,6 +26,8 @@ TRACE_2("fnc_unloadBoat",_vehicle,_boat);
 
 if !([_vehicle, _boat] call FUNC(canUnloadBoat)) exitWith { false; };
 
+_vehicle setVariable [QGVAR(isUnloading), true, true];
+["ace_common_blockDamage", [_vehicle, 1]] call CBA_fnc_globalEvent;
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 
 private _index = (_loadedBoats find _boat);
@@ -51,6 +53,8 @@ detach _boat;
 }, {
     params ["_vehicle", "_boat", "_index"];
     [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
+    _vehicle setVariable [QGVAR(isUnloading), nil, true];
+    ["ace_common_blockDamage", [_vehicle, 0]] call CBA_fnc_globalEvent;
 }, [_vehicle, _boat, _index], UNLOAD_TIMEOUT, {
     params ["_vehicle", "_boat", "_index"];
     WARNING_4("Timed out while unloading %1 (%2) from %3 (%4). Running event anyway.",_boat,typeOf _boat,_vehicle,typeOf _vehicle);

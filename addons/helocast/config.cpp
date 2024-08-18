@@ -18,3 +18,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgWaypoints.hpp"

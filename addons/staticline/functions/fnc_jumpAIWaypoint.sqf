@@ -26,8 +26,6 @@ private _vehicle = objectParent leader _group;
 private _direction = direction _vehicle;
 private _commander = effectiveCommander _vehicle;
 
-[_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "_closed", "_opened"];
-
 private _startPosition = _position vectorAdd [
     -START_POS_DISTANCE * sin _direction,
     -START_POS_DISTANCE * cos _direction,
@@ -35,15 +33,15 @@ private _startPosition = _position vectorAdd [
 ];
 
 #ifdef DEBUG_MODE_FULL
-    private _marker = createMarkerLocal [format ["%1_staticLineDropWaypoint", _vehicle], _position];
-    _marker setMarkerShapeLocal "ELLIPSE";
-    _marker setMarkerColorLocal "ColorYellow";
-    _marker setMarkerSize [COMPLETION_RADIUS, COMPLETION_RADIUS];
+    private _wpMarker = createMarkerLocal [format ["%1_staticLineDropWaypoint", _vehicle], _position];
+    _wpMarker setMarkerShapeLocal "ELLIPSE";
+    _wpMarker setMarkerColorLocal "ColorYellow";
+    _wpMarker setMarkerSize [COMPLETION_RADIUS, COMPLETION_RADIUS];
 
-    _marker = createMarkerLocal [format ["%1_staticLineDropEnd", _vehicle], _startPosition];
-    _marker setMarkerShapeLocal "ELLIPSE";
-    _marker setMarkerColorLocal "ColorOrange";
-    _marker setMarkerSize [COMPLETION_RADIUS, COMPLETION_RADIUS];
+    private _startMarker = createMarkerLocal [format ["%1_staticLineDropEnd", _vehicle], _startPosition];
+    _startMarker setMarkerShapeLocal "ELLIPSE";
+    _startMarker setMarkerColorLocal "ColorOrange";
+    _startMarker setMarkerSize [COMPLETION_RADIUS, COMPLETION_RADIUS];
 #endif
 
 // Ideally this should be updated to run unscheduled, but I can't be assed to rewrite them into CBA_waitUntilAndExecutes
@@ -52,11 +50,11 @@ private _startPosition = _position vectorAdd [
 if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     _commander doMove _startPosition;
     waitUntil {_vehicle distance2D _startPosition < COMPLETION_RADIUS};
-    _vehicle animateDoor [_anim, _opened]; // Most vanilla vehicles seem to use animateDoor, but most modded use animateSource
-    _vehicle animateSource [_anim, _opened];
     _commander doMove _position;
     [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
+
+[_vehicle] call EFUNC(common,openRamp);
 
 // Wait for door to open
 sleep 2;
@@ -65,7 +63,11 @@ sleep 2;
 [_vehicle] call FUNC(jumpAI);
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
-_vehicle animateDoor [_anim, _closed];
-_vehicle animateSource [_anim, _closed];
+#ifdef DEBUG_MODE_FULL
+    deleteMarker _wpMarker;
+    deleteMarker _startMarker;
+#endif
+
+[_vehicle] call EFUNC(common,closeRamp);
 [QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 true;
