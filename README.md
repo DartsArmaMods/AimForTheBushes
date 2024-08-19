@@ -36,6 +36,7 @@ The project is entirely **open-source** and any contributions to fix other mods 
 
 ## Core Features
 - [Static Line Jumping](./docs/features/staticline-feature.md)
+- [Helocasting](./docs/features/helocast-feature.md)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
