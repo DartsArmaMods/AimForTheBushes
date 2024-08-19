@@ -24,7 +24,7 @@ author = "DartRuffian"
 [hemtt.launch.default]
 workshop = [
     "450814997",  # CBA_A3
-    "463939057", # ACE
+    "463939057",  # ACE
     "2369477168", # Advanced Dev Tools
     "623475643",  # 3DEN Enhanced
 ]
@@ -49,6 +49,15 @@ workshop = [
 extends = "default"
 workshop = [
     "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.rhs]
+extends = "default"
+workshop = [
+    "843425103", # RHS AFRF Workshop ID
+    "843593391", # RHS GREF Workshop ID
+    "843577117", # RHS USAF Workshop ID
+    "843632231", # RHS SAF  Workshop ID
 ]
 
 [hemtt.launch.previews]

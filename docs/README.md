@@ -32,7 +32,7 @@ Delete this section after the project has been initially set up:
 
 **Helicopter Addon Features** (HAF) aims to add new features to helicopters in a modular way.
 
-The project is entirely **open-source** and any contributions to fix other mods are welcome.
+The project is entirely **open-source** and any contributions are welcome.
 
 ## Core Features
 - [Static Line Jumping](./docs/features/staticline-feature.md)

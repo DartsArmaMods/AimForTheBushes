@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="HAF">
     <Package name="Main">
-        <!-- <Key ID="STR_HAF_main_...">
-            <English></English>
-            <German></German>
-            <Chinese></Chinese>
-            <Chinesesimp></Chinesesimp>
-            <Italian></Italian>
-            <Czech></Czech>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <French></French>
-            <Portuguese></Portuguese>
-            <Spanish></Spanish>
-            <Turkish></Turkish>
-            <Russian></Russian>
-            <Korean></Korean>
-        </Key> -->
+        <Key ID="STR_HAF_main_url">
+            <English>https://github.com/DartRuffian/HelicopterAddonFeatures</English>
+            <German>https://github.com/DartRuffian/HelicopterAddonFeatures</German>
+            <Chinese>https://github.com/DartRuffian/HelicopterAddonFeatures</Chinese>
+            <Chinesesimp>https://github.com/DartRuffian/HelicopterAddonFeatures</Chinesesimp>
+            <Italian>https://github.com/DartRuffian/HelicopterAddonFeatures</Italian>
+            <Czech>https://github.com/DartRuffian/HelicopterAddonFeatures</Czech>
+            <Japanese>https://github.com/DartRuffian/HelicopterAddonFeatures</Japanese>
+            <Polish>https://github.com/DartRuffian/HelicopterAddonFeatures</Polish>
+            <French>https://github.com/DartRuffian/HelicopterAddonFeatures</French>
+            <Portuguese>https://github.com/DartRuffian/HelicopterAddonFeatures</Portuguese>
+            <Spanish>https://github.com/DartRuffian/HelicopterAddonFeatures</Spanish>
+            <Turkish>https://github.com/DartRuffian/HelicopterAddonFeatures</Turkish>
+            <Russian>https://github.com/DartRuffian/HelicopterAddonFeatures</Russian>
+            <Korean>https://github.com/DartRuffian/HelicopterAddonFeatures</Korean>
+        </Key>
     </Package>
 </Project>

@@ -15,5 +15,13 @@ class CfgVehicles {
             {20}
         };
         GVARMAIN(rampAnim)[] = {"laat_ramp_open", 0, 1};
+
+        EGVAR(helocast,boatPositions)[] = {
+            {0, -3, 0.2}
+        };
+    };
+    class lsd_heli_laati_ab: lsd_laat_base {
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
     };
 };

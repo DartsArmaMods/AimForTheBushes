@@ -8,16 +8,15 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "haf_common",
-            "ace_parachute"
+            "haf_loadOrder",
+            "rhs_main_loadorder"
         };
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
+
+        skipWhenMissingDependencies = 1;
     };
 };
 
 #include "CfgVehicles.hpp"
-#include "CfgSounds.hpp"
-#include "CfgEventHandlers.hpp"
-#include "CfgWaypoints.hpp"

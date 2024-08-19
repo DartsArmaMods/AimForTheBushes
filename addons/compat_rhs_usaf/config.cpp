@@ -1,15 +1,15 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class SUBADDON {
+    class ADDON {
         author = AUTHOR;
         authors[] = {"DartRuffian"};
+        url = ECSTRING(main,url);
         name = COMPONENT_NAME;
-        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QUOTE(ADDON),
-            "lsd_vehicles_heli"
+            "haf_loadOrder",
+            "rhsusf_main_loadorder"
         };
         units[] = {};
         weapons[] = {};

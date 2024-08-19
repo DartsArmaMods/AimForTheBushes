@@ -20,6 +20,9 @@ class CfgVehicles {
 | `haf_passengerTurrets`     | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
 | `haf_rampAnim`             | Array            | Door animation, must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
 
+> [!NOTE]
+> If a vehicle does not have a ramp, you can use `["", 0, 0]` to have "is ramp open" checks always be true.
+
 ### 1.2 Parachutes
 Some parachutes classes may not inherit from `B_Parachute`, the vanilla parachute class. To remedy this, HAF will consider any backpack to be a parachute if it has the `haf_isParachute` config property set to 1 (or greater). What each component does with a parachute will vary.
 

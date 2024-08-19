@@ -19,18 +19,17 @@
 params ["_boat", ["_vehicle", objNull]];
 TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
 
-if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
-    [_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "", "_open"];
-    _vehicle animationSourcePhase _anim != _open;
-}) exitWith { false; };
-
 private _positionAGL = ASLToAGL getPosASL _boat;
-
 if (isNull _vehicle) then {
     _vehicle = (nearestObjects [_positionAGL, ["Helicopter"], GVAR(loadDistance)]) select {
         alive _x;
     } select 0;
 };
+
+if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
+    [_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "", "_open"];
+    _vehicle animationSourcePhase _anim != _open;
+}) exitWith { false; };
 
 private _boatPositions = getArray (configOf _vehicle >> QGVAR(boatPositions));
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
