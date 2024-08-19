@@ -1,7 +1,7 @@
 class CfgVehicles {
     class Helicopter_Base_H;
     class CUP_Uh60_Base: Helicopter_Base_H {
-        GVARMAIN(rampAnim)[] = {"", 0, 0};
+        GVARMAIN(rampAnims)[] = {{"", 0, 0}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.8, -0.67}
@@ -17,7 +17,7 @@ class CfgVehicles {
     };
 
     class CUP_MH60S_Base: Helicopter_Base_H {
-        GVARMAIN(rampAnim)[] = {"", 0, 0};
+        GVARMAIN(rampAnims)[] = {{"", 0, 0}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.8, -0.75}
@@ -26,7 +26,7 @@ class CfgVehicles {
     };
 
     class CUP_MH47E_base: Helicopter_Base_H {
-        GVARMAIN(rampAnim)[] = {"ani_ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ani_ramp", 0, 1}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, -3.5, 2.1},
@@ -36,7 +36,7 @@ class CfgVehicles {
     };
 
     class CUP_CH53E_Base: Helicopter_Base_H {
-        GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.6, -2.7},
@@ -47,11 +47,24 @@ class CfgVehicles {
 
     class Plane_Base_F;
     class CUP_B_MV22_USMC: Plane_Base_F {
-        GVARMAIN(rampAnim)[] = {"ramp_bottom", 0, 1}; // Will also need "ramp_top" to be animated
+        GVARMAIN(rampAnims)[] = {
+            {"ramp_bottom", 0, 1},
+            {"ramp_top", 0, 1}
+        };
 
         EGVAR(helocast,boatPositions)[] = {
             {0, -1.1, -1.15}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
+    };
+
+    class CUP_C130J_Base: Plane_Base_F {
+        GVARMAIN(rampAnims)[] = {
+            {"ramp_bottom", 0, 1},
+            {"ramp_top", 0, 1}
+        };
+
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
     };
 };

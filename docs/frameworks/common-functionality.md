@@ -10,7 +10,9 @@ Configures vehicle properties, such as a vehicle's ramp that would be used for p
 class CfgVehicles {
     class TAG_myVehicle {
         haf_passengerTurrets[] = {{3}, {4}};
-        haf_rampAnim[] = {"Door_rear_source", 0, 1};
+        haf_rampAnims[] = {
+            {"Door_rear_source", 0, 1}
+        };
     };
 };
 ```
@@ -18,7 +20,7 @@ class CfgVehicles {
 | Config Name                | Type             | Description                                                       |
 | -------------------------- | ---------------- | ----------------------------------------------------------------- |
 | `haf_passengerTurrets`     | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
-| `haf_rampAnim`             | Array            | Door animation, must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
+| `haf_rampAnim`             | Array            | Door animations, (at least one) must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
 
 > [!NOTE]
 > If a vehicle does not have a ramp, you can use `["", 0, 0]` to have "is ramp open" checks always be true.

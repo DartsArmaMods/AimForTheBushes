@@ -27,8 +27,7 @@ if (isNull _vehicle) then {
 };
 
 if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
-    [_vehicle] call EFUNC(common,getRampAnimation) params ["_anim", "", "_open"];
-    _vehicle animationSourcePhase _anim != _open;
+    !([_vehicle] call EFUNC(common,isRampOpen))
 }) exitWith { false; };
 
 private _boatPositions = getArray (configOf _vehicle >> QGVAR(boatPositions));

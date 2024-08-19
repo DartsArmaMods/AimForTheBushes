@@ -17,7 +17,7 @@ class CfgVehicles {
         GVARMAIN(passengerTurrets)[] = {
             {1}, {2}
         };
-        GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
@@ -26,7 +26,7 @@ class CfgVehicles {
         GVARMAIN(passengerTurrets)[] = {
             {1}, {2}
         };
-        GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
@@ -37,7 +37,7 @@ class CfgVehicles {
         GVARMAIN(passengerTurrets)[] = {
             {1}, {2}
         };
-        GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
@@ -47,7 +47,7 @@ class CfgVehicles {
         GVARMAIN(passengerTurrets)[] = {
             {1}, {2}
         };
-        GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
