@@ -24,7 +24,7 @@ params [
     ["_instant", false, [false]],
     ["_phase", 1, [1]]
 ];
-TRACE_1("fnc_openRamp",_vehicle);
+TRACE_3("fnc_openRamp",_vehicle,_instant,_phase);
 
 private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
 {

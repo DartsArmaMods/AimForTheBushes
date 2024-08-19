@@ -20,16 +20,14 @@ params [
     ["_vehicle", objNull, [objNull]],
     ["_instant", false, [false]]
 ];
-TRACE_1("fnc_closeRamp",_vehicle);
+TRACE_2("fnc_closeRamp",_vehicle,_instant);
 
 private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
 {
-    _x params ["_anim", "_closed", "_opened"];
-    _phase = linearConversion [0, 1, _phase, _closed, _opened, true];
-
+    _x params ["_anim", "_closed"];
     // Vanilla vehicles seem to use animateDoor, while modded tend to use animateSource
-    _vehicle animateSource [_anim, _phase, _instant];
-    _vehicle animateDoor [_anim, _phase, _instant];
+    _vehicle animateSource [_anim, _closed, _instant];
+    _vehicle animateDoor [_anim, _closed, _instant];
 } forEach _rampAnims;
 
 _closed;
