@@ -67,4 +67,9 @@ class CfgVehicles {
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
     };
+
+    class CUP_C130J_VIV_Base: CUP_C130J_Base {
+        EGVAR(staticLine,enabled) = 0;
+        EGVAR(staticLine,condition) = QUOTE(false);
+    };
 };
