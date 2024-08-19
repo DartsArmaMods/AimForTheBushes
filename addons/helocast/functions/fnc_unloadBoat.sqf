@@ -11,12 +11,10 @@
  * True if boat was unloaded, otherwise false <BOOL>
  *
  * Example:
- * [_vehicle, _boat] call haf_helocast_fnc_loadBoat;
+ * [_vehicle, _boat] call haf_helocast_fnc_unloadBoat;
  *
  * Public: Yes
  */
-
-#define UNLOAD_TIMEOUT 15
 
 params [
     ["_vehicle", objNull, [objNull]],
@@ -33,21 +31,16 @@ private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 private _index = (_loadedBoats find _boat);
 _loadedBoats deleteAt _index;
 _vehicle setVariable [QGVAR(loadedBoats), _loadedBoats, true];
-detach _boat;
 
 [{
-    params ["_vehicle", "_boat"];
-    if (_vehicle distance _boat >= 10) then {
+    params ["_vehicle", "_boat", "", "_direction"];
+    if (_vehicle distance _boat >= 10 or {(getPosASL _boat) select 2 < 1}) then {
+        detach _boat;
         true;
     } else {
-        private _positionASL = getPosASL _boat;
-        private _direction = direction _vehicle;
-        _positionASL = _positionASL vectorDiff [
-            0.01 * sin _direction,
-            0.01 * cos _direction,
-            0
-        ];
-        _boat setPosASL _positionASL;
+        private _positionRelative = _vehicle getRelPos _boat; // Thanks ilbinek
+        _positionRelative set [1, _positionRelative#1 - 0.1];
+        _boat attachTo [_vehicle, _positionRelative];
         false;
     };
 }, {
@@ -55,9 +48,9 @@ detach _boat;
     [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
     _vehicle setVariable [QGVAR(isUnloading), nil, true];
     ["ace_common_blockDamage", [_vehicle, 0]] call CBA_fnc_globalEvent;
-}, [_vehicle, _boat, _index], UNLOAD_TIMEOUT, {
+}, [_vehicle, _boat, _index], GVAR(const_unloadTimeout), {
     params ["_vehicle", "_boat", "_index"];
-    WARNING_4("Timed out while unloading %1 (%2) from %3 (%4). Running event anyway.",_boat,typeOf _boat,_vehicle,typeOf _vehicle);
+    WARNING_4("Timed out while unloading %1 (%2) from %3 (%4). Unloading anyway.",_boat,typeOf _boat,_vehicle,typeOf _vehicle);
     [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
 }] call CBA_fnc_waitUntilAndExecute;
 
