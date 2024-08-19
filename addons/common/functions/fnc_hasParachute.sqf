@@ -24,6 +24,5 @@ if (isNull _unit) exitWith {};
 
 private _backpack = backpackContainer _unit;
 GVAR(parachuteCache) getOrDefaultCall [typeOf _backpack, {
-    _backpack isKindOf "B_Parachute" or
-    {getNumber (configOf _backpack >> QGVARMAIN(isParachute)) >= 1};
+    getNumber (configOf _backpack >> QGVARMAIN(isParachute)) >= 1;
 }, true];

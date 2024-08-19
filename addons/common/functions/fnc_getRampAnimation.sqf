@@ -4,7 +4,7 @@
  * Returns the configured ramp animation for a given vehicle.
  *
  * Arguments:
- * 0: Vehicle <OBJECT or STRING>
+ * 0: Vehicle <OBJECT>
  *
  * Return Value:
  * Ramp animation <ARRAY>
@@ -19,14 +19,14 @@
  */
 
 params [
-    ["_vehicle", objNull, [objNull, ""]]
+    ["_vehicle", objNull, [objNull]]
 ];
-
-if (_vehicle isEqualType objNull) then {
-    _vehicle = typeOf _vehicle;
-};
-
 TRACE_1("fnc_getRampAnimation",_vehicle);
 
-getArray (configFile >> "CfgVehicles" >> _vehicle >> QGVARMAIN(rampAnim)) params ["_anim", ["_closed", 0], ["_opened", 1]];
-[_anim, _closed, _opened];
+private _rampAnim = _vehicle getVariable [QGVARMAIN(rampAnim), []];
+if (_rampAnim isNotEqualTo []) exitWith { _rampAnim; };
+
+getArray (configOf _vehicle >> QGVARMAIN(rampAnim)) params ["_anim", ["_closed", 0], ["_opened", 1]];
+_rampAnim = [_anim, _closed, _opened];
+_vehicle setVariable [QGVARMAIN(rampAnim), _rampAnim];
+_rampAnim;

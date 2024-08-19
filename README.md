@@ -14,12 +14,11 @@
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Helicopter Addon Features License">
     </a>
-    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/HelicopterAddonFeatures/Hemtt.yml?style=flat-square&label=Build
-    " alt="Build Status">
+    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/HelicopterAddonFeatures/Hemtt.yml?style=flat-square&label=Build" alt="Build Status">
 </p>
 
 <p align="center">
-    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a></b>
+    <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a></b>
 </p>
 
 # Initial Project Setup!
@@ -37,6 +36,7 @@ The project is entirely **open-source** and any contributions to fix other mods 
 
 ## Core Features
 - [Static Line Jumping](./docs/features/staticline-feature.md)
+- [Helocasting](./docs/features/helocast-feature.md)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).

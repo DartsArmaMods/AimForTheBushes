@@ -1,5 +1,5 @@
-#define COMPONENT addonName
-#define COMPONENT_BEAUTIFIED Addon Name
+#define COMPONENT helocast
+#define COMPONENT_BEAUTIFIED Helocast
 #include "\z\haf\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

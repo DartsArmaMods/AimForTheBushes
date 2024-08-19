@@ -7,13 +7,15 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "haf_main",
-            "haf_common",
-            "haf_staticLine",
-            "haf_helocast"
+            "haf_common"
         };
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"
+#include "CfgSounds.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgWaypoints.hpp"

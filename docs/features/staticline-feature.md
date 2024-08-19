@@ -1,7 +1,7 @@
 # Static Line
 
 ## 1. Overview
-This allows players and AI units to hook into a vehicle's static line, which when jumping will automatically deploy a unit's parachute, as well as creating one for them if they are not already wearing one.
+Players and AI units are able to hook into a vehicle's static line, which when jumping will automatically deploy a unit's parachute, as well as creating one for them if they are not already wearing one.
 
 ## 2. Usage
 To use a vehicle's static line, interact with the vehicle using <kbd>⊞&nbsp;Win</kbd> (ACE3 default) and navigate to the `Static Line` menu. Before being able to jump, players must first hook into the vehicle's static line. Once hooked, a player will be able to jump out the vehicle when:
