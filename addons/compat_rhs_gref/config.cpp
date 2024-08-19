@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "haf_loadOrder",
-            "rhsusf_main_loadorder"
+            "rhsgref_main_loadorder"
         };
         units[] = {};
         weapons[] = {};
