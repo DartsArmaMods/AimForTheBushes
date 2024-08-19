@@ -14,8 +14,7 @@
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Helicopter Addon Features License">
     </a>
-    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/HelicopterAddonFeatures/Hemtt.yml?style=flat-square&label=Build
-    " alt="Build Status">
+    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/HelicopterAddonFeatures/Hemtt.yml?style=flat-square&label=Build" alt="Build Status">
 </p>
 
 <p align="center">
