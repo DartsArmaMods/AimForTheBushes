@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class Helicopter_Base_H;
-    class lsd_laat_base: Helicopter_Base_H {
+    class lsd_laat_base;
+    class lsd_heli_laati_ab: lsd_laat_base {
         GVARMAIN(passengerTurrets)[] = {
             // Left and right ramp seats, side seats, inside standing seats
             {1}, {2},
@@ -15,5 +15,8 @@ class CfgVehicles {
             {20}
         };
         GVARMAIN(rampAnim)[] = {"laat_ramp_open", 0, 1};
+
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
     };
 };
