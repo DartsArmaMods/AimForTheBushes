@@ -7,6 +7,8 @@
  * 0: Unit <OBJECT>
  * 1: Role (Unused) <STRING>
  * 2: Vehicle <OBJECT>
+ * 3: Turret path (Unused) <ARRAY>
+ * 4: Is eject <BOOL>
  *
  * Return Value:
  * None
@@ -17,10 +19,10 @@
  * Public: No
  */
 
-params ["_unit", "", "_vehicle"];
-TRACE_2("fnc_getOutMan",_vehicle,_unit);
+params ["_unit", "", "_vehicle", "", "_isEject"];
+TRACE_3("fnc_getOutMan",_vehicle,_unit,_isEject);
 
-if ([_vehicle, _unit] call FUNC(canJump)) then {
+if (_isEject and {[_vehicle, _unit] call FUNC(canJump)}) then {
     [_vehicle, _unit] call FUNC(jump);
 };
 
