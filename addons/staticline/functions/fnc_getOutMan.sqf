@@ -22,7 +22,7 @@ TRACE_2("fnc_getOutMan",_vehicle,_unit);
 
 if ([_vehicle, _unit] call FUNC(canJump)) then {
     [_vehicle, _unit] call FUNC(jump);
-} else {
-    [_vehicle, _unit] call FUNC(unhook);
 };
+
+[_vehicle, _unit] call FUNC(unhook);
 nil;

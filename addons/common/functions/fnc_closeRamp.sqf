@@ -30,4 +30,4 @@ private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
     _vehicle animateDoor [_anim, _closed, _instant];
 } forEach _rampAnims;
 
-_closed;
+nil;
