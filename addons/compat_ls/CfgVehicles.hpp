@@ -19,6 +19,7 @@ class CfgVehicles {
         EGVAR(helocast,boatPositions)[] = {
             {0, -3, 0.2}
         };
+        EGVAR(helocast,marker) = "Chemlight_green";
     };
     class lsd_heli_laati_ab: lsd_laat_base {
         EGVAR(staticLine,enabled) = 1;

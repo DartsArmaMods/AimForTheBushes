@@ -2,6 +2,7 @@ class CfgVehicles {
     class Helicopter_Base_H;
     class rhsusf_CH53E_USMC: Helicopter_Base_H {
         GVARMAIN(rampAnim)[] = {"ramp", 0, 1};
+
         EGVAR(helocast,boatPositions)[] = {
             {0, 5.75, -2.59},
             {0, 0.8, -2.59}
@@ -13,11 +14,13 @@ class CfgVehicles {
         GVARMAIN(rampAnim)[] = {"", 0, 0};
         GVARMAIN(passengerTurrets)[] = {
             {3}, {4},
-            {5}, {6},
+            {5}, {6}
         };
+
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.8, -1.45}
         };
+        EGVAR(helocast,marker) = "Chemlight_green";
     };
 
     class Heli_Transport_02_base_F;
@@ -34,6 +37,7 @@ class CfgVehicles {
             {0, 1.7, -1.3},
             {0, -3.27, -1.3}
         };
+        EGVAR(helocast,marker) = "Chemlight_green";
     };
 
     class RHS_CH_47F_cargo_base: RHS_CH_47F_base {

@@ -20,4 +20,12 @@ class CfgVehicles {
         };
         GVAR(marker) = "Chemlight_green";
     };
+
+    class VTOL_01_unarmed_base_F;
+    class VTOL_01_infantry_base_F: VTOL_01_unarmed_base_F {
+        GVAR(boatPositions)[] = {
+            {0, -1.27, -4.4}
+        };
+        GVAR(marker) = "Chemlight_green";
+    };
 };
