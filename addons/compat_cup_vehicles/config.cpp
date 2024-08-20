@@ -9,7 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "haf_loadOrder",
-            "rhssaf_main_loadorder"
+            "CUP_Vehicles_LoadOrder"
         };
         units[] = {};
         weapons[] = {};

@@ -1,6 +1,6 @@
 // Global toggles for caching/logging
 // #define DISABLE_COMPILE_CACHE
-// #define DEBUG_MODE_FULL
+#define DEBUG_MODE_FULL
 #define DEBUG_SYNCHRONOUS
 
 #include "\z\ace\addons\main\script_macros.hpp"
