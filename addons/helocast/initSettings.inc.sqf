@@ -7,5 +7,5 @@
 [
     QGVAR(loadDistance), "SLIDER",
     [LSTRING(loadDistance_name), LSTRING(loadDistance_tooltip)],
-    _category, [1, 20, 7, 0], true
+    _category, [1, 20, 7, 2], true
 ] call CBA_fnc_addSetting;

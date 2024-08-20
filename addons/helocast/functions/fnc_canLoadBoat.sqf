@@ -16,7 +16,7 @@
  */
 
 // _vehicle param needs to be second and optional for recover boat UserAction
-params ["_boat", ["_vehicle", objNull]];
+params ["_boat", ["_vehicle", objNull], ["_autoLoad", false, [false]]];
 TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
 
 private _positionAGL = ASLToAGL getPosASL _boat;
@@ -37,6 +37,10 @@ if ((_loadedBoats isEqualTo [] and {_boatPositions isNotEqualTo []}) or {
     count _loadedBoats < count _boatPositions
 }) exitWith {
     _boat setVariable [QGVAR(loadTarget), _vehicle];
+    if (_autoLoad and {_vehicle distance _boat <= GVAR(const_autoLoadDistance)}) then {
+        [_vehicle, _boat] call FUNC(loadBoat);
+    };
+
     true;
 };
 

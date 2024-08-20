@@ -3,6 +3,7 @@
 // Max time in seconds to try unloading a boat for.
 // If timeout is reached, boat is unloaded anyway.
 GVAR(const_unloadTimeout) = 15;
+GVAR(const_autoLoadDistance) = 2;
 
 ["Ship_F", "Init", {
     // Small delay for network syncing

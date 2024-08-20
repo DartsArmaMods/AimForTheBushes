@@ -25,5 +25,5 @@
 [
     QGVAR(parachuteDelay), "SLIDER",
     [LSTRING(parachuteDelay_name), LSTRING(parachuteDelay_tooltip)],
-    _category, [2, 10, 4, 0], true
+    _category, [2, 10, 4, 2], true
 ] call CBA_fnc_addSetting;
