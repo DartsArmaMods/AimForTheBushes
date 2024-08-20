@@ -21,6 +21,7 @@ class CfgVehicles {
             {0, 1.8, -1.45}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
+        EGVAR(helocast,drop) = 1;
     };
 
     class Heli_Transport_02_base_F;

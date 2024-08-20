@@ -31,15 +31,17 @@ private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 private _index = (_loadedBoats find _boat);
 _loadedBoats deleteAt _index;
 _vehicle setVariable [QGVAR(loadedBoats), _loadedBoats, true];
+private _drop = getNumber (configOf _vehicle >> QGVAR(drop));
 
 [{
-    params ["_vehicle", "_boat", "", "_direction"];
+    params ["_vehicle", "_boat", "", "_drop"];
     if (_vehicle distance _boat >= 10 or {(getPosASL _boat) select 2 < 1}) then {
         detach _boat;
         true;
     } else {
         private _positionRelative = _vehicle getRelPos _boat; // Thanks ilbinek
-        _positionRelative set [1, _positionRelative#1 - 0.1];
+        private _positionIndex = _drop + 1; // Kept as number to just do math to find right index
+        _positionRelative set [_positionIndex, (_positionRelative select _positionIndex) - 0.1];
         _boat attachTo [_vehicle, _positionRelative];
         false;
     };
@@ -48,7 +50,7 @@ _vehicle setVariable [QGVAR(loadedBoats), _loadedBoats, true];
     [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
     _vehicle setVariable [QGVAR(isUnloading), nil, true];
     ["ace_common_blockDamage", [_vehicle, 0]] call CBA_fnc_globalEvent;
-}, [_vehicle, _boat, _index], GVAR(const_unloadTimeout), {
+}, [_vehicle, _boat, _index, _drop], GVAR(const_unloadTimeout), {
     params ["_vehicle", "_boat", "_index"];
     WARNING_4("Timed out while unloading %1 (%2) from %3 (%4). Unloading anyway.",_boat,typeOf _boat,_vehicle,typeOf _vehicle);
     [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
