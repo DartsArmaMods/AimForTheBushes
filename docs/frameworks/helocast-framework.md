@@ -16,14 +16,16 @@ class CfgVehicles {
             {0, 0, 0}
         };
         haf_helocast_marker = "Chemlight_green";
+        haf_helocast_drop = 0;
     };
 };
 ```
 
-| Config Name                  | Type   | Description                                       |
-| ---------------------------- | ------ | ------------------------------------------------- |
-| `haf_helocast_boatPositions` | Array  | Array of model offsets where boats will be stored |
-| `haf_helocast_marker`        | String | `CfgVehicles` class to spawn on deployed boats    |
+| Config Name                  | Type   | Description                                                      |
+| ---------------------------- | ------ | ---------------------------------------------------------------- |
+| `haf_helocast_boatPositions` | Array  | Array of model offsets where boats will be stored                |
+| `haf_helocast_marker`        | String | `CfgVehicles` class to spawn on deployed boats                   |
+| `haf_helocast_drop`          | Number | 0-slide boat away from vehicle, 1-drop boat downwards (OPTIONAL) |
 
 ### 1.2 Boats
 Only inflatable (children of `Rubber_duck_base_F`) boats are loadable by default, but any object can be made loadable.

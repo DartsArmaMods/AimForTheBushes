@@ -7,6 +7,7 @@ class CfgVehicles {
             {0, 1.8, -0.67}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
+        EGVAR(helocast,drop) = 1;
     };
 
     class CUP_Uh60_FFV_Base: CUP_Uh60_Base {
@@ -23,6 +24,7 @@ class CfgVehicles {
             {0, 1.8, -0.75}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
+        EGVAR(helocast,drop) = 1;
     };
 
     class CUP_MH47E_base: Helicopter_Base_H {
