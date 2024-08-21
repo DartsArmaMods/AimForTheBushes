@@ -16,4 +16,4 @@ jobs:
       - uses: arma-actions/bom-check@v1
         name: Check for BOM
         with:
-          path: 'addons'
+          path: "addons"
