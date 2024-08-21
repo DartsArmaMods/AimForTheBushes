@@ -16,13 +16,13 @@ jobs:
     - name: Update version
       run: hemtt script update_patch
     - name: Run HEMTT release
-      run: hemtt release
+      run: hemtt release --no-archive
     - name: Upload to Steam
       uses: arma-actions/workshop-upload@v1
       with:
         appId: "107410"
         itemId: "3312012350"
-        contentPath: "releases/haf-latest/@haf"
+        contentPath: ".hemttout/release"
         changelog: "Automatic dev build update"
       env:
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
