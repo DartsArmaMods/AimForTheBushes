@@ -9,21 +9,31 @@ jobs:
   dev_update:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the source code
-      uses: actions/checkout@v4
-    - name: Setup HEMTT
-      uses: arma-actions/hemtt@v1
-    - name: Update version
-      run: hemtt script update_patch
-    - name: Run HEMTT release
-      run: hemtt release --no-archive
-    - name: Upload to Steam
-      uses: arma-actions/workshop-upload@v1
-      with:
-        appId: "107410"
-        itemId: "3312012350"
-        contentPath: ".hemttout/release"
-        changelog: "Automatic dev build update"
-      env:
-        STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
-        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+        # - name: Set VERSION env
+        #   run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
+        - name: Checkout the source code
+          uses: actions/checkout@v2
+        - name: Setup HEMTT
+          uses: arma-actions/hemtt@v1
+        - name: Run HEMTT build
+          run: hemtt release --no-archive
+        - name: Move release to releases folder
+          run:
+            mv .hemttout/release "@haf"
+        - name: Zip release
+          run: zip -r "@haf.zip" ./@haf
+        - name: Update Release with Files
+          uses: softprops/action-gh-release@v1
+          with:
+            files: ./@haf.zip
+            draft: true
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: Update to Steam Workshop (stable)
+          uses: arma-actions/workshop-upload@v1
+          with:
+            itemId: '3312012350'
+            contentPath: './@haf'
+          env:
+            STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+            STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
