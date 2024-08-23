@@ -57,7 +57,6 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
             params ["_unit"];
             [{
                 params ["_unit", "_thisEvent", "_thisEventHandler"];
-                systemChat "check";
                 if (isTouchingGround _unit or {[_unit] call ace_common_fnc_isSwimming}) then {
                     [_unit] call ace_common_fnc_dropBackpack; // Drop reserve
                     // actionOnBack needs a small delay after dropping the reserve
