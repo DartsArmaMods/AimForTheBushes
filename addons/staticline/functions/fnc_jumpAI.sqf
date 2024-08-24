@@ -6,6 +6,7 @@
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
+ * 1: Create new group for jumpers (optional, default: setting) <BOOL>
  *
  * Return Value:
  * None
@@ -17,7 +18,8 @@
  */
 
 params [
-    ["_vehicle", objNull, [objNull]]
+    ["_vehicle", objNull, [objNull]],
+    ["_createGroup", GVAR(createGroup), [true]]
 ];
 TRACE_2("fnc_jumpAI",_vehicle,_createGroup);
 
@@ -31,8 +33,10 @@ if !(GVAR(aiDeployPlayers)) then {
 
 if (_unitsToDeploy isEqualTo []) exitWith {};
 
-private _group = createGroup side (_unitsToDeploy#0);
-_unitsToDeploy joinSilent _group;
+if (_createGroup) then {
+    private _group = createGroup side (_unitsToDeploy#0);
+    _unitsToDeploy joinSilent _group;
+};
 
 _vehicle setVariable [QGVAR(unitsToDeploy), _unitsToDeploy, true];
 
