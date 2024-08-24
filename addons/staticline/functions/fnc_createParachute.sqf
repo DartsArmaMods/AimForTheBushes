@@ -4,20 +4,20 @@
  * Checks if a unit can hook into a static line.
  *
  * Arguments:
- * 0: Vehicle <OBJECT>
- * 1: Unit <OBJECT>
+ * 0: Unit <OBJECT>
+ * 1: Parachute class (optional, parachute setting) <STRING>
  *
  * Return Value:
  * Parachute <OBJECT>
  *
  * Example:
- * [objectParent ace_player, ace_player] call haf_staticLine_fnc_createParachute;
+ * [ace_player] call haf_staticLine_fnc_createParachute;
  *
  * Public: No
  */
 
-params ["_vehicle", "_unit", ["_parachuteClass", GVAR(defaultParachute)]];
-TRACE_3("fnc_createParachute",_vehicle,_unit,_parachuteClass);
+params ["_unit", ["_parachuteClass", GVAR(defaultParachute)]];
+TRACE_2("fnc_createParachute",_unit,_parachuteClass);
 
 private _positionAGL = ASLToAGL (getPosASL _unit);
 private _parachute = createVehicle [_parachuteClass, _positionAGL, [], 0, "CAN_COLLIDE"];

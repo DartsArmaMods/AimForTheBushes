@@ -19,6 +19,9 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_hook",_vehicle,_unit);
 
-[_unit, QGVAR(hook)] call EFUNC(common,say3D);
+if (ace_player == _unit) then {
+    playSound QGVAR(hook);
+};
+
 _unit setVariable [QGVAR(isHooked), true, true];
 nil;
