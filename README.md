@@ -3,7 +3,7 @@
 <h1 align="center">Helicopter Addon Features</h1>
 <p align="center">
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.4.0-blue?style=flat-square" alt="Helicopter Addon Features Version">
+        <img src="https://img.shields.io/badge/Version-0.0.5-blue?style=flat-square" alt="Helicopter Addon Features Version">
     </a>
     <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/issues">
         <img src="https://img.shields.io/github/issues-raw/DartRuffian/HelicopterAddonFeatures.svg?style=flat-square&label=Issues" alt="Helicopter Addon Features Issues">
