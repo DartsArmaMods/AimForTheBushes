@@ -5,7 +5,8 @@
 GVAR(const_unloadTimeout) = 15;
 GVAR(const_autoLoadDistance) = 2;
 
-["Ship_F", "Init", {
+["AllVehicles", "Init", {
+    if (getNumber (configOf _this >> QGVAR(isLoadable)) < 1) exitWith {};
     // Small delay for network syncing
     [LINKFUNC(initBoat), _this, 1] call CBA_fnc_waitAndExecute;
 }, true, [], true] call CBA_fnc_addClassEventHandler;
