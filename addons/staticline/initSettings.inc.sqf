@@ -11,6 +11,12 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(createGroup), "CHECKBOX",
+    [LSTRING(createGroup_name), LSTRING(createGroup_tooltip)],
+    _category, false, true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(defaultParachute), "EDITBOX",
     [LSTRING(defaultParachute_name), LSTRING(defaultParachute_tooltip)],
     _category, "NonSteerable_Parachute_F", true

@@ -28,6 +28,7 @@ if (!_hasParachute and {backpack _unit != ""} and {["bocr_main"] call ace_common
 private _velocity = velocity _vehicle;
 private _direction = direction _vehicle;
 
+[_unit] orderGetIn false;
 unassignVehicle _unit;
 moveOut _unit;
 
