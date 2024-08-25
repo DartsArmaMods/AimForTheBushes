@@ -1,6 +1,6 @@
 #define MAINPREFIX z
-#define PREFIX haf
-#define MOD_NAME Helicopter Addon Features
+#define PREFIX aftb
+#define MOD_NAME Aim For The Bushes
 #define AUTHOR "DartRuffian"
 
 #define REQUIRED_VERSION 2.16

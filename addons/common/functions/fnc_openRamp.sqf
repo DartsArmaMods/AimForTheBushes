@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [_vehicle] call haf_common_fnc_openRamp;
+ * [_vehicle] call aftb_common_fnc_openRamp;
  *
  * Public: Yes
  */

@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [_vehicle] call haf_staticLine_fnc_jumpAI;
+ * [_vehicle] call aftb_staticLine_fnc_jumpAI;
  *
  * Public: Yes
  */

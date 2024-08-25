@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [objectParent ace_player, ace_player] call haf_staticLine_fnc_unhook;
+ * [objectParent ace_player, ace_player] call aftb_staticLine_fnc_unhook;
  *
  * Public: No
  */

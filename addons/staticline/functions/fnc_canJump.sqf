@@ -11,7 +11,7 @@
  * True if unit can jump, otherwise false <BOOL>
  *
  * Example:
- * [objectParent ace_player, ace_player] call haf_staticLine_fnc_canJump;
+ * [objectParent ace_player, ace_player] call aftb_staticLine_fnc_canJump;
  *
  * Public: No
  */

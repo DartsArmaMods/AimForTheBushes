@@ -18,7 +18,7 @@
  * None
  *
  * Example:
- * [_vehicle, "sound"] call haf_common_fnc_say3D
+ * [_vehicle, "sound"] call aftb_common_fnc_say3D
  *
  * Public: Yes
  */

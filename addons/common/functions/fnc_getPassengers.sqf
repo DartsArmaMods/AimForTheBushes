@@ -10,7 +10,7 @@
  * Array of passenger units <ARRAY>
  *
  * Example:
- * [_vehicle] call haf_common_fnc_getPassengers
+ * [_vehicle] call aftb_common_fnc_getPassengers
  *
  * Public: Yes
  */

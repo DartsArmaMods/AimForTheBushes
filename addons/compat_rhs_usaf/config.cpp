@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "haf_loadOrder",
+            "aftb_loadOrder",
             "rhsusf_main_loadorder"
         };
         units[] = {};

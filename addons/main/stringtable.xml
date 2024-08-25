@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="HAF">
+<Project name="AFTB">
     <Package name="Main">
-        <Key ID="STR_HAF_main_url">
-            <English>https://github.com/DartRuffian/HelicopterAddonFeatures</English>
-            <German>https://github.com/DartRuffian/HelicopterAddonFeatures</German>
-            <Chinese>https://github.com/DartRuffian/HelicopterAddonFeatures</Chinese>
-            <Chinesesimp>https://github.com/DartRuffian/HelicopterAddonFeatures</Chinesesimp>
-            <Italian>https://github.com/DartRuffian/HelicopterAddonFeatures</Italian>
-            <Czech>https://github.com/DartRuffian/HelicopterAddonFeatures</Czech>
-            <Japanese>https://github.com/DartRuffian/HelicopterAddonFeatures</Japanese>
-            <Polish>https://github.com/DartRuffian/HelicopterAddonFeatures</Polish>
-            <French>https://github.com/DartRuffian/HelicopterAddonFeatures</French>
-            <Portuguese>https://github.com/DartRuffian/HelicopterAddonFeatures</Portuguese>
-            <Spanish>https://github.com/DartRuffian/HelicopterAddonFeatures</Spanish>
-            <Turkish>https://github.com/DartRuffian/HelicopterAddonFeatures</Turkish>
-            <Russian>https://github.com/DartRuffian/HelicopterAddonFeatures</Russian>
-            <Korean>https://github.com/DartRuffian/HelicopterAddonFeatures</Korean>
+        <Key ID="STR_AFTB_main_url">
+            <English>https://github.com/DartRuffian/AimForTheBushes</English>
+            <German>https://github.com/DartRuffian/AimForTheBushes</German>
+            <Chinese>https://github.com/DartRuffian/AimForTheBushes</Chinese>
+            <Chinesesimp>https://github.com/DartRuffian/AimForTheBushes</Chinesesimp>
+            <Italian>https://github.com/DartRuffian/AimForTheBushes</Italian>
+            <Czech>https://github.com/DartRuffian/AimForTheBushes</Czech>
+            <Japanese>https://github.com/DartRuffian/AimForTheBushes</Japanese>
+            <Polish>https://github.com/DartRuffian/AimForTheBushes</Polish>
+            <French>https://github.com/DartRuffian/AimForTheBushes</French>
+            <Portuguese>https://github.com/DartRuffian/AimForTheBushes</Portuguese>
+            <Spanish>https://github.com/DartRuffian/AimForTheBushes</Spanish>
+            <Turkish>https://github.com/DartRuffian/AimForTheBushes</Turkish>
+            <Russian>https://github.com/DartRuffian/AimForTheBushes</Russian>
+            <Korean>https://github.com/DartRuffian/AimForTheBushes</Korean>
         </Key>
     </Package>
 </Project>

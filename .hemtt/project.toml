@@ -1,6 +1,6 @@
-name = "Helicopter Addon Features"
+name = "Aim For The Bushes"
 author = "DartRuffian"
-prefix = "haf"
+prefix = "aftb"
 mainprefix = "z"
 
 [version]
@@ -11,8 +11,8 @@ git_hash = 0
 include = [
     "mod.cpp",
     "meta.cpp",
-    "logo_haf.png",
-    "logo_haf_ca.paa",
+    "logo_aftb.png",
+    "logo_aftb_ca.paa",
     "LICENSE.md",
     "README.md",
 ]

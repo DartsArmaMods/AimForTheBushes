@@ -11,7 +11,7 @@
  * True if ramp(s) are open, otherwise false <BOOL>
  *
  * Example:
- * [_vehicle] call haf_common_fnc_isRampOpen;
+ * [_vehicle] call aftb_common_fnc_isRampOpen;
  *
  * Public: Yes
  */

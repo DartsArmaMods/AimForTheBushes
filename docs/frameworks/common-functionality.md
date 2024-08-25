@@ -9,8 +9,8 @@ Configures vehicle properties, such as a vehicle's ramp that would be used for p
 ```cpp
 class CfgVehicles {
     class TAG_myVehicle {
-        haf_passengerTurrets[] = {{3}, {4}};
-        haf_rampAnims[] = {
+        aftb_passengerTurrets[] = {{3}, {4}};
+        aftb_rampAnims[] = {
             {"Door_rear_source", 0, 1}
         };
     };
@@ -19,28 +19,28 @@ class CfgVehicles {
 
 | Config Name                | Type             | Description                                                       |
 | -------------------------- | ---------------- | ----------------------------------------------------------------- |
-| `haf_passengerTurrets`     | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
-| `haf_rampAnim`             | Array            | Door animations, (at least one) must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
+| `aftb_passengerTurrets`     | Array            | Turret paths for seats that can also static line jump (OPTIONAL)  |
+| `aftb_rampAnim`             | Array            | Door animations, (at least one) must be open for players to jump. ["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
 
 > [!NOTE]
 > If a vehicle does not have a ramp, you can use `["", 0, 0]` to have "is ramp open" checks always be true.
 
 ### 1.2 Parachutes
-Some parachutes classes may not inherit from `B_Parachute`, the vanilla parachute class. To remedy this, HAF will consider any backpack to be a parachute if it has the `haf_isParachute` config property set to 1 (or greater). What each component does with a parachute will vary.
+Some parachutes classes may not inherit from `B_Parachute`, the vanilla parachute class. To remedy this, AFTB will consider any backpack to be a parachute if it has the `aftb_isParachute` config property set to 1 (or greater). What each component does with a parachute will vary.
 
 If a backpack inherits from `B_Parachute`, then it already has this config property set.
 
 ```cpp
 class CfgVehicles {
     class TAG_myBackpack {
-        haf_isParachute = 1;
+        aftb_isParachute = 1;
     };
 };
 ```
 
 | Config Name       | Type   | Description                         |
 | ----------------- | ------ | ----------------------------------- |
-| `haf_isParachute` | Number | 0-is not a parachute, 1-is a parachute |
+| `aftb_isParachute` | Number | 0-is not a parachute, 1-is a parachute |
 
 ## 2. Functions
 Functions will always be located in `<addon>/functions` and be named `fnc_functionName.sqf`.
@@ -61,7 +61,7 @@ Each function will have the same function header, which lists meta information a
  * Description <TYPE>
  *
  * Example:
- * [arg1] call haf_component_fnc_functionName;
+ * [arg1] call aftb_component_fnc_functionName;
  *
  * Public: Yes/No
  */

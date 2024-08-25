@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [ace_player, "", objectParent ace_player] call haf_staticLine_fnc_getOutMan;
+ * [ace_player, "", objectParent ace_player] call aftb_staticLine_fnc_getOutMan;
  *
  * Public: No
  */

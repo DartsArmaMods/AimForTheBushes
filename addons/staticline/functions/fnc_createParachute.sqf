@@ -11,7 +11,7 @@
  * Parachute <OBJECT>
  *
  * Example:
- * [ace_player] call haf_staticLine_fnc_createParachute;
+ * [ace_player] call aftb_staticLine_fnc_createParachute;
  *
  * Public: No
  */
