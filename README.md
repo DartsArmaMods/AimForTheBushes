@@ -32,5 +32,22 @@ The project is entirely **open-source** and any contributions are welcome.
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
+## Compatability
+### Mods
+The following mods have compatability patches built into AFTB.
+- [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
+- [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)
+- [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
+- [RHSUSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
+- [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
+- [RHSSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
+
+### CDLC
+The following creator DLCs have compatability patches built into AFTB.
+> [!NOTE]
+> I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatability data" mods if they exist.
+
+- [S.O.G. Prairie Fire](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/)
+
 ## License
 Aim For The Bushes is licensed under [APL-ND](./LICENSE.md).
