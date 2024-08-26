@@ -12,7 +12,7 @@
  * true <BOOL>
  *
  * Example:
- * [_group, [100, 100, 0]] call haf_staticLine_fnc_helocastAIWaypoint;
+ * [_group, [100, 100, 0]] call aftb_staticLine_fnc_helocastAIWaypoint;
  *
  * Public: No
  */

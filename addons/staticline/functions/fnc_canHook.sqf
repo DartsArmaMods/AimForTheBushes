@@ -11,7 +11,7 @@
  * True if unit can hook, otherwise false <BOOL>
  *
  * Example:
- * [objectParent ace_player, ace_player] call haf_staticLine_fnc_canHook;
+ * [objectParent ace_player, ace_player] call aftb_staticLine_fnc_canHook;
  *
  * Public: No
  */

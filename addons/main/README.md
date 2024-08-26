@@ -1,7 +1,7 @@
-haf_main
+aftb_main
 ===================
 
-Main Addon for Helicopter Addon Features
+Main Addon for Aim For The Bushes
 
 ## Maintainers
 

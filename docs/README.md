@@ -1,20 +1,20 @@
 <!-- If you want to make changes to this README, you need to also modify the README.md in the docs folder as well -->
 
-<h1 align="center">Helicopter Addon Features</h1>
+<h1 align="center">Aim For The Bushes</h1>
 <p align="center">
-    <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.0-blue?style=flat-square" alt="Helicopter Addon Features Version">
+    <a href="https://github.com/DartRuffian/AimForTheBushes/releases/latest">
+        <img src="https://img.shields.io/badge/Version-0.0.0-blue?style=flat-square" alt="Aim For The Bushes Version">
     </a>
-    <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/issues">
-        <img src="https://img.shields.io/github/issues-raw/DartRuffian/HelicopterAddonFeatures.svg?style=flat-square&label=Issues" alt="Helicopter Addon Features Issues">
+    <a href="https://github.com/DartRuffian/AimForTheBushes/issues">
+        <img src="https://img.shields.io/github/issues-raw/DartRuffian/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID">
-        <img src="https://img.shields.io/steam/downloads/MOD_ID.svg?style=flat-square&label=Downloads" alt="Helicopter Addon Features Downloads">
+        <img src="https://img.shields.io/steam/downloads/MOD_ID.svg?style=flat-square&label=Downloads" alt="Aim For The Bushes Downloads">
     </a>
-    <a href="https://github.com/DartRuffian/HelicopterAddonFeatures/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Helicopter Addon Features License">
+    <a href="https://github.com/DartRuffian/AimForTheBushes/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Aim For The Bushes License">
     </a>
-    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/HelicopterAddonFeatures/hemtt.yml?style=flat-square&label=Build" alt="Build Status">
+    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/AimForTheBushes/hemtt.yml?style=flat-square&label=Build" alt="Build Status">
 </p>
 
 <p align="center">
@@ -23,14 +23,14 @@
 
 # Initial Project Setup!
 Delete this section after the project has been initially set up:
-1. Find and replace all instances of `Helicopter Addon Features` with the mod's name.
-2. Find and replace all instances of `HelicopterAddonFeatures` with the mod's name *and no spaces*.
+1. Find and replace all instances of `Aim For The Bushes` with the mod's name.
+2. Find and replace all instances of `AimForTheBushes` with the mod's name *and no spaces*.
    - This should be the name of the repository on GitHub.
-3. Find and replace all instances of `haf` with the mod's prefix.
+3. Find and replace all instances of `aftb` with the mod's prefix.
    - This should be all lowercase.
 4. After the initial Steam upload, find and replace all instances of `MOD_ID` with the mod's Steam Workshop id.
 
-**Helicopter Addon Features** (HAF) aims to add new features to helicopters in a modular way.
+**Aim For The Bushes** (AFTB) aims to add new features to helicopters in a modular way.
 
 The project is entirely **open-source** and any contributions are welcome.
 
@@ -42,4 +42,4 @@ The project is entirely **open-source** and any contributions are welcome.
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
 ## License
-Helicopter Addon Features is licensed under [APL-ND](./LICENSE.md).
+Aim For The Bushes is licensed under [APL-ND](./LICENSE.md).

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_vehicle, _boat] call haf_helocast_fnc_canUnloadBoat;
+ * [_vehicle, _boat] call aftb_helocast_fnc_canUnloadBoat;
  *
  * Public: No
  */

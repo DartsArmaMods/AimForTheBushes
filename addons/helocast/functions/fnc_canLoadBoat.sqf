@@ -10,7 +10,7 @@
  * True if boat can be loaded, otherwise false <BOOL>
  *
  * Example:
- * [_boat] call haf_helocast_fnc_canLoadBoat;
+ * [_boat] call aftb_helocast_fnc_canLoadBoat;
  *
  * Public: No
  */

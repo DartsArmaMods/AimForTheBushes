@@ -1,8 +1,8 @@
 author = "DartRuffian";
-name = "Helicopter Addon Features";
-description = "Helicopter Addon Features - Version 0.0.0";
+name = "Aim For The Bushes";
+description = "Aim For The Bushes - Version 0.0.0";
 overview = "";
-overviewPicture = "logo_haf_ca.paa";
-picture = "logo_haf.png";
-logo = "logo_haf_ca.paa";
-logoOver = "logo_haf_ca.paa";
+overviewPicture = "logo_aftb_ca.paa";
+picture = "logo_aftb.png";
+logo = "logo_aftb_ca.paa";
+logoOver = "logo_aftb_ca.paa";

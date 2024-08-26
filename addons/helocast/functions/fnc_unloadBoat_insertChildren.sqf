@@ -11,7 +11,7 @@
  * Array of actions <ARRAY>
  *
  * Example:
- * [_target, _player] call haf_helocast_fnc_insertChildren;
+ * [_target, _player] call aftb_helocast_fnc_insertChildren;
  *
  * Public: No
  */

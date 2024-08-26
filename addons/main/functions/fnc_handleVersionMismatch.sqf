@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [] call haf_main_fnc_handleVersionMismatch;
+ * [] call aftb_main_fnc_handleVersionMismatch;
  *
  * Public: No
  */

@@ -11,7 +11,7 @@
  * True if unit can unhook, otherwise false <BOOL>
  *
  * Example:
- * [objectParent ace_player, ace_player] call haf_staticLine_fnc_canUnhook;
+ * [objectParent ace_player, ace_player] call aftb_staticLine_fnc_canUnhook;
  *
  * Public: No
  */

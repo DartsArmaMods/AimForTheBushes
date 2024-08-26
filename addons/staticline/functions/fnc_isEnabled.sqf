@@ -11,7 +11,7 @@
  * True if vehicle has static line (and setting enabled), other wise false (or setting disabled) <BOOL>
  *
  * Example:
- * [typeOf (objectParent ace_player)] call haf_staticLine_fnc_canHook;
+ * [typeOf (objectParent ace_player)] call aftb_staticLine_fnc_canHook;
  *
  * Public: No
  */

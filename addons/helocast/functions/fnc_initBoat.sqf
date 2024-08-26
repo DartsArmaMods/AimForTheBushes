@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_boat] call haf_helocast_fnc_initBoat;
+ * [_boat] call aftb_helocast_fnc_initBoat;
  *
  * Public: No
  */

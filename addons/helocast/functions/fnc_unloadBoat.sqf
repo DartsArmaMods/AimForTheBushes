@@ -11,7 +11,7 @@
  * True if boat was unloaded, otherwise false <BOOL>
  *
  * Example:
- * [_vehicle, _boat] call haf_helocast_fnc_unloadBoat;
+ * [_vehicle, _boat] call aftb_helocast_fnc_unloadBoat;
  *
  * Public: Yes
  */

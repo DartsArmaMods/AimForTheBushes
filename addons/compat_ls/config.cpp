@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "haf_loadOrder",
+            "aftb_loadOrder",
             "lsd_core",
             "lsd_vehicles_heli"
         };

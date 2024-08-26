@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [_vehicle, _unitsToDeploy] call haf_staticLine_fnc_jumpAIRecursive;
+ * [_vehicle, _unitsToDeploy] call aftb_staticLine_fnc_jumpAIRecursive;
  *
  * Public: No
  */

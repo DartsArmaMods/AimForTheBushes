@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call haf_addonName_fnc_empty;
+ * [] call aftb_addonName_fnc_empty;
  *
  * Public: No
  */

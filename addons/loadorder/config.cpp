@@ -8,10 +8,10 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "haf_main",
-            "haf_common",
-            "haf_staticLine",
-            "haf_helocast"
+            "aftb_main",
+            "aftb_common",
+            "aftb_staticLine",
+            "aftb_helocast"
         };
         units[] = {};
         weapons[] = {};

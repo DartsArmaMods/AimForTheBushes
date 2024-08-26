@@ -11,7 +11,7 @@
  * True if unit is (co)pilot, otherwise false <BOOL>
  *
  * Example:
- * [_vehicle, _unit] call haf_common_fnc_isPilot
+ * [_vehicle, _unit] call aftb_common_fnc_isPilot
  *
  * Public: Yes
  */
