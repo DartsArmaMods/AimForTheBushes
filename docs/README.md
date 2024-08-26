@@ -8,8 +8,8 @@
     <a href="https://github.com/DartRuffian/AimForTheBushes/issues">
         <img src="https://img.shields.io/github/issues-raw/DartRuffian/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
     </a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID">
-        <img src="https://img.shields.io/steam/downloads/MOD_ID.svg?style=flat-square&label=Downloads" alt="Aim For The Bushes Downloads">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3317533489">
+        <img src="https://img.shields.io/steam/downloads/3317533489.svg?style=flat-square&label=Downloads" alt="Aim For The Bushes Downloads">
     </a>
     <a href="https://github.com/DartRuffian/AimForTheBushes/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Aim For The Bushes License">
@@ -20,15 +20,6 @@
 <p align="center">
     <b>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA</a> and <a href="https://github.com/acemod/ACE3/releases/latest">ACE3</a></b>
 </p>
-
-# Initial Project Setup!
-Delete this section after the project has been initially set up:
-1. Find and replace all instances of `Aim For The Bushes` with the mod's name.
-2. Find and replace all instances of `AimForTheBushes` with the mod's name *and no spaces*.
-   - This should be the name of the repository on GitHub.
-3. Find and replace all instances of `aftb` with the mod's prefix.
-   - This should be all lowercase.
-4. After the initial Steam upload, find and replace all instances of `MOD_ID` with the mod's Steam Workshop id.
 
 **Aim For The Bushes** (AFTB) aims to add new features to helicopters in a modular way.
 
