@@ -47,7 +47,8 @@ The following creator DLCs have compatability patches built into AFTB.
 > [!NOTE]
 > I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatability data" mods if they exist.
 
-- [S.O.G. Prairie Fire](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/)
+- [S.O.G. Prairie Fire](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire)
+- [Reaction Forces](https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces)
 
 ## License
 Aim For The Bushes is licensed under [APL-ND](./LICENSE.md).

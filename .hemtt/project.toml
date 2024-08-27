@@ -45,12 +45,6 @@ workshop = [
     "2162749089", # Legion Studios: Core
 ]
 
-[hemtt.launch.vn]
-extends = "default"
-workshop = [
-    "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
-]
-
 [hemtt.launch.rhs]
 extends = "default"
 workshop = [
@@ -66,6 +60,18 @@ workshop = [
     "497660133", # CUP Weapons
     "497661914", # CUP Units
     "541888371", # CUP Vehicles
+]
+
+[hemtt.launch.vn]
+extends = "default"
+workshop = [
+    "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.rf]
+extends = "default"
+workshop = [
+    "3150497912", # Reaction Forces - Creator DLC Compatibility Data
 ]
 
 [hemtt.launch.previews]
