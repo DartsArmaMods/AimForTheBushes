@@ -9,8 +9,8 @@ class CfgVehicles {
         };
     };
 
-    class Heli_Transport_01_base_F;
-    class RHS_UH60M_base: Heli_Transport_01_base_F {
+    class RHS_UH60_Base;
+    class RHS_UH60M_base: RHS_UH60_Base {
         GVARMAIN(rampAnims)[] = {{"", 0, 0}};
         GVARMAIN(passengerTurrets)[] = {
             {3}, {4},
