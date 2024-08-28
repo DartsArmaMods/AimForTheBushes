@@ -74,6 +74,12 @@ workshop = [
     "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
 ]
 
+[hemtt.launch.csla]
+extends = "default"
+workshop = [
+    "2503886780", # CSLA - Iron Curtain - Creator DLC Compatibility Data
+]
+
 [hemtt.launch.gm]
 extends = "default"
 workshop = [
