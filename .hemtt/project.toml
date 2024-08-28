@@ -62,6 +62,12 @@ workshop = [
     "541888371", # CUP Vehicles
 ]
 
+[hemtt.launch.ws]
+extends = "default"
+workshop = [
+    "2636962953", # Western Sahara - Creator DLC Compatibility Data
+]
+
 [hemtt.launch.vn]
 extends = "default"
 workshop = [
