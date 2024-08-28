@@ -74,6 +74,12 @@ workshop = [
     "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
 ]
 
+[hemtt.launch.gm]
+extends = "default"
+workshop = [
+    "1776428269", # Global Mobilization - Creator DLC Compatibility Data
+]
+
 [hemtt.launch.rf]
 extends = "default"
 workshop = [
