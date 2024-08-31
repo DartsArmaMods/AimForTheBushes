@@ -86,6 +86,12 @@ workshop = [
     "1776428269", # Global Mobilization - Creator DLC Compatibility Data
 ]
 
+[hemtt.launch.spe]
+extends = "default"
+workshop = [
+    "2991828484", # Spearhead 1944 - Creator DLC Compatibility Data
+]
+
 [hemtt.launch.rf]
 extends = "default"
 workshop = [

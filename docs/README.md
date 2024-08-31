@@ -45,11 +45,12 @@ The following mods have compatability patches built into AFTB.
 ### CDLC
 The following creator DLCs have compatability patches built into AFTB.
 > [!NOTE]
-> I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatability data" mods if they exist.
+> I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatability data" mods.
 
 <!-- - [Western Sahara](https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara) -->
 - [S.O.G. Prairie Fire](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire)
 - [CSLA - Iron Curtain](https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain)
+- [Spearhead 1944](https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944)
 - [Reaction Forces](https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces)
 <!-- - (goes after CSLA) [Global Mobilization](https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany) -->
 
