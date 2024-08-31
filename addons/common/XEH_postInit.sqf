@@ -22,7 +22,7 @@ STATUS_WRAPPER(blockEngine);
 [QGVAR(lockVehicle), {
     params ["_object", "_reason", "_set"];
     [_object, "disableWeaponAssembly", _reason, _set] call ace_common_fnc_statusEffect_set;
-}] call CBA_fnc_addEventHandler
+}] call CBA_fnc_addEventHandler;
 
 if (hasInterface) then {
     call COMPILE_SCRIPT(XEH_postInitClient);
