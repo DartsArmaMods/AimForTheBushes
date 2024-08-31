@@ -14,15 +14,15 @@ GVAR(const_autoLoadDistance) = 2;
 [QGVAR(boatLoaded), {
     params ["_vehicle", "_boat", "_index"];
     [QEGVAR(common,disableCollision), [_boat]] call CBA_fnc_localEvent;
-    ["ace_common_blockDamage", [_boat, 1]] call CBA_fnc_localEvent;
-    ["ace_common_blockEngine", [_boat, 1]] call CBA_fnc_localEvent;
-    ["ace_common_lockVehicle", _boat] call CBA_fnc_localEvent;
+    [QEGVAR(common,blockDamage), [_boat, QGVAR(boatIsLoaded), true]] call CBA_fnc_localEvent;
+    [QEGVAR(common,blockEngine), [_boat, QGVAR(boatIsLoaded), true]] call CBA_fnc_localEvent;
+    [QEGVAR(common,lockVehicle), [_boat, QGVAR(boatIsLoaded), true]] call CBA_fnc_localEvent;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(boatUnloaded), {
     params ["_vehicle", "_boat", "_index"];
     [QEGVAR(common,enableCollision), [_boat]] call CBA_fnc_localEvent;
-    ["ace_common_blockDamage", [_boat, 0]] call CBA_fnc_localEvent;
-    ["ace_common_blockEngine", [_boat, 0]] call CBA_fnc_localEvent;
-    ["ace_common_unlockVehicle", _boat] call CBA_fnc_localEvent;
+    [QEGVAR(common,blockDamage), [_boat, QGVAR(boatIsLoaded), false]] call CBA_fnc_localEvent;
+    [QEGVAR(common,blockEngine), [_boat, QGVAR(boatIsLoaded), false]] call CBA_fnc_localEvent;
+    [QEGVAR(common,lockVehicle), [_boat, QGVAR(boatIsLoaded), false]] call CBA_fnc_localEvent;
 }] call CBA_fnc_addEventHandler;

@@ -60,3 +60,9 @@
 
 // Statements and conditions
 #define CLAMP(var1,lower,upper) (lower max (var1 min upper))
+
+// Event Handler wrappers for local ace status effects
+#define STATUS_WRAPPER(type) [QGVAR(type), { \
+    params ["_object", "_reason", "_set"]; \
+    [_object, QUOTE(type), _reason, _set] call ace_common_fnc_statusEffect_set; \
+}] call CBA_fnc_addEventHandler
