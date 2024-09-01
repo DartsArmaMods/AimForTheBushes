@@ -52,6 +52,12 @@ workshop = [
     "1572627279" # Operation TREBUCHET First Contact
 ]
 
+[hemtt.launch.jk]
+extends = "default"
+workshop = [
+    "2894199585", # C-47 Skytrain Mega Pack
+]
+
 [hemtt.launch.rhs]
 extends = "default"
 workshop = [
