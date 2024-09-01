@@ -19,6 +19,8 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_unhook",_vehicle,_unit);
 
+if !(_unit getVariable [QGVAR(isHooked), false]) exitWith {};
+
 if (ace_player == _unit) then {
     playSound QGVAR(unhook);
 };
