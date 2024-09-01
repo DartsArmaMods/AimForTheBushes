@@ -26,16 +26,18 @@
 The project is entirely **open-source** and any contributions are welcome.
 
 ## Core Features
-- [Static Line Jumping](./docs/features/staticline-feature.md)
-- [Helocasting](./docs/features/helocast-feature.md)
+- [Static Line Jumping](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/features/staticline-feature.md)
+- [Helocasting](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/features/helocast-feature.md)
 
 ## Contributing
-For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartRuffian/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
 
 ## Compatability
 ### Mods
 The following mods have compatability patches built into AFTB.
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
+- [Operation TREBUCHET](https://steamcommunity.com/workshop/filedetails/?id=769440155)
+- [Operation TREBUCHET First Contact](https://steamcommunity.com/sharedfiles/filedetails/?id=1572627279)
 - [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)
 - [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
 - [RHSUSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
@@ -55,4 +57,4 @@ The following creator DLCs have compatability patches built into AFTB.
 - [Reaction Forces](https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces)
 
 ## License
-Aim For The Bushes is licensed under [APL-ND](./LICENSE.md).
+Aim For The Bushes is licensed under [APL-ND](https://github.com/DartRuffian/AimForTheBushes/blob/main/LICENSE.md).

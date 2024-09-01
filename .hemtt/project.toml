@@ -45,6 +45,13 @@ workshop = [
     "2162749089", # Legion Studios: Core
 ]
 
+[hemtt.launch.optre]
+extends = "default"
+workshop = [
+    "769440155", # Operation TREBUCHET
+    "1572627279" # Operation TREBUCHET First Contact
+]
+
 [hemtt.launch.rhs]
 extends = "default"
 workshop = [
