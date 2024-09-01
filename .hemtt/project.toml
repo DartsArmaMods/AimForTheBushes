@@ -45,12 +45,6 @@ workshop = [
     "2162749089", # Legion Studios: Core
 ]
 
-[hemtt.launch.vn]
-extends = "default"
-workshop = [
-    "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
-]
-
 [hemtt.launch.rhs]
 extends = "default"
 workshop = [
@@ -66,6 +60,42 @@ workshop = [
     "497660133", # CUP Weapons
     "497661914", # CUP Units
     "541888371", # CUP Vehicles
+]
+
+[hemtt.launch.ws]
+extends = "default"
+workshop = [
+    "2636962953", # Western Sahara - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.vn]
+extends = "default"
+workshop = [
+    "2477276806", # S.O.G. Prairie Fire - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.csla]
+extends = "default"
+workshop = [
+    "2503886780", # CSLA - Iron Curtain - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.gm]
+extends = "default"
+workshop = [
+    "1776428269", # Global Mobilization - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.spe]
+extends = "default"
+workshop = [
+    "2991828484", # Spearhead 1944 - Creator DLC Compatibility Data
+]
+
+[hemtt.launch.rf]
+extends = "default"
+workshop = [
+    "3150497912", # Reaction Forces - Creator DLC Compatibility Data
 ]
 
 [hemtt.launch.previews]
