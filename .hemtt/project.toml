@@ -81,6 +81,12 @@ workshop = [
     "541888371", # CUP Vehicles
 ]
 
+[hemtt.launch.uk3cb]
+extends = "default"
+workshop = [
+    "893349825" # 3CB BAF Vehicles
+]
+
 [hemtt.launch.ws]
 extends = "default"
 workshop = [
