@@ -3,7 +3,7 @@
 <h1 align="center">Aim For The Bushes</h1>
 <p align="center">
     <a href="https://github.com/DartRuffian/AimForTheBushes/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.1-blue?style=flat-square" alt="Aim For The Bushes Version">
+        <img src="https://img.shields.io/badge/Version-1.1.0-blue?style=flat-square" alt="Aim For The Bushes Version">
     </a>
     <a href="https://github.com/DartRuffian/AimForTheBushes/issues">
         <img src="https://img.shields.io/github/issues-raw/DartRuffian/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
@@ -35,6 +35,8 @@ For new contributers, see the [Contributing Setup & Guidelines](https://github.c
 ## Compatability
 ### Mods
 The following mods have compatability patches built into AFTB.
+I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/frameworks).
+
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
 - [Operation TREBUCHET](https://steamcommunity.com/workshop/filedetails/?id=769440155)
 - [Operation TREBUCHET First Contact](https://steamcommunity.com/sharedfiles/filedetails/?id=1572627279)
@@ -42,6 +44,9 @@ The following mods have compatability patches built into AFTB.
 - [C-47 Skytrain Mega Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585)
 - [Task Force 373 MH-47G SOAR Chinook](https://steamcommunity.com/sharedfiles/filedetails/?id=2993751324)
 - [3CB BAF Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=893349825)
+- [USAF Mod - Utility](https://steamcommunity.com/sharedfiles/filedetails/?id=2397376046)
+- [USAF Mod - AC-130](https://steamcommunity.com/sharedfiles/filedetails/?id=2226368165)
+- [Lockheed C-130](https://steamcommunity.com/sharedfiles/filedetails/?id=375880426)
 - [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
 - [RHSUSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
 - [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
