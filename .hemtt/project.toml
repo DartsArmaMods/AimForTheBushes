@@ -87,6 +87,14 @@ workshop = [
     "893349825" # 3CB BAF Vehicles
 ]
 
+[hemtt.launch.usaf]
+extends = "default"
+workshop = [
+    "2397360831", # USAF Mod - Main
+    "2397376046", # USAF Mod - Utility
+    "2226368165", # USAF_AC130_BETA
+]
+
 [hemtt.launch.ws]
 extends = "default"
 workshop = [

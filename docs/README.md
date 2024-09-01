@@ -42,6 +42,8 @@ The following mods have compatability patches built into AFTB.
 - [C-47 Skytrain Mega Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585)
 - [Task Force 373 MH-47G SOAR Chinook](https://steamcommunity.com/sharedfiles/filedetails/?id=2993751324)
 - [3CB BAF Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=893349825)
+- [USAF Mod - Utility](https://steamcommunity.com/sharedfiles/filedetails/?id=2397376046)
+- [USAF Mod - AC-130](https://steamcommunity.com/sharedfiles/filedetails/?id=2226368165)
 - [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
 - [RHSUSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
 - [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
