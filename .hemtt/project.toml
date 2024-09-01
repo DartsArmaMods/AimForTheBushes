@@ -95,6 +95,12 @@ workshop = [
     "2226368165", # USAF_AC130_BETA
 ]
 
+[hemtt.launch.sab]
+extends = "default"
+workshop = [
+    "375880426", # Lockheed C-130
+]
+
 [hemtt.launch.ws]
 extends = "default"
 workshop = [
