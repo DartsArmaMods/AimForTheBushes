@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "aftb_loadOrder",
+            "aftb_loadorder",
             "sab_C130"
         };
         units[] = {};

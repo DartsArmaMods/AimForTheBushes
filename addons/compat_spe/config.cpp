@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "aftb_loadOrder",
+            "aftb_loadorder",
             "WW2_SPE_Missions_p_Cutscene_p"
         };
         units[] = {};
