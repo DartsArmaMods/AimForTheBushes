@@ -1,4 +1,4 @@
-#define COMPONENT loadOrder
+#define COMPONENT loadorder
 #define COMPONENT_BEAUTIFIED Load Order
 #include "\z\aftb\addons\main\script_mod.hpp"
 

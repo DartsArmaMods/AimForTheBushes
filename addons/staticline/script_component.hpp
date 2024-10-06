@@ -1,4 +1,4 @@
-#define COMPONENT staticLine
+#define COMPONENT staticline
 #define COMPONENT_BEAUTIFIED Static Line
 #include "\z\aftb\addons\main\script_mod.hpp"
 
