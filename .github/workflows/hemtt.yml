@@ -3,18 +3,12 @@ name: HEMTT
 on:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout the source code
-      uses: actions/checkout@v4
-
   check:
     runs-on: ubuntu-latest
     steps:
