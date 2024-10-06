@@ -21,7 +21,7 @@ TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
 
 private _positionAGL = ASLToAGL getPosASL _boat;
 if (isNull _vehicle) then {
-    _vehicle = (nearestObjects [_positionAGL, ["Helicopter"], GVAR(loadDistance)]) select {
+    _vehicle = (nearestObjects [_positionAGL, ["Air"], GVAR(loadDistance)]) select {
         alive _x;
     } select 0;
 };
