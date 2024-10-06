@@ -1,3 +1,4 @@
+PREP(addWaypoint);
 PREP(canHook);
 PREP(canJump);
 PREP(canUnhook);
