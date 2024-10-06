@@ -1,4 +1,4 @@
-#define COMPONENT addonName
+#define COMPONENT addonname
 #define COMPONENT_BEAUTIFIED Addon Name
 #include "\z\aftb\addons\main\script_mod.hpp"
 
