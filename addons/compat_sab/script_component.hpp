@@ -1,5 +1,5 @@
-#define COMPONENT compat_jk
-#define COMPONENT_BEAUTIFIED Joker's C-47 Skytrain Compatibility
+#define COMPONENT compat_sab
+#define COMPONENT_BEAUTIFIED Lockheed C-130 Compatibility
 #include "\z\aftb\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
