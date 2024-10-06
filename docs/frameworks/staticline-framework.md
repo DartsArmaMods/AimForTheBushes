@@ -25,3 +25,15 @@ class CfgVehicles {
 | `aftb_staticLine_jumped`                | [_vehicle, _unit, _parachute]           | Local    | A unit jumped out                     |
 | `aftb_staticLine_jumpWaypointStarted`   | [_vehicle, _startPosition, _wpPosition] | Global   | "Static Line Jump" waypoint started   |
 | `aftb_staticLine_jumpWaypointFinished`  | [_vehicle, _startPosition, _wpPosition] | Global   | "Static Line Jump" waypoint completed |
+
+## 3. Scripting Examples
+### 3.1 Adding a Static Line Jump waypoint
+```sqf
+private _plane = ...; // Any compatibile vehicle
+
+// Exact params for https://community.bistudio.com/wiki/addWaypoint
+private _waypointParams = [getPosASL dropZone, -1];
+
+// Returns created waypoint
+[group _plane, _waypointParams] call aftb_staticLine_fnc_addWaypoint;
+```
