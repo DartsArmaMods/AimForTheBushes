@@ -3,7 +3,7 @@
 <h1 align="center">Aim For The Bushes</h1>
 <p align="center">
     <a href="https://github.com/DartRuffian/AimForTheBushes/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.1.0-blue?style=flat-square" alt="Aim For The Bushes Version">
+        <img src="https://img.shields.io/badge/Version-1.1.1-blue?style=flat-square" alt="Aim For The Bushes Version">
     </a>
     <a href="https://github.com/DartRuffian/AimForTheBushes/issues">
         <img src="https://img.shields.io/github/issues-raw/DartRuffian/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
