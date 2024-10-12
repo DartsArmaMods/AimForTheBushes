@@ -1,4 +1,4 @@
-#define COMPONENT compat_3as
+#define COMPONENT compat_tas
 #define COMPONENT_BEAUTIFIED 3AS Compatability
 #include "\z\aftb\addons\main\script_mod.hpp"
 
