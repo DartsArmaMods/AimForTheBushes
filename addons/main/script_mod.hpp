@@ -1,7 +1,7 @@
 #define MAINPREFIX z
 #define PREFIX aftb
 #define MOD_NAME Aim For The Bushes
-#define AUTHOR "Dart"
+#define AUTHOR "DartRuffian"
 
 #define REQUIRED_VERSION 2.16
 #define REQUIRED_CBA_VERSION {3,17,0}
