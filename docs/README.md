@@ -2,19 +2,19 @@
 
 <h1 align="center">Aim For The Bushes</h1>
 <p align="center">
-    <a href="https://github.com/DartRuffian/AimForTheBushes/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.0-blue?style=flat-square" alt="Aim For The Bushes Version">
-    </a>
-    <a href="https://github.com/DartRuffian/AimForTheBushes/issues">
-        <img src="https://img.shields.io/github/issues-raw/DartRuffian/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
+    <img src="https://img.shields.io/badge/Version-0.0.0-blue?style=flat-square" alt="Aim For The Bushes Version">
+    <a href="https://github.com/DartsArmaMods/AimForTheBushes/issues">
+        <img src="https://img.shields.io/github/issues-raw/DartsArmaMods/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3317533489">
         <img src="https://img.shields.io/steam/downloads/3317533489.svg?style=flat-square&label=Downloads" alt="Aim For The Bushes Downloads">
     </a>
-    <a href="https://github.com/DartRuffian/AimForTheBushes/blob/master/LICENSE">
+    <a href="https://github.com/DartsArmaMods/AimForTheBushes/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="Aim For The Bushes License">
     </a>
-    <img src="https://img.shields.io/github/actions/workflow/status/DartRuffian/AimForTheBushes/hemtt.yml?style=flat-square&label=Build" alt="Build Status">
+    <br>
+    <img src="https://img.shields.io/github/actions/workflow/status/DartsArmaMods/AimForTheBushes/hemtt.yml?style=flat-square&label=HEMTT" alt="HEMTT">
+    <img src="https://img.shields.io/github/actions/workflow/status/DartsArmaMods/AimForTheBushes/arma.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
 <p align="center">
@@ -26,16 +26,16 @@
 The project is entirely **open-source** and any contributions are welcome.
 
 ## Core Features
-- [Static Line Jumping](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/features/staticline-feature.md)
-- [Helocasting](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/features/helocast-feature.md)
+- [Static Line Jumping](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/staticline-feature.md)
+- [Helocasting](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/helocast-feature.md)
 
 ## Contributing
-For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartRuffian/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
+For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
 
 ## Compatability
 ### Mods
 The following mods have compatability patches built into AFTB.
-I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartRuffian/AimForTheBushes/blob/main/docs/frameworks).
+I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/frameworks).
 
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
 - [Operation TREBUCHET](https://steamcommunity.com/workshop/filedetails/?id=769440155)
@@ -65,4 +65,4 @@ The following creator DLCs have compatability patches built into AFTB.
 - [Reaction Forces](https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces)
 
 ## License
-Aim For The Bushes is licensed under [APL-ND](https://github.com/DartRuffian/AimForTheBushes/blob/main/LICENSE.md).
+Aim For The Bushes is licensed under [APL-ND](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/LICENSE.md).

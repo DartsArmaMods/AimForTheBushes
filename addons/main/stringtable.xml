@@ -2,20 +2,20 @@
 <Project name="AFTB">
     <Package name="Main">
         <Key ID="STR_AFTB_main_url">
-            <English>https://github.com/DartRuffian/AimForTheBushes</English>
-            <German>https://github.com/DartRuffian/AimForTheBushes</German>
-            <Chinese>https://github.com/DartRuffian/AimForTheBushes</Chinese>
-            <Chinesesimp>https://github.com/DartRuffian/AimForTheBushes</Chinesesimp>
-            <Italian>https://github.com/DartRuffian/AimForTheBushes</Italian>
-            <Czech>https://github.com/DartRuffian/AimForTheBushes</Czech>
-            <Japanese>https://github.com/DartRuffian/AimForTheBushes</Japanese>
-            <Polish>https://github.com/DartRuffian/AimForTheBushes</Polish>
-            <French>https://github.com/DartRuffian/AimForTheBushes</French>
-            <Portuguese>https://github.com/DartRuffian/AimForTheBushes</Portuguese>
-            <Spanish>https://github.com/DartRuffian/AimForTheBushes</Spanish>
-            <Turkish>https://github.com/DartRuffian/AimForTheBushes</Turkish>
-            <Russian>https://github.com/DartRuffian/AimForTheBushes</Russian>
-            <Korean>https://github.com/DartRuffian/AimForTheBushes</Korean>
+            <English>https://github.com/DartsArmaMods/AimForTheBushes</English>
+            <German>https://github.com/DartsArmaMods/AimForTheBushes</German>
+            <Chinese>https://github.com/DartsArmaMods/AimForTheBushes</Chinese>
+            <Chinesesimp>https://github.com/DartsArmaMods/AimForTheBushes</Chinesesimp>
+            <Italian>https://github.com/DartsArmaMods/AimForTheBushes</Italian>
+            <Czech>https://github.com/DartsArmaMods/AimForTheBushes</Czech>
+            <Japanese>https://github.com/DartsArmaMods/AimForTheBushes</Japanese>
+            <Polish>https://github.com/DartsArmaMods/AimForTheBushes</Polish>
+            <French>https://github.com/DartsArmaMods/AimForTheBushes</French>
+            <Portuguese>https://github.com/DartsArmaMods/AimForTheBushes</Portuguese>
+            <Spanish>https://github.com/DartsArmaMods/AimForTheBushes</Spanish>
+            <Turkish>https://github.com/DartsArmaMods/AimForTheBushes</Turkish>
+            <Russian>https://github.com/DartsArmaMods/AimForTheBushes</Russian>
+            <Korean>https://github.com/DartsArmaMods/AimForTheBushes</Korean>
         </Key>
     </Package>
 </Project>
