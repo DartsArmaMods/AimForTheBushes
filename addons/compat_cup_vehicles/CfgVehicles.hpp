@@ -1,6 +1,6 @@
 class CfgVehicles {
     class Helicopter_Base_H;
-    class CUP_Uh60_Base: Helicopter_Base_H {
+    class CUP_UH60_Base: Helicopter_Base_H {
         GVARMAIN(rampAnims)[] = {{"", 0, 0}};
 
         EGVAR(helocast,boatPositions)[] = {
@@ -8,13 +8,6 @@ class CfgVehicles {
         };
         EGVAR(helocast,marker) = "Chemlight_green";
         EGVAR(helocast,drop) = 1;
-    };
-
-    class CUP_Uh60_FFV_Base: CUP_Uh60_Base {
-        GVARMAIN(passengerTurrets)[] = {
-            {3}, {4},
-            {5}, {6}
-        };
     };
 
     class CUP_MH60S_Base: Helicopter_Base_H {

@@ -12,10 +12,6 @@ class CfgVehicles {
     class RHS_UH60_Base;
     class RHS_UH60M_base: RHS_UH60_Base {
         GVARMAIN(rampAnims)[] = {{"", 0, 0}};
-        GVARMAIN(passengerTurrets)[] = {
-            {3}, {4},
-            {5}, {6}
-        };
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.8, -1.45}
@@ -27,9 +23,6 @@ class CfgVehicles {
     class Heli_Transport_02_base_F;
     class RHS_CH_47F_base: Heli_Transport_02_base_F {
         GVARMAIN(rampAnims)[] = {{"ramp_anim", 0, 1}};
-        GVARMAIN(passengerTurrets)[] = {
-            {3}, {4}
-        };
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
