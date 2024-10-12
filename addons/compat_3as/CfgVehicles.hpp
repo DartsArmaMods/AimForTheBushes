@@ -21,7 +21,7 @@ class CfgVehicles {
             {32}, {33},
             {34}
         };
-        GVARMAIN(rampAnims)[] = {{"rampOpen", 0, 1}};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, -3, 0.2}
