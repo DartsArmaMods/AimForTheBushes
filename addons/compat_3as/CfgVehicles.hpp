@@ -40,7 +40,7 @@ class CfgVehicles {
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
     };
-    class 3as_LAAT_Mk2Lights: lsd_laat_base {
+    class 3as_LAAT_Mk2Lights: 3as_laat_Base {
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
     };
