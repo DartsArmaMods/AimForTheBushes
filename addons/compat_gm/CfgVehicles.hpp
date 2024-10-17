@@ -9,7 +9,7 @@ class CfgVehicles {
         aftb_staticLine_condition = "true";
     };
     class gm_l410_base;
-    class gm_l410t_base : gm_l410_base {
+    class gm_l410t_base: gm_l410_base {
         aftb_staticLine_enabled = 1;
         aftb_staticLine_condition = "true";
     };
