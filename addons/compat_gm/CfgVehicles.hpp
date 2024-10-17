@@ -5,7 +5,7 @@ class CfgVehicles {
         aftb_staticLine_condition = "true";
     };
     class gm_do28d2_medevac_base : gm_do28d2_base {
-    aftb_staticLine_enabled = 0;
+        aftb_staticLine_enabled = 0;
         aftb_staticLine_condition = "true";
     };
     class gm_l410_base;
