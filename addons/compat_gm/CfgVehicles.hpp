@@ -1,7 +1,7 @@
 class CfgVehicles {
     class gm_plane_base;
     class gm_do28d2_base: gm_plane_base {
-        aftb_rampAnims[] = {
+        GVARMAIN(rampAnims)[] = {
             {"", 0, 0}
         };
         aftb_staticLine_enabled = 1;
