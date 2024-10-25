@@ -9,7 +9,7 @@ class CfgVehicles {
     };
     class gm_do28d2_medevac_base: gm_do28d2_base {
         EGVAR(staticLine,enabled) = 0;
-        EGVAR(staticLine,condition) = "true";
+        EGVAR(staticLine,condition) = "false";
     };
     class gm_l410_base;
     class gm_l410t_base: gm_l410_base {
