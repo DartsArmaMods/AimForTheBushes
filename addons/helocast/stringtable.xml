@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFTB">
     <Package name="Helocast">
+        <Key ID="STR_AFTB_helocast_action_helocast">
+            <English>Helocast</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_action_recoverBoat">
+            <English>Recover Boat</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_action_removeMarker">
+            <English>Remove Marker</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_action_unloadBoat">
+            <English>Unload %1</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_action_unloadBoats">
+            <English>Unload Boats</English>
+        </Key>
         <Key ID="STR_AFTB_helocast_displayName">
             <English>Helocast</English>
         </Key>
@@ -10,30 +25,11 @@
         <Key ID="STR_AFTB_helocast_enabled_tooltip">
             <English>Enables / disables helocasting.</English>
         </Key>
-
         <Key ID="STR_AFTB_helocast_loadDistance_name">
             <English>Load Distance</English>
         </Key>
         <Key ID="STR_AFTB_helocast_loadDistance_tooltip">
             <English>Distance in meters that boats are able to load into helicopters from.</English>
-        </Key>
-
-        <Key ID="STR_AFTB_helocast_action_helocast">
-            <English>Helocast</English>
-        </Key>
-        <Key ID="STR_AFTB_helocast_action_recoverBoat">
-            <English>Recover Boat</English>
-        </Key>
-        <Key ID="STR_AFTB_helocast_action_unloadBoats">
-            <English>Unload Boats</English>
-        </Key>
-        <!-- %1 will be displayName of given boat -->
-        <Key ID="STR_AFTB_helocast_action_unloadBoat">
-            <English>Unload %1</English>
-        </Key>
-
-        <Key ID="STR_AFTB_helocast_action_removeMarker">
-            <English>Remove Marker</English>
         </Key>
     </Package>
 </Project>
