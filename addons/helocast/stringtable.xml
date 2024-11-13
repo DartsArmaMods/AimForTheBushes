@@ -19,9 +19,6 @@
         <Key ID="STR_AFTB_helocast_displayName">
             <English>Helocast</English>
         </Key>
-        <Key ID="STR_AFTB_helocast_enabled_name">
-            <English>Enabled</English>
-        </Key>
         <Key ID="STR_AFTB_helocast_enabled_tooltip">
             <English>Enables / disables helocasting.</English>
         </Key>
