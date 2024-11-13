@@ -1,6 +1,6 @@
 [
     QGVAR(enabled), "CHECKBOX",
-    [LSTRING(enabled_name), LSTRING(enabled_tooltip)],
+    [localize "STR_ACE_Common_Enabled", LSTRING(enabled_tooltip)],
     _category, true, true
 ] call CBA_fnc_addSetting;
 
