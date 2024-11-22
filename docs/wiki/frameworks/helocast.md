@@ -52,3 +52,54 @@ class CfgVehicles {
 | ---------------------------- | ----------------------------- | -------- | ------------------- |
 | `aftb_helocast_boatLoaded`   | \[\_vehicle, \_boat, \_index] | Global   | A boat was loaded   |
 | `aftb_helocast_boatUnloaded` | \[\_vehicle, \_boat, \_index] | Global   | A boat was unloaded |
+
+## 3. Scripting Examples
+### 3.1 Loading Boats in Eden
+```sqf
+[aircraftName, boat, nil, nil, true] call aftb_helocast_fnc_loadBoat;
+```
+
+## 4. Public Functions
+### 4.1 Load Boat
+```sqf
+/*
+ * Author: DartRuffian
+ * Loads a boat into a given vehicle.
+ *
+ * Arguments:
+ * 0: Vehicle <OBJECT>
+ * 1: Boat <OBJECT>
+ * 2: Move boat crew into vehicle (optional, default: true) <BOOL>
+ * 3: Index (optional, default: first found) <NUMBER>
+ * 4: Ignore ramp (optional, default: false) <BOOL>
+ *    - If true, the ramp's animation state will be ignored
+ *
+ * Return Value:
+ * True if boat was loaded, otherwise false <BOOL>
+ *
+ * Example:
+ * [_vehicle, _boat] call aftb_helocast_fnc_loadBoat;
+ *
+ * Public: Yes
+ */
+```
+
+### 4.2 Unload Boat
+```sqf
+/*
+ * Author: DartRuffian
+ * Loads a boat into a given vehicle.
+ *
+ * Arguments:
+ * 0: Vehicle <OBJECT>
+ * 1: Boat <OBJECT>
+ *
+ * Return Value:
+ * True if boat was unloaded, otherwise false <BOOL>
+ *
+ * Example:
+ * [_vehicle, _boat] call aftb_helocast_fnc_unloadBoat;
+ *
+ * Public: Yes
+ */
+```

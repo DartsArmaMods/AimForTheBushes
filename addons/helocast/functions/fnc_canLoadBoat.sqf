@@ -5,6 +5,9 @@
  *
  * Arguments:
  * 0: Boat <OBJECT>
+ * 1: Vehicle <OBJECT>
+ * 2: Automatically load if close enough (optional, default: false) <BOOL>
+ * 3: Ignore ramp state (optional, default: false) <BOOL>
  *
  * Return Value:
  * True if boat can be loaded, otherwise false <BOOL>
@@ -16,8 +19,8 @@
  */
 
 // _vehicle param needs to be second and optional for recover boat UserAction
-params ["_boat", ["_vehicle", objNull], ["_autoLoad", false, [false]]];
-TRACE_2("fnc_canLoadBoat",_boat,_vehicle);
+params ["_boat", ["_vehicle", objNull], ["_autoLoad", false], ["_ignoreRamp", false]];
+TRACE_4("fnc_canLoadBoat",_boat,_vehicle,_autoLoad,_ignoreRamp);
 
 private _positionAGL = ASLToAGL getPosASL _boat;
 if (isNull _vehicle) then {
@@ -26,15 +29,14 @@ if (isNull _vehicle) then {
     } select 0;
 };
 
-if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1 or {
-    !([_vehicle] call EFUNC(common,isRampOpen))
-}) exitWith { false; };
+if (getNumber (configOf _boat >> QGVAR(isLoadable)) < 1) exitWith { false };
 
 private _boatPositions = getArray (configOf _vehicle >> QGVAR(boatPositions));
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 
-if ((_loadedBoats isEqualTo [] and {_boatPositions isNotEqualTo []}) or {
-    count _loadedBoats < count _boatPositions
+if ((_loadedBoats isEqualTo [] and {_boatPositions isNotEqualTo []}) or
+{count _loadedBoats < count _boatPositions} or {
+    _ignoreRamp or {([_vehicle] call EFUNC(common,isRampOpen))}
 }) exitWith {
     _boat setVariable [QGVAR(loadTarget), _vehicle];
     if (_autoLoad and {_vehicle distance _boat <= GVAR(const_autoLoadDistance)}) then {
