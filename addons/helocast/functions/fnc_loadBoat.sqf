@@ -8,9 +8,11 @@
  * 1: Boat <OBJECT>
  * 2: Move boat crew into vehicle (optional, default: true) <BOOL>
  * 3: Index (optional, default: first found) <NUMBER>
+ * 4: Ignore ramp (optional, default: false) <BOOL>
+ *    - If true, the ramp's animation state will be ignored
  *
  * Return Value:
- * None
+ * True if boat was loaded, otherwise false <BOOL>
  *
  * Example:
  * [_vehicle, _boat] call aftb_helocast_fnc_loadBoat;
@@ -22,13 +24,14 @@ params [
     ["_vehicle", objNull, [objNull]],
     ["_boat", objNull, [objNull]],
     ["_moveIntoVehicle", true, [true]],
-    ["_index", -1, [0]]
+    ["_index", -1, [0]],
+    ["_ignoreRamp", false, [false]]
 ];
-TRACE_4("fnc_loadBoat",_vehicle,_boat,_moveIntoVehicle,_index);
+TRACE_5("fnc_loadBoat",_vehicle,_boat,_moveIntoVehicle,_index,_ignoreRamp);
 
 // This technically doubles up on the condition when using the recover boat action,
 // However the second instance will be faster due to _vehicle already being known
-if !([_boat, _vehicle] call FUNC(canLoadBoat)) exitWith { false; };
+if !([_boat, _vehicle, nil, _ignoreRamp] call FUNC(canLoadBoat)) exitWith { false; };
 
 private _boatPositions = getArray (configOf _vehicle >> QGVAR(boatPositions));
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
