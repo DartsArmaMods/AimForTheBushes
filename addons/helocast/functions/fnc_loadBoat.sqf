@@ -29,6 +29,12 @@ params [
 ];
 TRACE_5("fnc_loadBoat",_vehicle,_boat,_moveIntoVehicle,_index,_ignoreRamp);
 
+// Boats loaded via Eden init did not have damage disabled
+if (CBA_missionTime < 1) exitWith {
+    TRACE_1("loadBoat called too soon, delay until CBA_missionTime >= 1");
+    [{CBA_missionTime >= 1}, FUNC(loadBoat), _this] call CBA_fnc_waitUntilAndExecute;
+};
+
 // This technically doubles up on the condition when using the recover boat action,
 // However the second instance will be faster due to _vehicle already being known
 if !([_boat, _vehicle, nil, _ignoreRamp] call FUNC(canLoadBoat)) exitWith { false; };
