@@ -31,7 +31,7 @@ TRACE_5("fnc_loadBoat",_vehicle,_boat,_moveIntoVehicle,_index,_ignoreRamp);
 
 // Boats loaded via Eden init did not have damage disabled
 if (CBA_missionTime < 1) exitWith {
-    TRACE_1("loadBoat called too soon, delay until CBA_missionTime >= 1");
+    TRACE_1("loadBoat called too soon, delay until CBA_missionTime >= 1",CBA_missionTime);
     [{CBA_missionTime >= 1}, FUNC(loadBoat), _this] call CBA_fnc_waitUntilAndExecute;
 };
 
