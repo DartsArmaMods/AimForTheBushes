@@ -23,28 +23,38 @@ if (!local _boat) exitWith {
     [QGVAR(unloadBoatPFH), _this, _boat] call CBA_fnc_targetEvent;
 };
 
-private _minDistance = getNumber (configOf _vehicle >> QGVAR(minUnloadDistance));
+private _config = configOf _vehicle;
+private _minDistance = getNumber (_config >> QGVAR(minUnloadDistance));
 if (_minDistance <= 0) then {
     _minDistance = 6;
 };
 
-// TODO: Account for drop = 1 in config
+private _drop = getNumber (_config >> QGVAR(drop));
+
 private _fromPosASL = getPosASL _boat;
 private _direction = direction _vehicle;
-private _toPosASL = _fromPosASL vectorDiff [
-    _minDistance * sin _direction,
-    _minDistance * cos _direction,
-    0
-];
-
 private _fromVelocity = velocity _vehicle;
-private _toVelocity = _fromVelocity vectorDiff [
-    2 * sin _direction,
-    2 * cos _direction,
-    0
-];
 private _vectorDir = vectorDir _boat;
 private _vectorUp = vectorUp _boat;
+
+private ["_toPosASL", "_toVelocity"];
+
+if (_drop >= 1) then {
+    _toPosASL = _fromPosASL vectorDiff [0, 0, _minDistance];
+    _toVelocity = _fromVelocity; // No change needed
+} else {
+    _toPosASL = _fromPosASL vectorDiff [
+        _minDistance * sin _direction,
+        _minDistance * cos _direction,
+        0
+    ];
+
+    _toVelocity = _fromVelocity vectorDiff [
+        2 * sin _direction,
+        2 * cos _direction,
+        0
+    ];
+};
 
 private _startTime = diag_tickTime;
 
