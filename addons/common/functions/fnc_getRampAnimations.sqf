@@ -23,14 +23,11 @@ params [
 ];
 TRACE_1("fnc_getRampAnimations",_vehicle);
 
-private _rampAnims = _vehicle getVariable [QGVARMAIN(rampAnims), []];
-if (_rampAnims isNotEqualTo []) exitWith { _rampAnims; };
-
-_rampAnims = getArray (configOf _vehicle >> QGVARMAIN(rampAnims));
-_rampAnims = _rampAnims apply {
-    _x params ["_anim", ["_closed", 0], ["_opened", 1]];
-    [_anim, _closed, _opened];
-};
-
-_vehicle setVariable [QGVARMAIN(rampAnims), _rampAnims];
-_rampAnims;
+GVAR(rampAnimationsCache) getOrDefaultCall [typeOf _vehicle, {
+    private _rampAnims = getArray (configOf _vehicle >> QGVARMAIN(rampAnims));
+    _rampAnims = _rampAnims apply {
+        _x params ["_anim", ["_closed", 0], ["_opened", 1]];
+        [_anim, _closed, _opened];
+    };
+    _rampAnims;
+}, true];

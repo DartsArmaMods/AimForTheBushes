@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-GVAR(parachuteCache) = createHashMapFromArray [["", false]];
-
 [QGVAR(disableCollision), {
     params ["_object"];
     _object setVariable [QGVAR(originalMass), getMass _object];
