@@ -1,7 +1,7 @@
 class CfgVehicles {
     class Helicopter_Base_H;
     class rhsusf_CH53E_USMC: Helicopter_Base_H {
-        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 0.56}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 5.75, -2.59},
@@ -22,7 +22,7 @@ class CfgVehicles {
 
     class Heli_Transport_02_base_F;
     class RHS_CH_47F_base: Heli_Transport_02_base_F {
-        GVARMAIN(rampAnims)[] = {{"ramp_anim", 0, 1}};
+        GVARMAIN(rampAnims)[] = {{"ramp_anim", 0, 0.6}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);
@@ -41,7 +41,7 @@ class CfgVehicles {
 
     class Plane_Base_F;
     class RHS_C130J_Base: Plane_Base_F {
-        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 0.65}};
 
         EGVAR(staticLine,enabled) = 1;
         EGVAR(staticLine,condition) = QUOTE(true);

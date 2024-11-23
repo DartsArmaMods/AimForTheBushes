@@ -24,10 +24,12 @@ class CfgVehicles {
 | Config Name             | Type  | Description                                                                                                                                                   |
 | ----------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `aftb_passengerTurrets` | Array | Extra turret paths to also consider passengers. (OPTIONAL)                                                                                                    |
-| `aftb_rampAnim`         | Array | Door animation(s) that one of must be open for players to jump. \["animationSource", closedState, openState]. Closed/open states default to 0/1 respectively. |
+| `aftb_rampAnim`         | Array | Door animation(s) that one of must be open for players to jump. \["animationSource", closedState, minimumOpenState]. Closed/open states default to 0/1 respectively. |
 
 {% hint style="info" %}
 If a vehicle does not have a ramp, you can use `{"", 0, 0}` have a vehicle's ramp always be considered open.
+
+"minimumOpenState" is the minimum amount that the ramp needs to be opened to count as "open". For vehicles that can level their ramps, this value will be around ~0.5. Meaning that any amount higher than 0.5 will count as open.
 {% endhint %}
 
 ### 1.2 Parachutes

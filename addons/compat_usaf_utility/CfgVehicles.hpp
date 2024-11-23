@@ -3,7 +3,7 @@ class CfgVehicles {
     class USAF_C130J_Base: Plane_Base_F {
         GVARMAIN(rampAnims)[] = {
             {"ramp_top", 0, 1},
-            {"ramp_bottom", 0, 1}
+            {"ramp_bottom", 0, 0.5}
         };
 
         EGVAR(staticLine,enabled) = 1;

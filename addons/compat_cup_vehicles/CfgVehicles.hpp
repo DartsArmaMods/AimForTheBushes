@@ -31,7 +31,7 @@ class CfgVehicles {
     };
 
     class CUP_CH53E_Base: Helicopter_Base_H {
-        GVARMAIN(rampAnims)[] = {{"ramp", 0, 1}};
+        GVARMAIN(rampAnims)[] = {{"ramp", 0, 0.56}};
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.6, -2.7},
@@ -43,7 +43,7 @@ class CfgVehicles {
     class Plane_Base_F;
     class CUP_B_MV22_USMC: Plane_Base_F {
         GVARMAIN(rampAnims)[] = {
-            {"ramp_bottom", 0, 1},
+            {"ramp_bottom", 0, 0.56},
             {"ramp_top", 0, 1}
         };
 
@@ -55,7 +55,7 @@ class CfgVehicles {
 
     class CUP_C130J_Base: Plane_Base_F {
         GVARMAIN(rampAnims)[] = {
-            {"ramp_bottom", 0, 1},
+            {"ramp_bottom", 0, 0.7},
             {"ramp_top", 0, 1}
         };
 
