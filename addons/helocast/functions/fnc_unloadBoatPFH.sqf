@@ -25,7 +25,7 @@ if (!local _boat) exitWith {
 
 private _minDistance = getNumber (configOf _vehicle >> QGVAR(minUnloadDistance));
 if (_minDistance <= 0) then {
-    _minDistance = 5;
+    _minDistance = 6;
 };
 
 // TODO: Account for drop = 1 in config
@@ -37,22 +37,26 @@ private _toPosASL = _fromPosASL vectorDiff [
     0
 ];
 
-// These should remain unchanged while unloading
 private _fromVelocity = velocity _vehicle;
 private _toVelocity = _fromVelocity vectorDiff [
     2 * sin _direction,
     2 * cos _direction,
-    2
+    0
 ];
 private _vectorDir = vectorDir _boat;
 private _vectorUp = vectorUp _boat;
 
+private _startTime = diag_tickTime;
+
 detach _boat;
+TRACE_8("unloadPFH params",_vehicle,_boat,_fromPosASL,_toPosASL,_fromVelocity,_toVelocity,_vectorDir,_vectorUp);
 
 [{
     params ["_args", "_handle"];
-    _args params ["_vehicle", "_boat", "_fromPosASL", "_toPosASL", "_fromVelocity", "_toVelocity", "_vectorDir", "_vectorUp", "_interval"];
-    TRACE_9("",_vehicle,_boat,_fromPosASL,_toPosASL,_fromVelocity,_toVelocity,_vectorDir,_vectorUp,_interval);
+    _args params ["_vehicle", "_boat", "_fromPosASL", "_toPosASL", "_fromVelocity", "_toVelocity", "_vectorDir", "_vectorUp", "_startTime"];
+
+    private _interval = (diag_tickTime - _startTime) / 2;
+    TRACE_1("unloadPFH loop",_interval);
 
     if (_interval > 1) then {
         _handle call CBA_fnc_removePerFrameHandler;
@@ -68,7 +72,5 @@ detach _boat;
         _vectorUp, [0, 0, 1],
         _interval
     ];
-
-    _args set [-1, _interval + 0.05];
-}, 0.01, [_vehicle, _boat, _fromPosASL, _toPosASL, _fromVelocity, _toVelocity, _vectorDir, _vectorUp, 0]] call CBA_fnc_addPerFrameHandler;
+}, 0.01, [_vehicle, _boat, _fromPosASL, _toPosASL, _fromVelocity, _toVelocity, _vectorDir, _vectorUp, _startTime]] call CBA_fnc_addPerFrameHandler;
 nil;
