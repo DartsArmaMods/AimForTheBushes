@@ -11,7 +11,7 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
 // Max time in seconds to try unloading a boat for.
 // If timeout is reached, boat is unloaded anyway.
 GVAR(const_unloadTimeout) = 15;
-GVAR(const_autoLoadDistance) = 2;
+GVAR(const_autoLoadDistance) = 3;
 
 ["AllVehicles", "Init", {
     if (getNumber (configOf (_this#0) >> QGVAR(isLoadable)) < 1) exitWith {};
