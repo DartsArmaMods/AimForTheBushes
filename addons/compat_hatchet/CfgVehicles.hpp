@@ -4,7 +4,7 @@ class CfgVehicles {
         GVARMAIN(rampAnims)[] = {{"", 0, 0}};
 
         EGVAR(helocast,boatPositions)[] = {
-            {0, 0, 0}
+            {0, 1.5, -0.8}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
         EGVAR(helocast,drop) = 1;
