@@ -2,7 +2,7 @@
 
 <h1 align="center">Aim For The Bushes</h1>
 <p align="center">
-    <img src="https://img.shields.io/badge/Version-1.1.1-blue?style=flat-square" alt="Aim For The Bushes Version">
+    <img src="https://img.shields.io/badge/Version-1.2.0-blue?style=flat-square" alt="Aim For The Bushes Version">
     <a href="https://github.com/DartsArmaMods/AimForTheBushes/issues">
         <img src="https://img.shields.io/github/issues-raw/DartsArmaMods/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
     </a>
