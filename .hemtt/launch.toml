@@ -22,11 +22,17 @@ workshop = [
     "2162749089", # Legion Studios: Core
 ]
 
-[tas]
+[jlts]
 extends = "default"
 workshop = [
     "1940589429", # Just Like The Simulations - The Great War
+]
+
+[tas]
+extends = "jlts"
+workshop = [
     "2058554822", # 3AS (Beta Test)
+    "2215872933", # 3AS Terrains (Beta)
 ]
 
 [optre]
