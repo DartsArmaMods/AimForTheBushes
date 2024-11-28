@@ -16,10 +16,6 @@ class CfgVehicles {
         GVARMAIN(isParachute) = 1;
     };
 
-    class JLTS_Clone_jumppack_mc: B_Kitbag_rgr {
-        GVARMAIN(isParachute) = 1;
-    };
-
     class JLTS_B1_jetpack: B_Kitbag_rgr {
         GVARMAIN(isParachute) = 1;
     };
