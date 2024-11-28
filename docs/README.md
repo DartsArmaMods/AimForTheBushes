@@ -38,6 +38,7 @@ The following mods have compatability patches built into AFTB.
 I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/frameworks).
 
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
+- [3AS (Beta Test)](https://steamcommunity.com/sharedfiles/filedetails/?id=2058554822)
 - [Operation TREBUCHET](https://steamcommunity.com/workshop/filedetails/?id=769440155)
 - [Operation TREBUCHET First Contact](https://steamcommunity.com/sharedfiles/filedetails/?id=1572627279)
 - [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)
