@@ -55,7 +55,7 @@ class Cfg3DEN {
                         property = QGVAR(boatCountID);
 
                         control = QGVAR(boatCount);
-                        defaultValue = 0;
+                        defaultValue = "0";
                         typeName = "STRING";
                         expression = QUOTE(_this setVariable [ARR_3(QQGVAR(boatCount),_value,true)]);
                     };
