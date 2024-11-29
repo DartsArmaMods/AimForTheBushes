@@ -1,4 +1,6 @@
-PREP(boatTypesOnLoad);
+PREP(3DEN_boatCountOnLoad);
+PREP(3DEN_boatTypesOnLoad);
+PREP(3DEN_loadBoats);
 PREP(canLoadBoat);
 PREP(canUnloadBoat);
 PREP(helocastAIWaypoint);

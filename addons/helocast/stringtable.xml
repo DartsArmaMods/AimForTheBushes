@@ -16,6 +16,12 @@
         <Key ID="STR_AFTB_helocast_action_unloadBoats">
             <English>Unload Boats</English>
         </Key>
+        <Key ID="STR_AFTB_helocast_boatCount_displayName">
+            <English>Boat count</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_boatCount_tooltip">
+            <English>How many of the given boat type to load.</English>
+        </Key>
         <Key ID="STR_AFTB_helocast_boatType_displayName">
             <English>Boat type</English>
         </Key>

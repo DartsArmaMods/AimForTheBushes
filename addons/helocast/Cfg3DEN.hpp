@@ -15,7 +15,16 @@ class Cfg3DEN {
             class Controls: Controls {
                 class Title: Title {};
                 class Value: Value {
-                    onLoad = QUOTE(call (uiNamespace getVariable QQFUNC(boatTypesOnLoad)));
+                    onLoad = QUOTE(call (uiNamespace getVariable QQFUNC(3DEN_boatTypesOnLoad)));
+                };
+            };
+        };
+
+        class GVAR(boatCount): Combo {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: Value {
+                    onLoad = QUOTE(call (uiNamespace getVariable QQFUNC(3DEN_boatCountOnLoad)));
                 };
             };
         };
@@ -37,7 +46,18 @@ class Cfg3DEN {
                         typeName = "STRING";
 
                         condition = "objectVehicle";
-                        expression = "";
+                        expression = QUOTE(_this setVariable [ARR_3(QQGVAR(boatType),_value,true)]);
+                    };
+
+                    class GVAR(boatCount): GVAR(boatType) {
+                        displayName = CSTRING(boatCount_displayName);
+                        tooltip = CSTRING(boatCount_tooltip);
+                        property = QGVAR(boatCountID);
+
+                        control = QGVAR(boatCount);
+                        defaultValue = 0;
+                        typeName = "STRING";
+                        expression = QUOTE(_this setVariable [ARR_3(QQGVAR(boatCount),_value,true)]);
                     };
                 };
             };

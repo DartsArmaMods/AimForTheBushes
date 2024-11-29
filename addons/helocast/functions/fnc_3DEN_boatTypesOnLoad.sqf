@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-#include "\a3\ui_f\hpp\defineCommonColors.inc"
 /*
  * Author: DartRuffian
  * Handles the onLoad for the boatTypes attribute
@@ -11,13 +10,13 @@
  * None
  *
  * Example:
- * _ctrlGroup call aftb_helocast_fnc_boatTypesOnLoad;
+ * _ctrlGroup call aftb_helocast_fnc_3DEN_boatTypesOnLoad;
  *
  * Public: No
  */
 
 params ["_ctrl"];
-TRACE_1("fnc_boatTypesOnLoad",_ctrl);
+TRACE_1("fnc_3DEN_boatTypesOnLoad",_ctrl);
 
 private _vehicle = (get3DENSelected "object") select 0;
 if (getArray (configOf _vehicle >> QGVAR(boatPositions)) isEqualTo []) exitWith {
