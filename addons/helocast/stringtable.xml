@@ -16,6 +16,12 @@
         <Key ID="STR_AFTB_helocast_action_unloadBoats">
             <English>Unload Boats</English>
         </Key>
+        <Key ID="STR_AFTB_helocast_boatType_displayName">
+            <English>Boat type</English>
+        </Key>
+        <Key ID="STR_AFTB_helocast_boatType_tooltip">
+            <English>What type of boat to load into the aircraft when the mission is started.</English>
+        </Key>
         <Key ID="STR_AFTB_helocast_displayName">
             <English>Helocast</English>
         </Key>

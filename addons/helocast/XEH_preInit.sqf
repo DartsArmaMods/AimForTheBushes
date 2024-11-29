@@ -8,6 +8,8 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
 
 #include "initSettings.inc.sqf"
 
+GVAR(loadableBoats) = keys (uiNamespace getVariable QGVAR(loadableBoats));
+
 // Max time in seconds to try unloading a boat for.
 // If timeout is reached, boat is unloaded anyway.
 GVAR(const_unloadTimeout) = 15;
@@ -20,7 +22,7 @@ GVAR(const_autoLoadDistance) = 3;
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 [QGVAR(boatLoaded), {
-    params ["_vehicle", "_boat", "_index"];
+    params ["", "_boat"];
     [QEGVAR(common,disableCollision), [_boat]] call CBA_fnc_localEvent;
     [QEGVAR(common,blockDamage), [_boat, QGVAR(boatIsLoaded), true]] call CBA_fnc_localEvent;
     [QEGVAR(common,blockEngine), [_boat, QGVAR(boatIsLoaded), true]] call CBA_fnc_localEvent;
@@ -28,7 +30,7 @@ GVAR(const_autoLoadDistance) = 3;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(boatUnloaded), {
-    params ["_vehicle", "_boat", "_index"];
+    params ["", "_boat"];
     [QEGVAR(common,enableCollision), [_boat]] call CBA_fnc_localEvent;
     [QEGVAR(common,blockDamage), [_boat, QGVAR(boatIsLoaded), false]] call CBA_fnc_localEvent;
     [QEGVAR(common,blockEngine), [_boat, QGVAR(boatIsLoaded), false]] call CBA_fnc_localEvent;

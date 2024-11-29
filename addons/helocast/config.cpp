@@ -20,3 +20,4 @@ class CfgPatches {
 #include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWaypoints.hpp"
+#include "Cfg3DEN.hpp"

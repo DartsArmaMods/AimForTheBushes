@@ -1,3 +1,4 @@
+PREP(boatTypesOnLoad);
 PREP(canLoadBoat);
 PREP(canUnloadBoat);
 PREP(helocastAIWaypoint);
