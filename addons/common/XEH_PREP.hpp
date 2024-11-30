@@ -1,6 +1,7 @@
 PREP(closeRamp);
 PREP(getPassengers);
 PREP(getRampAnimations);
+PREP(getSideColor);
 PREP(hasParachute);
 PREP(isPilot);
 PREP(isRampOpen);
