@@ -2,7 +2,7 @@
 
 <h1 align="center">Aim For The Bushes</h1>
 <p align="center">
-    <img src="https://img.shields.io/badge/Version-1.2.0-blue?style=flat-square" alt="Aim For The Bushes Version">
+    <img src="https://img.shields.io/badge/Version-1.2.1-blue?style=flat-square" alt="Aim For The Bushes Version">
     <a href="https://github.com/DartsArmaMods/AimForTheBushes/issues">
         <img src="https://img.shields.io/github/issues-raw/DartsArmaMods/AimForTheBushes.svg?style=flat-square&label=Issues" alt="Aim For The Bushes Issues">
     </a>
@@ -26,8 +26,8 @@
 The project is entirely **open-source** and any contributions are welcome.
 
 ## Core Features
-- [Static Line Jumping](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/staticline-feature.md)
-- [Helocasting](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/helocast-feature.md)
+- [Static Line Jumping](https://darts-arma-mods.gitbook.io/aim-for-the-bushes/features/static-line)
+- [Helocasting](https://darts-arma-mods.gitbook.io/aim-for-the-bushes/features/helocast)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
@@ -38,6 +38,8 @@ The following mods have compatability patches built into AFTB.
 I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/frameworks).
 
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
+- [Just Like the Simulations](https://steamcommunity.com/sharedfiles/filedetails/?id=1940589429)
+- [3AS (Beta Test)](https://steamcommunity.com/sharedfiles/filedetails/?id=2058554822)
 - [Operation TREBUCHET](https://steamcommunity.com/workshop/filedetails/?id=769440155)
 - [Operation TREBUCHET First Contact](https://steamcommunity.com/sharedfiles/filedetails/?id=1572627279)
 - [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)
@@ -51,6 +53,7 @@ I am not currently taking suggestions for adding compatability to more mods. The
 - [RHSUSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
 - [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
 - [RHSSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
+- [Hatchet H-60 Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1745501605)
 
 ### CDLC
 The following creator DLCs have compatability patches built into AFTB.
