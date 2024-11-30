@@ -26,8 +26,8 @@
 The project is entirely **open-source** and any contributions are welcome.
 
 ## Core Features
-- [Static Line Jumping](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/staticline-feature.md)
-- [Helocasting](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/features/helocast-feature.md)
+- [Static Line Jumping](https://darts-arma-mods.gitbook.io/aim-for-the-bushes/features/static-line)
+- [Helocasting](https://darts-arma-mods.gitbook.io/aim-for-the-bushes/features/helocast)
 
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
