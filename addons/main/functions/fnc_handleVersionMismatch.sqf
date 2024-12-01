@@ -31,18 +31,14 @@ if (!_outdated) exitWith {};
 
 private _serverVersionStr = _serverVersion joinString ".";
 private _clientVersionStr = _clientVersion joinString ".";
-private _title = "Version Mismatch";
-private _message = format ["<t align='center'>Client: %1  Server: %2</t><br/><br/>Running an oudated version on any machine could cause unexpected behavior. Press OK to return to title screen, or CANCEL to continue playing.", _clientVersionStr, _serverVersionStr];
+private _title = format ["[%1] ERROR - Version Mismatch", toUpper QUOTE(PREFIX)];
+private _message = format ["<t align='center'>Client: %1  Server: %2</t><br/><br/>Running an oudated version on any machine could cause unexpected behavior. Press OK to return to the title screen.", _clientVersionStr, _serverVersionStr];
 
-[{alive (_this#0)}, {
+[{alive (_this#0) && !isNil "CBA_settings_ready"}, {
     params ["", "_title", "_message"];
-    [
-        format ["[%1] ERROR - %2", toUpper QUOTE(PREFIX), _title], _message, {
-            findDisplay 46 closeDisplay 0;
-        }, {
-            WARNING("Client accepted version mismatch warning. Here be dragons.");
-        }
-    ] call ace_common_fnc_errorMessage;
+    if (GVAR(disconnectMismatchedVersions)) then {
+        [_title, _message, {true}, {false}] call ace_common_fnc_errorMessage;
+    };
 }, [_player, _title, _message]] call CBA_fnc_waitUntilAndExecute;
 
 nil;

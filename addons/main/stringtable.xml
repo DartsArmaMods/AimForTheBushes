@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFTB">
     <Package name="Main">
+        <Key ID="STR_AFTB_main_disconnectMismatchedVersions_name">
+            <English>Disconnect Mismatched Versions</English>
+        </Key>
+        <Key ID="STR_AFTB_main_disconnectMismatchedVersions_tooltip">
+            <English>If enabled, clients with a version of AFTB different from the server will be disconnected.</English>
+        </Key>
         <Key ID="STR_AFTB_main_url">
             <English>https://github.com/DartsArmaMods/AimForTheBushes</English>
             <Czech>https://github.com/DartsArmaMods/AimForTheBushes</Czech>
