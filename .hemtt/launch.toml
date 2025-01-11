@@ -126,8 +126,3 @@ extends = "default"
 workshop = [
     "3150497912", # Reaction Forces - Creator DLC Compatibility Data
 ]
-
-[previews]
-extends = "default"
-mission = "Previews.VR"
-parameters = ["-name=Previews"]
