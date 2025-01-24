@@ -5,7 +5,7 @@
  *
  * Arguments:
  * 0: Unit <OBJECT>
- * 1: Parachute class (optional, parachute setting) <STRING>
+ * 1: Parachute class (optional, default: parachute setting) <STRING>
  *
  * Return Value:
  * Parachute <OBJECT>

@@ -14,13 +14,11 @@
         "files.insertFinalNewline": false,
 
         "files.associations": {
-            "*.cpp": "cpp",
-            "*.hpp": "cpp",
-            "*.inc": "cpp",
-            "*.cfg": "cpp",
-            "*.rvmat": "cpp"
-        },
-
-        "C_Cpp.errorSquiggles": "disabled"
+            "*.cpp": "arma-config",
+            "*.hpp": "arma-config",
+            "*.inc": "arma-config",
+            "*.cfg": "arma-config",
+            "*.rvmat": "arma-config"
+        }
     }
 }
