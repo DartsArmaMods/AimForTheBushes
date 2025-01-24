@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "brettmayson.hemtt",
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "bux578.vscode-openlastrpt",
+        "DartRuffian.LazyArmaDev"
     ]
 }
