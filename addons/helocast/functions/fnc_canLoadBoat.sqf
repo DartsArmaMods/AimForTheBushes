@@ -13,7 +13,7 @@
  * True if boat can be loaded, otherwise false <BOOL>
  *
  * Example:
- * [_boat] call aftb_helocast_fnc_canLoadBoat;
+ * _boat call aftb_helocast_fnc_canLoadBoat;
  *
  * Public: No
  */
@@ -36,7 +36,7 @@ private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 
 if ((_loadedBoats isEqualTo [] and {_boatPositions isNotEqualTo []}) or
 {count _loadedBoats < count _boatPositions} or {
-    _ignoreRamp or {([_vehicle] call EFUNC(common,isRampOpen))}
+    _ignoreRamp or {(_vehicle call EFUNC(common,isRampOpen))}
 }) exitWith {
     _boat setVariable [QGVAR(loadTarget), _vehicle];
     if (_autoLoad and {_vehicle distance _boat <= GVAR(const_autoLoadDistance)}) then {

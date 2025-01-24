@@ -10,7 +10,7 @@
  * True if unit has parachute, otherwise false <BOOL>
  *
  * Example:
- * [ace_player] call aftb_common_fnc_hasParachute;
+ * player call aftb_common_fnc_hasParachute;
  *
  * Public: Yes
  */

@@ -13,7 +13,7 @@
  *  2: Opened state <NUMBER>
  *
  * Example:
- * [_vehicle] call aftb_common_fnc_getRampAnimations;
+ * _vehicle call aftb_common_fnc_getRampAnimations;
  *
  * Public: Yes
  */

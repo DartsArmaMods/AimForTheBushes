@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [_vehicle] call aftb_common_fnc_openRamp;
+ * _vehicle call aftb_common_fnc_openRamp;
  *
  * Public: Yes
  */
@@ -26,7 +26,7 @@ params [
 ];
 TRACE_3("fnc_openRamp",_vehicle,_instant,_phase);
 
-private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
+private _rampAnims = _vehicle call FUNC(getRampAnimations);
 {
     _x params ["_anim", "_closed", "_opened"];
     _phase = linearConversion [0, 1, _phase, _closed, _opened, true];

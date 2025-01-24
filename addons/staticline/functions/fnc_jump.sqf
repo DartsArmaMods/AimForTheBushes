@@ -19,9 +19,9 @@
 params ["_vehicle", "_unit"];
 TRACE_2("fnc_jump",_vehicle,_unit);
 
-private _hasParachute = [_unit] call EFUNC(common,hasParachute);
-if (!_hasParachute and {backpack _unit != ""} and {["bocr_main"] call ace_common_fnc_isModLoaded}) then {
-    [_unit] call bocr_main_fnc_actionOnChest;
+private _hasParachute = _unit call EFUNC(common,hasParachute);
+if (!_hasParachute and {backpack _unit != ""} and {"bocr_main" call ace_common_fnc_isModLoaded}) then {
+    _unit call bocr_main_fnc_actionOnChest;
     _unit setVariable [QGVAR(movedBackpack), true];
 };
 
@@ -49,7 +49,7 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
         _parachute = objectParent _unit;
         _parachute setVelocity _velocity;
     } else {
-        _parachute = [_unit] call FUNC(createParachute);
+        _parachute = _unit call FUNC(createParachute);
     };
 
     // Automatically swap backpack back after landing
@@ -58,8 +58,8 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
             params ["_unit"];
             [{
                 params ["_unit", "_thisEvent", "_thisEventHandler"];
-                if (isTouchingGround _unit or {[_unit] call ace_common_fnc_isSwimming}) then {
-                    [_unit] call ace_common_fnc_dropBackpack; // Drop reserve
+                if (isTouchingGround _unit or {_unit call ace_common_fnc_isSwimming}) then {
+                    _unit call ace_common_fnc_dropBackpack; // Drop reserve
                     // actionOnBack needs a small delay after dropping the reserve
                     [{ [_this] call bocr_main_fnc_actionOnBack }, _unit, 1] call CBA_fnc_waitAndExecute;
                     _unit setVariable [QGVAR(movedBackpack), nil];

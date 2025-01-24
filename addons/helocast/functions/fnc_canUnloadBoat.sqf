@@ -19,7 +19,7 @@
 params ["_vehicle", "_boat"];
 TRACE_2("fnc_canUnloadBoat",_vehicle,_boat);
 
-if !([_vehicle] call EFUNC(common,isRampOpen)) exitWith { false; };
+if !(_vehicle call EFUNC(common,isRampOpen)) exitWith { false; };
 
 private _loadedBoats = _vehicle getVariable [QGVAR(loadedBoats), []];
 if (!alive _vehicle or {!alive _boat} or {!(_boat in _loadedBoats)}) exitWith { false; };

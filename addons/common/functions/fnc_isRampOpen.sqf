@@ -11,7 +11,7 @@
  * True if ramp(s) are open, otherwise false <BOOL>
  *
  * Example:
- * [_vehicle] call aftb_common_fnc_isRampOpen;
+ * _vehicle call aftb_common_fnc_isRampOpen;
  *
  * Public: Yes
  */
@@ -23,7 +23,7 @@ params [
 TRACE_2("fnc_isRampOpen",_vehicle,_checkAll);
 
 private _return = true;
-private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
+private _rampAnims = _vehicle call FUNC(getRampAnimations);
 
 if (_checkAll) then {
     {
