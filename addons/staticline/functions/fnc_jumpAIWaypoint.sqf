@@ -54,13 +54,13 @@ if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
 
-[_vehicle] call EFUNC(common,openRamp);
+_vehicle call EFUNC(common,openRamp);
 
 // Wait for door to open
 sleep 2;
 
 // - Deployment ---------------------------------------------------------------
-[_vehicle] call FUNC(jumpAI);
+_vehicle call FUNC(jumpAI);
 waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
 
 #ifdef DEBUG_MODE_FULL
@@ -68,6 +68,6 @@ waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
     deleteMarker _startMarker;
 #endif
 
-[_vehicle] call EFUNC(common,closeRamp);
+_vehicle call EFUNC(common,closeRamp);
 [QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 true;

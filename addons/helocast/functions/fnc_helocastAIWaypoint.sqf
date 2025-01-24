@@ -45,7 +45,7 @@ if (_vehicle distance2D _position > COMPLETION_RADIUS) then {
     [QGVAR(helocastWaypointStarted), [_vehicle, _position]] call CBA_fnc_globalEvent;
 };
 
-[_vehicle] call EFUNC(common,openRamp);
+_vehicle call EFUNC(common,openRamp);
 
 // Wait for door to open
 sleep 2;
@@ -75,6 +75,6 @@ _vehicle flyInHeight [100, true];
     deleteMarker _wpMarker;
 #endif
 
-[_vehicle] call EFUNC(common,closeRamp);
+_vehicle call EFUNC(common,closeRamp);
 [QGVAR(helocastWaypointFinished), [_vehicle, _position]] call CBA_fnc_globalEvent;
 true;

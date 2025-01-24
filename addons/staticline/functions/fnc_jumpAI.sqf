@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [_vehicle] call aftb_staticLine_fnc_jumpAI;
+ * _vehicle call aftb_staticLine_fnc_jumpAI;
  *
  * Public: Yes
  */
@@ -25,7 +25,7 @@ TRACE_2("fnc_jumpAI",_vehicle,_createGroup);
 
 if (!alive _vehicle or getNumber (configOf _vehicle >> QGVAR(enabled)) < 1) exitWith {};
 
-private _unitsToDeploy = [_vehicle] call EFUNC(common,getPassengers);
+private _unitsToDeploy = _vehicle call EFUNC(common,getPassengers);
 
 if !(GVAR(aiDeployPlayers)) then {
     _unitsToDeploy = _unitsToDeploy select {!isPlayer _x};

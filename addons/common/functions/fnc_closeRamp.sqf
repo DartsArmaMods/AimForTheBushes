@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_vehicle] call aftb_common_fnc_closeRamp;
+ * _vehicle call aftb_common_fnc_closeRamp;
  *
  * Public: Yes
  */
@@ -22,7 +22,7 @@ params [
 ];
 TRACE_2("fnc_closeRamp",_vehicle,_instant);
 
-private _rampAnims = [_vehicle] call FUNC(getRampAnimations);
+private _rampAnims = _vehicle call FUNC(getRampAnimations);
 {
     _x params ["_anim", "_closed"];
     // Vanilla vehicles seem to use animateDoor, while modded tend to use animateSource

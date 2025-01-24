@@ -11,9 +11,6 @@
  * Return Value:
  * None
  *
- * Example:
- * [] call aftb_main_fnc_handleVersionMismatch;
- *
  * Public: No
  */
 
