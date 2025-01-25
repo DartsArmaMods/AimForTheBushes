@@ -48,7 +48,7 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
         if (isNull objectParent _unit) then {
             _unit action ["OpenParachute", _unit];
         } else {
-            WARNING_2("Unit %1 exited vehicle, but still is inside vehicle (%2)!",_unit,objectParent _unit);
+            WARNING_2("Unit %1 exited vehicle, but was put into another vehicle (%2)!",_unit,objectParent _unit);
         };
 
         private _velocity = velocity _unit;
