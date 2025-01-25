@@ -37,4 +37,6 @@ if (backpack _unit == "") then {
     // A reserve parachute itself obviously doesn't have another reserve, manually set the "canCut" variable
 };
 
+TRACE_3("Created parachute",_unit,_parachuteClass,_parachute);
+
 _parachute;

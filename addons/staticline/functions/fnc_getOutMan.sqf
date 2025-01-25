@@ -22,6 +22,8 @@
 params ["_unit", "", "_vehicle", "", "_isEject"];
 TRACE_3("fnc_getOutMan",_vehicle,_unit,_isEject);
 
+if (!local _unit) exitWith {};
+
 if (_isEject and {[_vehicle, _unit] call FUNC(canJump)}) then {
     [_vehicle, _unit] call FUNC(jump);
 };

@@ -44,11 +44,18 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
     private _parachute = objNull;
 
     if (_hasParachute) then {
-        _unit action ["OpenParachute", _unit];
+        TRACE_1("Unit has a parachute, open existing one",_unit);
+        if (isNull objectParent _unit) then {
+            _unit action ["OpenParachute", _unit];
+        } else {
+            WARNING_2("Unit %1 exited vehicle, but was put into another vehicle (%2)!",_unit,objectParent _unit);
+        };
+
         private _velocity = velocity _unit;
         _parachute = objectParent _unit;
         _parachute setVelocity _velocity;
     } else {
+        TRACE_1("Unit does not have a parachute, create one",_unit);
         _parachute = _unit call FUNC(createParachute);
     };
 
