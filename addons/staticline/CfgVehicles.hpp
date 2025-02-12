@@ -13,6 +13,11 @@ class CfgVehicles {
     };
 
     class Helicopter_Base_H;
+    class Heli_Attack_02_base_F: Helicopter_Base_H {
+        GVAR(enabled) = 1;
+        GVAR(condition) = QUOTE(true);
+    };
+
     class Heli_Light_02_base_F: Helicopter_Base_H {
         GVAR(enabled) = 1;
         GVAR(condition) = QUOTE(true);
