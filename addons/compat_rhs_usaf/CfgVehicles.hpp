@@ -10,6 +10,7 @@ class CfgVehicles {
             {0, 5.75, -2.59},
             {0, 0.8, -2.59}
         };
+        EGVAR(helocast,minUnloadDistance) = 12;
     };
 
     class Heli_light_03_base_F;
@@ -46,6 +47,7 @@ class CfgVehicles {
             {0, -3.27, -1.3}
         };
         EGVAR(helocast,marker) = "Chemlight_green";
+        EGVAR(helocast,minUnloadDistance) = 12;
     };
 
     class RHS_CH_47F_cargo_base: RHS_CH_47F_base {
