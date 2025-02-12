@@ -3,15 +3,29 @@ class CfgVehicles {
     class rhsusf_CH53E_USMC: Helicopter_Base_H {
         GVARMAIN(rampAnims)[] = {{"ramp", 0, 0.56}};
 
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
+
         EGVAR(helocast,boatPositions)[] = {
             {0, 5.75, -2.59},
             {0, 0.8, -2.59}
         };
     };
 
+    class Heli_light_03_base_F;
+    class RHS_UH1_Base: Heli_light_03_base_F {
+        GVARMAIN(rampAnims)[] = {{"doorhandler_l", 0, 1}, {"doorhandler_r", 0, 1}};
+
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
+    };
+
     class RHS_UH60_Base;
     class RHS_UH60M_base: RHS_UH60_Base {
-        GVARMAIN(rampAnims)[] = {{"", 0, 0}};
+        GVARMAIN(rampAnims)[] = {{"doorhandler_l", 0, 1}, {"doorhandler_r", 0, 1}};
+
+        EGVAR(staticLine,enabled) = 1;
+        EGVAR(staticLine,condition) = QUOTE(true);
 
         EGVAR(helocast,boatPositions)[] = {
             {0, 1.8, -1.45}
