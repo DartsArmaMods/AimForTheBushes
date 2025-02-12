@@ -3,6 +3,8 @@
     <Package name="Common">
         <Key ID="STR_AFTB_common_displayName">
             <English>Common</English>
+            <Italian>Comune</Italian>
+            <German>Allgemein</German>
         </Key>
     </Package>
 </Project>

@@ -3,51 +3,83 @@
     <Package name="StaticLine">
         <Key ID="STR_AFTB_staticLine_action_hook">
             <English>Hook</English>
+            <Italian>Aggancia</Italian>
+            <German>Einhängen</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_action_jump">
             <English>Jump</English>
+            <Italian>Lanciati</Italian>
+            <German>Springe</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_action_staticLine">
             <English>Static Line</English>
+            <Italian>Fune di vincolo</Italian>
+            <German>Reißleine</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_action_unhook">
             <English>Unhook</English>
+            <Italian>Sgancia</Italian>
+            <German>Aushängen</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_aiDeployPlayers_name">
             <English>AI Deploy Players</English>
+            <Italian>IA lancia giocatori</Italian>
+            <German>KI wirft Spieler ab</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_aiDeployPlayers_tooltip">
             <English>If enabled, AI pilots will also deploy players when using the Static Line Jump waypoint.</English>
+            <Italian>Se abilitato, piloti IA faranno lanciare anche giocatori agganciati, quando giungono al proprio waypoint di lancio automatico.</Italian>
+            <German>Wenn aktiviert, werden KI-Piloten eingehängte Spieler abspringen lassen, wenn sie an ihrem Automatensprung-Wegpunkt ankommen.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_createGroup_name">
             <English>Create New Group</English>
+            <Italian>Crea nuovo gruppo</Italian>
+            <German>Erstelle neue Gruppe</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_createGroup_tooltip">
             <English>If enabled, all jumpers will be automatically moved into a new group. If disabled, jumpers will be left in their original group.</English>
+            <Italian>Se abilitato, tutti i paracadutisti verranno automaticamente spostati in un nuovo gruppo. Altrimenti rimarranno nel loro gruppo originale.</Italian>
+            <German>Wenn aktiviert, werden alle Springer in eine neue Gruppe verschoben. Falls nicht, verbleiben sie in ihrer aktuellen Gruppe.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_defaultParachute_name">
             <English>Default Parachute</English>
+            <Italian>Paracadute predefinito</Italian>
+            <German>Standard Fallschirm</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_defaultParachute_tooltip">
             <English>The default parachute (vehicle) class to use when a unit ejects without a parachute equipped.</English>
+            <Italian>La classe del veicolo paracadute da utilizzare quando un'unità si lancia senza aver equipaggiato un paracadute.</Italian>
+            <German>Die Fahrzeug-Klasse des Fallschirms der verwendet wird falls eine Einheit abspringt ohne einen Fallschirm zu tragen.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_defaultReserveParachute_name">
             <English>Default Reserve Parachute</English>
+            <Italian>Paracadute di riserva predefinito</Italian>
+            <German>Standard Reserve Fallschirm</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_defaultReserveParachute_tooltip">
             <English>The default reserve parachute (backpack) class to add to units who jump without a backpack at all.</English>
+            <Italian>La classe del veicolo paracadute di riserva da aggiungere ad un'unità che si è lanciata senza uno zaino.</Italian>
+            <German>Die Fahrzeug-Klasse des Reserve-Fallschirms der einer Einheit angezogen wird, falls diese ohne einen Rucksack abspringt.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_displayName">
             <English>Static Line Jump</English>
+            <Italian>Lancio automatico da fune</Italian>
+            <German>Automatischer Leinensprung</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_enabled_tooltip">
             <English>Enables / disables static line jumping from vehicles.</English>
+            <Italian>Abilita / Disabilita lanci con apertura automatica da velivoli.</Italian>
+            <German>Aktiviert / Deaktiviert Automatensprünge mit Aufziehleine von Flugzeugen.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_parachuteDelay_name">
             <English>Parachute Delay</English>
+            <Italian>Intervallo di apertura</Italian>
+            <German>Fallschirm-Öffnungsverzögerung</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_parachuteDelay_tooltip">
             <English>The minimum amount of time in seconds before deploying a unit's parachute. There will be a small offset to this time (0-1 seconds)</English>
+            <Italian>Il minimo intervallo in secondi tra il salto e l'apertura del paracadute. È seguito da un ulteriore intervallo casuale tra 0-1 secondi.</Italian>
+            <German>Die Mindestdauer in Sekunden zwischen Absprung und Öffnung, gefolgt von einer weiteren zufälligen Verzögerung von bis zu einer Sekunde.</German>
         </Key>
     </Package>
 </Project>
