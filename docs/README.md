@@ -54,6 +54,7 @@ I am not currently taking suggestions for adding compatability to more mods. The
 - [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
 - [RHSSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
 - [Hatchet H-60 Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1745501605)
+- [3CB Factions](https://steamcommunity.com/workshop/filedetails/?id=1673456286)
 
 ### CDLC
 The following creator DLCs have compatability patches built into AFTB.
