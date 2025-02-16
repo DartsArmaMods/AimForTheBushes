@@ -1,5 +1,5 @@
-#define COMPONENT compat_ls
-#define COMPONENT_BEAUTIFIED Legion Studios Compatibility
+#define COMPONENT compat_3cbfactions
+#define COMPONENT_BEAUTIFIED 3CB Factions Compatibility
 #include "\z\aftb\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

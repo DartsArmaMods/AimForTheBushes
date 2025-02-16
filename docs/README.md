@@ -32,10 +32,10 @@ The project is entirely **open-source** and any contributions are welcome.
 ## Contributing
 For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/.github/CONTRIBUTING.md).
 
-## Compatability
+## Compatibility
 ### Mods
-The following mods have compatability patches built into AFTB.
-I am not currently taking suggestions for adding compatability to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/frameworks).
+The following mods have compatibility patches built into AFTB.
+I am not currently taking suggestions for adding compatibility to more mods. The vehicle you are suggesting likely already has a supported version in a mod listed below. If there is a specific vehicle you would like to add AFTB functionality do, check out the [documentation](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/frameworks).
 
 - [Legion Studios: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2162749089)
 - [Just Like the Simulations](https://steamcommunity.com/sharedfiles/filedetails/?id=1940589429)
@@ -54,11 +54,12 @@ I am not currently taking suggestions for adding compatability to more mods. The
 - [RHSGREF](https://steamcommunity.com/sharedfiles/filedetails/?id=843593391)
 - [RHSSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
 - [Hatchet H-60 Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1745501605)
+- [3CB Factions](https://steamcommunity.com/workshop/filedetails/?id=1673456286)
 
 ### CDLC
-The following creator DLCs have compatability patches built into AFTB.
+The following creator DLCs have compatibility patches built into AFTB.
 > [!NOTE]
-> I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatability data" mods.
+> I, DartRuffian, do not own any CDLC content, these patches are tested with the "compatibility data" mods.
 
 - [Western Sahara](https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara)
 - [S.O.G. Prairie Fire](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire)

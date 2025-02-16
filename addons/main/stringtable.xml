@@ -3,9 +3,13 @@
     <Package name="Main">
         <Key ID="STR_AFTB_main_disconnectMismatchedVersions_name">
             <English>Disconnect Mismatched Versions</English>
+            <Italian>Disconnetti versioni diverse</Italian>
+            <German>Trenne Spieler mit anderer Version</German>
         </Key>
         <Key ID="STR_AFTB_main_disconnectMismatchedVersions_tooltip">
             <English>If enabled, clients with a version of AFTB different from the server will be disconnected.</English>
+            <Italian>Se abilitato, i giocatori con una versione di AFTB differente dal server verranno disconnessi.</Italian>
+            <German>Wenn aktiviert, werden Spieler mit einer anderen AFTB Version als die des Servers getrennt.</German>
         </Key>
         <Key ID="STR_AFTB_main_url">
             <English>https://github.com/DartsArmaMods/AimForTheBushes</English>

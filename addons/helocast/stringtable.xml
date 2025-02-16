@@ -3,42 +3,68 @@
     <Package name="Helocast">
         <Key ID="STR_AFTB_helocast_action_helocast">
             <English>Helocast</English>
+            <Italian>Helocast</Italian>
+            <German>Helocast</German>
         </Key>
         <Key ID="STR_AFTB_helocast_action_recoverBoat">
             <English>Recover Boat</English>
+            <Italian>Recupera barca</Italian>
+            <German>Boot einladen</German>
         </Key>
         <Key ID="STR_AFTB_helocast_action_removeMarker">
             <English>Remove Marker</English>
+            <Italian>Rimuovi marcatore</Italian>
+            <German>Marker entfernen</German>
         </Key>
         <Key ID="STR_AFTB_helocast_action_unloadBoat">
             <English>Unload %1</English>
+            <Italian>Sgancia %1</Italian>
+            <German>Lade %1 aus</German>
         </Key>
         <Key ID="STR_AFTB_helocast_action_unloadBoats">
             <English>Unload Boats</English>
+            <Italian>Sgancia barche</Italian>
+            <German>Boote ausladen</German>
         </Key>
         <Key ID="STR_AFTB_helocast_boatCount_displayName">
             <English>Boat count</English>
+            <Italian>Numero di barche</Italian>
+            <German>Anzahl an Booten</German>
         </Key>
         <Key ID="STR_AFTB_helocast_boatCount_tooltip">
             <English>How many of the given boat type to load.</English>
+            <Italian>Numero di barche (di questo tipo) da caricare.</Italian>
+            <German>Anzahl an Booten (dieser Klasse) die einzuladen sind.</German>
         </Key>
         <Key ID="STR_AFTB_helocast_boatType_displayName">
             <English>Boat type</English>
+            <Italian>Tipo di barca</Italian>
+            <German>Bootsklasse</German>
         </Key>
         <Key ID="STR_AFTB_helocast_boatType_tooltip">
             <English>What type of boat to load into the aircraft when the mission is started.</English>
+            <Italian>Il tipo di barca da caricare nel velivolo a inizio missione.</Italian>
+            <German>Die Bootsklasse die bei Missionsbeginn in das Flugzeug einzuladen ist.</German>
         </Key>
         <Key ID="STR_AFTB_helocast_displayName">
             <English>Helocast</English>
+            <Italian>Helocast</Italian>
+            <German>Helocast</German>
         </Key>
         <Key ID="STR_AFTB_helocast_enabled_tooltip">
             <English>Enables / disables helocasting.</English>
+            <Italian>Abilita / Disabilita il helocasting.</Italian>
+            <German>Aktiviert / Deaktiviert das Helocasting.</German>
         </Key>
         <Key ID="STR_AFTB_helocast_loadDistance_name">
             <English>Load Distance</English>
+            <Italian>Distanza di recupero</Italian>
+            <German>Einlad-Entfernung</German>
         </Key>
         <Key ID="STR_AFTB_helocast_loadDistance_tooltip">
             <English>Distance in meters that boats are able to load into helicopters from.</English>
+            <Italian>Distanza in metri entro cui è possibile recupare una barca nell'elicottero.</Italian>
+            <German>Entfernung in Metern aus der es möglich ist ein Boot in den Hubschrauber einzuladen.</German>
         </Key>
     </Package>
 </Project>
