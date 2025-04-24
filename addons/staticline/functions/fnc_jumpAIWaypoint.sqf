@@ -61,7 +61,7 @@ sleep 2;
 
 // - Deployment ---------------------------------------------------------------
 _vehicle call FUNC(jumpAI);
-waitUntil {(_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []};
+waitUntil {sleep 0.5; (_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo [];}; //Not necessary, but if the jump interval is long then there is no point in checking every frame
 
 #ifdef DEBUG_MODE_FULL
     deleteMarker _wpMarker;
