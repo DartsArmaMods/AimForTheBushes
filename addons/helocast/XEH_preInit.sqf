@@ -8,6 +8,7 @@ private _category = [QUOTE(MOD_NAME), LLSTRING(displayName)];
 
 #include "initSettings.inc.sqf"
 
+GVAR(initializedBoats) = [];
 GVAR(loadableBoats) = keys (uiNamespace getVariable QGVAR(loadableBoats));
 GVAR(const_autoLoadDistance) = 3;
 
