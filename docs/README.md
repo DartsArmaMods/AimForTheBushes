@@ -55,6 +55,7 @@ I am not currently taking suggestions for adding compatibility to more mods. The
 - [RHSSAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
 - [Hatchet H-60 Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=1745501605)
 - [3CB Factions](https://steamcommunity.com/workshop/filedetails/?id=1673456286)
+- [Unsung](https://steamcommunity.com/sharedfiles/filedetails/?id=943001311)
 
 ### CDLC
 The following creator DLCs have compatibility patches built into AFTB.
