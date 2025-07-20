@@ -18,18 +18,17 @@
  */
 
 params ["_vehicle", "_unitsToDeploy", "_jumpInterval"];
-TRACE_3("fnc_jumpAI_recursive",_vehicle,_unitsToDeploy,_jumpInterval);
+TRACE_3("fnc_jumpAIRecursive",_vehicle,_unitsToDeploy,_jumpInterval);
 
 private _unit = _unitsToDeploy deleteAt 0;
 if (_unit in _vehicle) then {
     [_vehicle, _unit] call FUNC(jump);
 };
+
 if (_unitsToDeploy isNotEqualTo []) then {
-    [{
-        _this call FUNC(jumpAIRecursive);
-    }, _this, _jumpInterval] call CBA_fnc_waitAndExecute;
+    [{ call FUNC(jumpAIRecursive) }, _this, _jumpInterval] call CBA_fnc_waitAndExecute;
 } else {
-    _vehicle setVariable [QGVAR(unitsToDeploy), _unitsToDeploy, true];
+    _vehicle setVariable [QGVAR(unitsToDeploy), [], true];
 };
 
 nil;

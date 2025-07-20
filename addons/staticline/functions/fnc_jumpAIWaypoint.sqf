@@ -49,7 +49,7 @@ private _startPosition = _position vectorAdd [
 // - Approach -----------------------------------------------------------------
 if (_vehicle distance2D _startPosition > COMPLETION_RADIUS) then {
     _commander doMove _startPosition;
-    waitUntil {_vehicle distance2D _startPosition < COMPLETION_RADIUS};
+    waitUntil { sleep 0.5; _vehicle distance2D _startPosition < COMPLETION_RADIUS };
     _commander doMove _position;
     [QGVAR(jumpWaypointStarted), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
 };
@@ -61,7 +61,9 @@ sleep 2;
 
 // - Deployment ---------------------------------------------------------------
 _vehicle call FUNC(jumpAI);
-waitUntil {sleep 0.5; (_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo [];}; //Not necessary, but if the jump interval is long then there is no point in checking every frame
+
+// No need to check every frame, especially since if the jump interval is high
+waitUntil { sleep 0.5; (_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualTo []; };
 
 #ifdef DEBUG_MODE_FULL
     deleteMarker _wpMarker;
@@ -70,4 +72,4 @@ waitUntil {sleep 0.5; (_vehicle getVariable [QGVAR(unitsToDeploy), []]) isEqualT
 
 _vehicle call EFUNC(common,closeRamp);
 [QGVAR(jumpWaypointFinished), [_vehicle, _startPosition, _position]] call CBA_fnc_globalEvent;
-true;
+true; // Mark waypoint as completed
