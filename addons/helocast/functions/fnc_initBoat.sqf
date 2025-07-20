@@ -29,7 +29,7 @@ if (hasInterface) then {
     }, [], 5, true, true, "", QUOTE(ace_player == currentPilot _originalTarget and {[ARR_3(_originalTarget,nil,true)] call FUNC(canLoadBoat)}), GVAR(loadDistance)];
 
     // This could technically just be done via config
-    private _action = [QGVAR(removeMarker), "Remove Marker", "", {
+    private _action = [QGVAR(removeMarker), LLSTRING(action_removeMarker), "", {
         params ["_target"];
         private _marker = _target getVariable [QGVAR(marker), objNull];
         deleteVehicle _marker;
