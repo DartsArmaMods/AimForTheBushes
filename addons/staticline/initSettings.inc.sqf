@@ -33,3 +33,15 @@
     [LSTRING(parachuteDelay_name), LSTRING(parachuteDelay_tooltip)],
     _category, [2, 10, 4, 2], true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(commandGroupJumps), "LIST",
+    [LSTRING(commandGroupJumps_name), LSTRING(commandGroupJumps_tooltip)],
+    _category, [[0, 1, 2, 3], [LSTRING(nobody), LSTRING(onlyJumpMasters), LSTRING(alsoPilots), LSTRING(alsoGroupLeaders)], 3], true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(leaderJumpOrder), "LIST",
+    [LSTRING(leaderJumpOrder_name), LSTRING(leaderJumpOrder_tooltip)],
+    _category, [[0, 1, 2], [LSTRING(jumpsFirst), LSTRING(jumpsMiddle), LSTRING(jumpsLast)], 2], true
+] call CBA_fnc_addSetting;

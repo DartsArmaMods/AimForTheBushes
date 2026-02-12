@@ -23,4 +23,11 @@
         statement = QUOTE(call FUNC(jump)); \
         icon = "\a3\ui_f\data\map\vehicleicons\iconparachute_ca.paa"; \
     }; \
+}; \
+class GVAR(deployGroups) { \
+    displayName = CSTRING(action_deployGroups); \
+    condition = QUOTE(_target call FUNC(isEnabled) and {call FUNC(canDeployGroups)}); \
+    statement = ""; \
+    insertChildren = QUOTE(call FUNC(deployGroupsChildrenActions)); \
+    icon = QPATHTOF(ui\iconparachutes_ca.paa); \
 }

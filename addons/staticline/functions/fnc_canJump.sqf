@@ -21,10 +21,4 @@ TRACE_2("fnc_canJump",_vehicle,_unit);
 
 _unit getVariable [QGVAR(isHooked), false] and
 { _vehicle call EFUNC(common,isRampOpen) } and
-{
-    private _rampAnims = _vehicle call EFUNC(common,getRampAnimations);
-    private _jumpCondition = compile getText (configOf _vehicle >> QGVAR(condition));
-    if (_jumpCondition isEqualTo {}) then { _jumpCondition = { true }; };
-
-    [_vehicle, _unit, _rampAnims] call _jumpCondition
-};
+{ [_vehicle, _unit] call FUNC(checkJumpCondition) };
