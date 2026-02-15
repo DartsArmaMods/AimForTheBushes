@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Checks if a unit jump from a vehicle.
+ * Makes a unit jump, handles parachute deployment and automates dropping of chute backpacks after landing.
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
@@ -59,22 +59,28 @@ private _delay = (GVAR(parachuteDelay) + random 1) max 0;
         _parachute = _unit call FUNC(createParachute);
     };
 
-    // Automatically swap backpack back after landing
-    if (_unit getVariable [QGVAR(movedBackpack), false]) then {
-        _unit addEventHandler ["GetOutMan", {
-            params ["_unit"];
-            [{
-                params ["_unit", "_thisEvent", "_thisEventHandler"];
-                if (isTouchingGround _unit or {_unit call ace_common_fnc_isSwimming}) then {
-                    _unit call ace_common_fnc_dropBackpack; // Drop reserve
+    // Handle dropping of reserve chute and swapping BOCR backpack back after landing
+    _unit addEventHandler ["GetOutMan", {
+        params ["_unit"];
+        [{
+            params ["_unit", "_thisEvent", "_thisEventHandler"];
+            if (isTouchingGround _unit or {_unit call ace_common_fnc_isSwimming}) then {
+                // Drop reserve chute
+                if (backpack _unit == GVAR(defaultReserveParachute)) then {
+                    _unit call ace_common_fnc_dropBackpack;
+                };
+
+                // Swap backpack from chest to back
+                if (_unit getVariable [QGVAR(movedBackpack), false]) then {
                     // actionOnBack needs a small delay after dropping the reserve
                     [{ [_this] call bocr_main_fnc_actionOnBack }, _unit, 1] call CBA_fnc_waitAndExecute;
                     _unit setVariable [QGVAR(movedBackpack), nil];
-                    _unit removeEventHandler [_thisEvent, _thisEventHandler];
                 };
-            }, [_unit, _thisEvent, _thisEventHandler], 1.5] call CBA_fnc_waitAndExecute
-        }];
-    };
+
+                _unit removeEventHandler [_thisEvent, _thisEventHandler];
+            };
+        }, [_unit, _thisEvent, _thisEventHandler], 1.5] call CBA_fnc_waitAndExecute
+    }];
 
     [QGVAR(jumped), [_vehicle, _unit, _parachute]] call CBA_fnc_localEvent;
 }, [_vehicle, _unit, _hasParachute], _delay] call CBA_fnc_waitAndExecute;
