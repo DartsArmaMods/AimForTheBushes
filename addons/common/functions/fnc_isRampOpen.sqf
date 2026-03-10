@@ -28,13 +28,14 @@ private _rampAnims = _vehicle call FUNC(getRampAnimations);
 if (_checkAll) then {
     {
         _x params ["_anim", "_closed", "_opened"];
-        if (_vehicle animationSourcePhase _anim != _opened) exitWith {
+        // In MP, animationSourcePhase can be incorrect on remote machines. E.g. if animated to 0.6 it will return 0.6 where vehicle is local but may return 0.59... on a remote machine
+        if (((_vehicle animationSourcePhase _anim) toFixed 1) != (_opened toFixed 1)) exitWith {
             _return = false;
         };
     } forEach _rampAnims;
 } else {
     private _rampAnim = (_rampAnims select 0) params ["_anim", "_closed", "_opened"];
-    if (_vehicle animationSourcePhase _anim != _opened) then {
+    if (((_vehicle animationSourcePhase _anim) toFixed 1) != (_opened toFixed 1)) then {
         _return = false;
     };
 };

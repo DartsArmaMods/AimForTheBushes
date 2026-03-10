@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFTB">
     <Package name="StaticLine">
+        <Key ID="STR_AFTB_staticLine_action_abortGroupDeployment">
+            <English>Abort Deployment of %1 remaining units</English>
+            <Italian>Interrompi lancio di ulteriori %1 parà</Italian>
+            <German>Abwurf von weiteren %1 Springern abbrechen</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_action_deployAllGroups">
+            <English>Launch All</English>
+            <Italian>Lancia Tutti</Italian>
+            <German>Alle Absetzen</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_action_deployGroups">
+            <English>Launch Groups</English>
+            <Italian>Lancia Gruppi</Italian>
+            <German>Gruppen Absetzen</German>
+        </Key>
         <Key ID="STR_AFTB_staticLine_action_hook">
             <English>Hook</English>
             <Italian>Aggancia</Italian>
             <German>Einhängen</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_action_hooked">
+            <English>%1/%2 hooked</English>
+            <Italian>%1/%2 agganciati</Italian>
+            <German>%1/%2 eingehängt</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_action_jump">
             <English>Jump</English>
@@ -30,6 +50,26 @@
             <English>If enabled, AI pilots will also deploy players when using the Static Line Jump waypoint.</English>
             <Italian>Se abilitato, piloti IA faranno lanciare anche giocatori agganciati, quando giungono al proprio waypoint di lancio automatico.</Italian>
             <German>Wenn aktiviert, werden KI-Piloten eingehängte Spieler abspringen lassen, wenn sie an ihrem Automatensprung-Wegpunkt ankommen.</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_alsoGroupLeaders">
+            <English>Also Group Leaders</English>
+            <Italian>Anche capigruppo</Italian>
+            <German>Auch Gruppenführer</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_alsoPilots">
+            <English>Also Pilots</English>
+            <Italian>Anche piloti</Italian>
+            <German>Auch Piloten</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_commandGroupJumps_name">
+            <English>Command Group Jumps</English>
+            <Italian>Comanda lanci di gruppo</Italian>
+            <German>Befehle Gruppensprünge</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_commandGroupJumps_tooltip">
+            <English>Defines which personnel can command group jumps.\nGroup leaders can only command their own group to jump.</English>
+            <Italian>Determina quale personale può comandare lanci di gruppi.\nI capigruppo possono solo comandare il lancio del proprio gruppo.</Italian>
+            <German>Bestimmt welches Personal Gruppensprünge durch ACE Aktionen befehlen kann.\nGruppenführer können nur ihre eigene Gruppe abspringen lassen.</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_createGroup_name">
             <English>Create New Group</English>
@@ -70,6 +110,51 @@
             <English>Enables / disables static line jumping from vehicles.</English>
             <Italian>Abilita / Disabilita lanci con apertura automatica da velivoli.</Italian>
             <German>Aktiviert / Deaktiviert Automatensprünge mit Aufziehleine von Flugzeugen.</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_jumpMaster_displayName">
+            <English>Unit is a Jumpmaster</English>
+            <Italian>Unità è un direttore di lancio</Italian>
+            <German>Einheit ist ein Absetzleiter</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_jumpMaster_tooltip">
+            <English>The unit will be granted the abilities of "Jumpmaster", which allows it to order the staticline deployment of any hooked-in groups via ACE interactions, regardless of where the Jumpmaster is seated on the aircraft.</English>
+            <Italian>L'unità riceverà l'abilità di "direttore di lancio", che gli permetterà di comandare il lancio da fune di vincolo di un qualsiasi gruppo collegato ad essa, mediante interazioni ACE, indipendentemente da dove il direttore è seduto sul velivolo.</Italian>
+            <German>Die Einheit wird die Fähigkeit des "Absetzleiters" erhalten, was ihr erlaubt den Automatensprung von jeglicher Gruppe zu befehlen (durch ACE-Aktionen) die in die Reißleine eingehängt ist, unabhängig von der Position die der Absetzleiter im Luftfahrzeug einnimmt.</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_jumpsFirst">
+            <English>Jumps First</English>
+            <Italian>Salta per primo</Italian>
+            <German>Springt zuerst</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_jumpsLast">
+            <English>Jumps Last</English>
+            <Italian>Salta per ultimo</Italian>
+            <German>Springt zuletzt</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_jumpsMiddle">
+            <English>Jumps in the Middle</English>
+            <Italian>Salta in mezzo</Italian>
+            <German>Springt in der Mitte</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_leaderJumpOrder_name">
+            <English>Leader Jump Order</English>
+            <Italian>Sequenza lancio capogruppo</Italian>
+            <German>Gruppenführer Absetzordnung</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_leaderJumpOrder_tooltip">
+            <English>Determine in which order the leader jumps, among the units from his group.\nUnits assigned to the same "Team" (color) are always grouped together in the jump sequence.</English>
+            <Italian>Determina in quale ordine salta il capogruppo, rispetto alle unità del proprio gruppo.\nUnità dello stesso "Team" (colore) sono sempre raggruppate nella sequenza di lancio.</Italian>
+            <German>Definiere in welcher Reihenfolge der Gruppenführer abspringt, unter den Einheiten seiner Gruppe.\nEinheiten, die demselben "Team" (Farbe) zugeordnet sind, werden in der Absetzreihenfolge immer zusammen gruppiert.</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_nobody">
+            <English>Nobody</English>
+            <Italian>Nessuno</Italian>
+            <German>Niemand</German>
+        </Key>
+        <Key ID="STR_AFTB_staticLine_onlyJumpMasters">
+            <English>Only Jumpmasters</English>
+            <Italian>Solo direttori di lancio</Italian>
+            <German>Nur Absetzleiter</German>
         </Key>
         <Key ID="STR_AFTB_staticLine_parachuteDelay_name">
             <English>Parachute Delay</English>

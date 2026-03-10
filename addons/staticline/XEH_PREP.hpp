@@ -1,10 +1,15 @@
 PREP(addWaypoint);
+PREP(canDeployGroups);
 PREP(canHook);
 PREP(canJump);
 PREP(canUnhook);
+PREP(checkJumpCondition);
 PREP(createParachute);
+PREP(deployGroupsChildrenActions);
 PREP(getOutMan);
+PREP(getUnitsToDeploy);
 PREP(hook);
+PREP(isAircraftCrew);
 PREP(isEnabled);
 PREP(jump);
 PREP(jumpAI);

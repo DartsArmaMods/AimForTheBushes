@@ -23,7 +23,7 @@ The default loading distance is 7 meters, but this can be changed in the Addon O
 
 Mission makers can also load boats easily through a custom 3DEN property. These boats will be automatically created and loaded into the airctaft once the mission is started.
 
-![Custom 3DEN Property](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/wiki/images/helocast_3DEN_loadBoats.png)
+![Custom 3DEN Property](https://github.com/DartsArmaMods/AimForTheBushes/blob/main/docs/wiki/images/helocast_3DEN_loadBoats.png?raw=true)
 
 ### 2.2 Unloading a Boat
 

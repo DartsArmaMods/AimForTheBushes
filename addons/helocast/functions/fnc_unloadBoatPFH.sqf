@@ -70,7 +70,7 @@ TRACE_8("unloadPFH params",_vehicle,_boat,_fromPosASL,_toPosASL,_fromVelocity,_t
 
     if (_interval > 1) then {
         _handle call CBA_fnc_removePerFrameHandler;
-        [QGVAR(boatUnloaded), [_vehicle, _boat, _index]] call CBA_fnc_globalEvent;
+        [QGVAR(boatUnloaded), [_vehicle, _boat]] call CBA_fnc_globalEvent;
         _vehicle setVariable [QGVAR(isUnloading), nil, true];
         [QEGVAR(common,blockDamage), [_vehicle, QGVAR(isUnloadingBoat), false]] call CBA_fnc_globalEvent;
     };
