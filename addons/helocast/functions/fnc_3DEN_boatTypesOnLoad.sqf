@@ -42,7 +42,7 @@ private _cfgFactionClasses = configFile >> "CfgFactionClasses";
 
     // If no faction icon is set, use the side color
     if (_factionIcon == "") then {
-        _texture = ["#(rgb,1,1,1)color(%1,%2,%3,%4)"];
+        private _texture = ["#(rgb,1,1,1)color(%1,%2,%3,%4)"];
         _texture append ((getNumber (_vehicleConfig >> "side")) call EFUNC(common,getSideColor));
         _factionIcon = format _texture;
         TRACE_2("Missing faction icon, using side color",_factionIcon,_texture);

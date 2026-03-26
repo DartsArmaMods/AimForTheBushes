@@ -44,7 +44,7 @@ if (_unitsToDeploy isEqualTo ["all"]) then {
     private _unitCount = count _unitsToDeploy;
     if (_unitCount > 0) then {
         private _time = START_POS_DISTANCE / ((speed _vehicle) / 3.6);
-        private _jumpInterval = _time / _unitCount;
+        _jumpInterval = _time / _unitCount;
     };
 };
 

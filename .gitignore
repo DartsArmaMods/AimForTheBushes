@@ -1,6 +1,7 @@
 # HEMTT
 hemtt.exe
 .hemtt/missions/~*
+.hemttprivatekey
 .hemttout/
 releases/
 
