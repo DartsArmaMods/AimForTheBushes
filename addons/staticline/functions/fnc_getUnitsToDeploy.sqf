@@ -73,7 +73,7 @@ private _unitsToDeploy = [];
 
             // Append the leader's team to the group's sequence, with the leader in the desired position/index
             _leaderTeam = _leaderTeam - [_leader];
-            for [{_i = _firstLeaderTeamIdx}, {_i <= _lastLeaderTeamIdx}, {_i = _i + 1}] do {
+            for [{private _i = _firstLeaderTeamIdx}, {_i <= _lastLeaderTeamIdx}, {_i = _i + 1}] do {
                 if (_i == _leaderIdx) then {
                     _groupUnitsSorted set [_i, _leader];
                 } else {

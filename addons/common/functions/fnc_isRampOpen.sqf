@@ -34,7 +34,7 @@ if (_checkAll) then {
         };
     } forEach _rampAnims;
 } else {
-    private _rampAnim = (_rampAnims select 0) params ["_anim", "_closed", "_opened"];
+    (_rampAnims select 0) params ["_anim", "_closed", "_opened"];
     if (((_vehicle animationSourcePhase _anim) toFixed 1) != (_opened toFixed 1)) then {
         _return = false;
     };

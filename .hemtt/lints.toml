@@ -3,3 +3,6 @@ options.banned = [
     "execVM", # Script files should never be run directly, they should be functions
     "remoteExec", # CBA events should be used for networking
 ]
+
+[stringtables.usage]
+options.ignore_unused = true
